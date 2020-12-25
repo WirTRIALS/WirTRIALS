@@ -47,11 +47,14 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background:rgba(255,255,255,0.8);
+  color:black;
 
 }
 
 #header.header-scrolled, #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background:rgba(255,255,255,0.9);
+  color: black;
 }
 
 #header .logo {
@@ -90,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #fff;
+  color: black;
   transition: 0.3s;
   font-size: 20px;
   letter-spacing: 0.5px;
@@ -100,6 +103,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #47b2e4;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+img{
+  vertical-align: middle;
+  border-style: none;
 }
 
 .nav-menu .drop-down ul {
@@ -318,7 +329,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: black;
+  background: white;
+  color: black;
 }
 
 #hero .container {
@@ -330,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: black;
 }
 
 #hero h2 {
@@ -459,7 +471,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-color: white;
 }
 
 .section-title {
@@ -585,6 +597,51 @@ section {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 10px;
+}
+
+.services .icon-box .icon i {
+  color: #47b2e4;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+.services .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: #37517e;
+  transition: ease-in-out 0.3s;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  transform: translateY(-10px);
+}
+
+.services .icon-box:hover h4 a {
+  color: #47b2e4;
+}
+
 
 
 
@@ -600,8 +657,7 @@ section {
 
 .team .member .pic {
   overflow: hidden;
-  width: 180px;
-  border-radius: 50%;
+  width: 400px;
 }
 
 .team .member .pic img {
@@ -914,7 +970,8 @@ ul {
 
 #footer {
   font-size: 14px;
-  background: black;
+  background: white;
+  color: black;
 }
 
 
