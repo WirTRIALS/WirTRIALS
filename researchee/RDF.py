@@ -6,7 +6,7 @@
 #RDF file for researchers name
 #<rdf:RDF
 # xmlns:researchee="http://wirtrials.app.web/researchee#"
-# xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syyntax-ns#">
+# xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 # <rdf:Description rdf:about="http://wirtrials.app.web/researchee#researcher1">
 #   <researchee:name>Martin Gaedke</researchee:name>
 #   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#expertise1"/>
