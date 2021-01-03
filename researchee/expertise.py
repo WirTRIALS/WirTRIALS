@@ -5,4 +5,9 @@
 
 def getExpertise(name):
 
-    return list();
+    return list()
+    
+def getExpertiseTest(name):
+
+    expList = ["Software-Engineering","Web-Engineering"]
+    return expList

@@ -24,8 +24,28 @@
 #</rdf:RDF>
 
 
-import name
-import expertise
+from name import getName
+from expertise import getExpertise,getExpertiseTest
+from rdflib import Graph,Namespace,URIRef,Literal
+
 def makeRDF():
 
-
+    g = Graph()
+    n = Namespace("http://wirtrials.app.web/researchee#")
+    g.bind("researchee", n)
+    namelist = getName()
+    for name in namelist:
+        s = URIRef(n+name)
+        p = URIRef(n+"name")
+        o = Literal(name)
+        g.add((s,p,o))          #create a triple for researcher's name
+        expList = getExpertiseTest(name)
+#        expList = getExpertise(name)
+        for exp in expList:
+            s2 = URIRef(n+exp)
+            o2 = Literal(exp)
+            g.add((s2,p,o2))    #create a triple for expertise's name
+            p2 = URIRef(n+"hasExpertise")
+            g.add((s,p2,s2))    #create a triple for researcher's expertise
+        break;
+    g.serialize(destination="database.rdf", format="xml")

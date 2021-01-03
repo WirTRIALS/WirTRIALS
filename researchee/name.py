@@ -19,8 +19,10 @@ def getName():
                 name = item.find("span").contents[0]
                 if name[0] == 'N' and name[1] == '.' : 
                     continue;
+                fullname = name.split(' ')
+                while fullname[0].startswith("Univ.") or fullname[0].startswith("Dr") or fullname[0].startswith("Prof.") or fullname[0].startswith("Jun."):
+                    fullname.pop(0)
+                name = '-'.join(fullname)
                 name_list.append(name)
 
     return name_list
-
-print(getName())
