@@ -8,24 +8,22 @@
 # xmlns:researchee="http://wirtrials.app.web/researchee#"
 # xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 # <rdf:Description rdf:about="http://wirtrials.app.web/researchee#researcher1">
-#   <researchee:name>Martin Gaedke</researchee:name>
-#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#expertise1"/>
-#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#expertise3"/>  
+#   <researchee:researcherName>Martin Gaedke</researchee:name>
+#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web-Engineering"/>
+#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software-Engineering"/>  
 # </rdf:Description>
-#</rdf:RDF>
 
-#RDF file for expertise
-#<rdf:RDF
-# xmlns:researchee="http://wirtrials.app.web/researchee#"
-# xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#expertise1">
-#   <researchee:name>Web engineering</researchee:name>
+# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web-Engineering">
+#   <researchee:expertiseName>Web Engineering</researchee:name>
+# </rdf:Description>
+# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software-Engineering">
+#   <researchee:expertiseName>Software Engineering</researchee:name>
 # </rdf:Description>
 #</rdf:RDF>
 
 
 from name import getName
-from expertise import getExpertise,getExpertiseTest
+from expertise import getExpertiseTest
 from rdflib import Graph,Namespace,URIRef,Literal
 
 def makeRDF():
@@ -36,16 +34,19 @@ def makeRDF():
     namelist = getName()
     for name in namelist:
         s = URIRef(n+name)
-        p = URIRef(n+"name")
+        p = URIRef(n+"researcherName")
         o = Literal(name)
         g.add((s,p,o))          #create a triple for researcher's name
         expList = getExpertiseTest(name)
 #        expList = getExpertise(name)
         for exp in expList:
             s2 = URIRef(n+exp)
+            p2 = URIRef(n+"expertiseName")
             o2 = Literal(exp)
-            g.add((s2,p,o2))    #create a triple for expertise's name
-            p2 = URIRef(n+"hasExpertise")
-            g.add((s,p2,s2))    #create a triple for researcher's expertise
+            g.add((s2,p2,o2))    #create a triple for expertise's name
+            p3 = URIRef(n+"hasExpertise")
+            g.add((s,p3,s2))    #create a triple for researcher's expertise
         break;
     g.serialize(destination="database.rdf", format="xml")
+
+makeRDF()
