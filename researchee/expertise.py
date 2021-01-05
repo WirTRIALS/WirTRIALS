@@ -48,7 +48,7 @@ print(expertise)
 #     author_name = container.div.select("a")[2].text
 
 #     # Grabs the author information by searching
-#     author_info = container.findAll("li", {"class": "price-ship"})[0].text.strip().replace("$", "")
+#     author_info = container.findAll("li", {"class": "title"})[0].text.strip().replace("$", "")
 
 #     # prints the dataset to console
 #     print("author: " + author + "\n")
