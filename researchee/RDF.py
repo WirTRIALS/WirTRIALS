@@ -3,21 +3,21 @@
 #Parameters: empty
 #Return Value: empty
 
-#RDF file for researchers name
+#RDF file as database
 #<rdf:RDF
 # xmlns:researchee="http://wirtrials.app.web/researchee#"
 # xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 # <rdf:Description rdf:about="http://wirtrials.app.web/researchee#researcher1">
-#   <researchee:researcherName>Martin Gaedke</researchee:name>
+#   <researchee:researcherName>Martin Gaedke</researchee:researcherName>
 #   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web-Engineering"/>
 #   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software-Engineering"/>  
 # </rdf:Description>
 
 # <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web-Engineering">
-#   <researchee:expertiseName>Web Engineering</researchee:name>
+#   <researchee:expertiseName>Web-Engineering</researchee:expertiseName>
 # </rdf:Description>
 # <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software-Engineering">
-#   <researchee:expertiseName>Software Engineering</researchee:name>
+#   <researchee:expertiseName>Software-Engineering</researchee:expertiseName>
 # </rdf:Description>
 #</rdf:RDF>
 
@@ -43,7 +43,7 @@ def makeRDF():
             s2 = URIRef(n+exp)
             p2 = URIRef(n+"expertiseName")
             o2 = Literal(exp)
-            g.add((s2,p2,o2))    #create a triple for expertise's name
+            g.add((s2,p2,o2))   #create a triple for expertise's name
             p3 = URIRef(n+"hasExpertise")
             g.add((s,p3,s2))    #create a triple for researcher's expertise
         break;
