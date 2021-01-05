@@ -30,7 +30,7 @@ print(expertise)
 # # Saving to local disk
 # out_filename = "researchinfo.csv"
 # # header of csv file to be written
-# headers = "title, author_name,shipping \n"
+# headers = "title, author_name \n"
 
 # # opens file, and writes headers
 # f = open(out_filename, "w")
@@ -43,24 +43,20 @@ print(expertise)
 #     make_rating_sp = container.title("a")
 #     print(make_rating_sp)
 
-#     # Grabs the title 
-#     # Then does proper casing using .title()
-#     brand = make_rating_sp[0].img["title"].title()
+#     co_author = make_rating_sp[0].img["title"].title()
 
-#     # Grabs the text within the second "(a)" tag from within
-#     # the list of queries.
 #     author_name = container.div.select("a")[2].text
 
 #     # Grabs the author information by searching
-#     author_info = container.findAll("li", {"class": "price-ship"})[0].text.strip().replace("$", "").replace(" Shipping", "")
+#     author_info = container.findAll("li", {"class": "price-ship"})[0].text.strip().replace("$", "")
 
 #     # prints the dataset to console
-#     print("brand: " + brand + "\n")
-#     print("author_name: " + product_name + "\n")
+#     print("author: " + author + "\n")
+#     print("co_author: " + co_author + "\n")
 #     print("author_info: " + author_info + "\n")
 
 #     # writes the dataset to file
-#     f.write(brand + ", " + product_name.replace(",", "|") + ", " + shipping + "\n")
+#     f.write(brand + ", " + product_name.replace(",", "|") + ", " ")
 
 # f.close()  # Close the file
 
