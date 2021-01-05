@@ -4,14 +4,14 @@
    xmlns:researchee="http://wirtrials.app.web/researchee#"
 >
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heinrich-Lang">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web-Engineering"/>
-    <researchee:name>Heinrich-Lang</researchee:name>
     <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software-Engineering"/>
+    <researchee:researcherName>Heinrich-Lang</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web-Engineering"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web-Engineering">
-    <researchee:name>Web-Engineering</researchee:name>
+    <researchee:expertiseName>Web-Engineering</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software-Engineering">
-    <researchee:name>Software-Engineering</researchee:name>
+    <researchee:expertiseName>Software-Engineering</researchee:expertiseName>
   </rdf:Description>
 </rdf:RDF>

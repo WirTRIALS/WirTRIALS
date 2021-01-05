@@ -3,7 +3,7 @@
 #Parameters: empty
 #Return Value: a list containing all the values
 
-from bs4 import BeauifulSoup
+from bs4 import BeautifulSoup
 import requests
 
 def getName():
