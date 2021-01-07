@@ -29,5 +29,3 @@ def getName():
                 name_list.append(name)
             
     return name_list
-
-print (name.getName())

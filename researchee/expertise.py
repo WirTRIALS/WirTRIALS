@@ -26,7 +26,9 @@ def getExpertise(name):
         soup = BeautifulSoup(r.text, 'html.parser')
         mydivs = soup.findAll("a", {"class": "profile-about__badge"})        
         for title in mydivs:
-            expertList.append(title.get_text())
+            exp = title.get_text()
+            exp = '_'.join(exp.split(' '))
+            expertList.append(exp)
 
         return expertList
 
@@ -36,5 +38,3 @@ def inputFullname():
     expertlistOfName = getExpertise(fullname)
     print(expertlistOfName)
 # print(getExpertise('Martin_Gaedke'))
-
-inputFullname()
