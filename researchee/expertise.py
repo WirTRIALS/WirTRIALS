@@ -1,3 +1,8 @@
+#This module contains a function, which could get all the expertises of a researher.
+#Function Name: getExpertise()
+#Parameters: a string which contains researcher's name
+#Return Value: a list containing all the expertises of the researcher
+
 from bs4 import BeautifulSoup
 import requests
 import name

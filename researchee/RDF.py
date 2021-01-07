@@ -46,5 +46,5 @@ for name in namelist:
         g.add((s2,p2,o2))   #create a triple for expertise's name
         p3 = URIRef(n+"hasExpertise")
         g.add((s,p3,s2))    #create a triple for researcher's expertise
-    
+
 g.serialize(destination="database.rdf", format="xml")
