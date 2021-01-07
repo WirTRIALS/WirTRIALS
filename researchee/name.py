@@ -5,6 +5,8 @@
 
 from bs4 import BeautifulSoup
 import requests
+import name
+
 
 def getName():
     faculty_list = ["naturwissenschaften/professuren.html","informatik/professuren.php","mathematik/professuren/prof.de.php","wirtschaft/fakultaet/professuren.php","mb/professuren.php","phil/professuren.php","etit/profs/index.php","hsw/professuren/index.php"]
@@ -22,7 +24,10 @@ def getName():
                 fullname = name.split(' ')
                 while fullname[0].startswith("Univ.") or fullname[0].startswith("Dr") or fullname[0].startswith("Prof.") or fullname[0].startswith("Jun."):
                     fullname.pop(0)
-                name = '-'.join(fullname)
+                name = '_'.join(fullname)
+                
                 name_list.append(name)
-
+            
     return name_list
+
+print (name.getName())
