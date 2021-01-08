@@ -37,7 +37,10 @@ def getExpertise(name):
 
         return expertList
 
-
+def getExpertiseDemo(name):
+    list = ["web_engineering","software_engineering"]
+    return list
+    
 def inputFullname():
     fullname = input("Enter Fullname:(For example: Martin_Gaedke) ")
     expertlistOfName = getExpertise(fullname)

@@ -3,741 +3,784 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:researchee="http://wirtrials.app.web/researchee#"
 >
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Noise_Analysis">
-    <researchee:expertiseName>Noise_Analysis</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alloys">
+    <researchee:expertiseName>Alloys</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Acoustics">
-    <researchee:expertiseName>Acoustics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Stollmann">
-    <researchee:researcherName>Peter_Stollmann</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Group_Theory"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Topology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Geometry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algebra"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Measurement"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Pure_Mathematics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Functional_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Differentiation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ralph_Mayer">
-    <researchee:researcherName>Ralph_Mayer</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Knee"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Trauma_Surgery"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Knee_Surgery"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fracture"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Sports_Injuries"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Knee_Injuries"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Knee_Arthroplasty"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Bone"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Arthroplasty"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cartilage"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Guido_Brunnett">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Augmented_Reality"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Virtual_Reality"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#3D_Computer_Graphics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#3D_Reconstruction"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#GPU_Programming"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Object_Tracking"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#CAD"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#3D_Modeling"/>
-    <researchee:researcherName>Guido_Brunnett</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Object_Recognition"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sibylle_Gemming">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanoscience"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Density_Functional_Theory"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Electronic_Structure"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanostructures"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Semiconductor_Nanostructure"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computational_Chemistry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computational_Materials_Science"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanostructured_Materials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanoelectronics"/>
-    <researchee:researcherName>Sibylle_Gemming</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Danny_Kowerko">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Machine_Learning"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#RNA"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Spectroscopy"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#MATLAB"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Image_Processing"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Biochemistry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fluorescence"/>
-    <researchee:researcherName>Danny_Kowerko</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Experimental_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Applied_Mathematics"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Holger_Cebulla">
-    <researchee:researcherName>Holger_Cebulla</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#DNA_Nanotechnology">
-    <researchee:expertiseName>DNA_Nanotechnology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Production_Engineering">
-    <researchee:expertiseName>Production_Engineering</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Production_Planning">
-    <researchee:expertiseName>Production_Planning</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Analysis">
-    <researchee:expertiseName>Numerical_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Gangolf_Hirtz">
-    <researchee:researcherName>Gangolf_Hirtz</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Seyller">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Experimental_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials_Science"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanomaterials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
-    <researchee:researcherName>Thomas_Seyller</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Electronic_Structure"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Solid_State_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Surface_Characterization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alois_Pichler">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Edition"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#TEI"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Textual_Criticism"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Wittgenstein"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Digital_Humanities"/>
-    <researchee:researcherName>Alois_Pichler</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials">
-    <researchee:expertiseName>Materials</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Phase_Transitions">
-    <researchee:expertiseName>Phase_Transitions</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Marc_Armbrüster">
-    <researchee:researcherName>Marc_Armbrüster</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Gaedke">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cloud_Computing"/>
-    <researchee:researcherName>Martin_Gaedke</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computer_Programming"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Information_Technology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software_Programming"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Object-Oriented_Programming"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#SQL"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Information_and_Communication_Technology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software_Development"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web_Development"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#User_Experience"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ralph_Riedel">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Production_Management"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Industrial_Management"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Operations_Management"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Production_Engineering"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Production_Planning"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Logistics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optimization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Production"/>
-    <researchee:researcherName>Ralph_Riedel</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Lean_Manufacturing"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Lean_Management"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#User_Experience">
-    <researchee:expertiseName>User_Experience</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Mehring">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Medical_Education"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Primary_Care_Physicians"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Evidence_Based_Medicine"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Primary_Care_Medicine"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Health_Outcomes"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Family_Medicine"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Primary_Care"/>
-    <researchee:researcherName>Michael_Mehring</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Systematic_Reviews"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Oliver_Ernst">
-    <researchee:researcherName>Oliver_Ernst</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Georgeta_Salvan">
-    <researchee:researcherName>Georgeta_Salvan</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanomaterials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optoelectronics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#X-ray_Diffraction"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optics_and_Photonics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wolfram_Hardt">
-    <researchee:researcherName>Wolfram_Hardt</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Embedded_Systems"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Wireless_Sensor_Network"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Car"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Routing"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software_Engineering"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Evaluation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Prototyping"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Rapid_Prototyping"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optimization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jörn_Ihlemann">
-    <researchee:researcherName>Jörn_Ihlemann</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexandra_Bendixen">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognitive_Neuroscience"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognition"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Sleep,_Memory_and_Learning"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Memory"/>
-    <researchee:researcherName>Alexandra_Bendixen</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Sound"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Teaching_and_Learning"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Acoustics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Experimental_Psychology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognitive_Psychology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Learning"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Werner_Goedel">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Water_Purification_Technologies"/>
-    <researchee:researcherName>Werner_Goedel</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Membranes"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Membrane_Technology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Membrane_Separation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Filtration"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Polymers"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Surface_Science"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Conducting_Polymers"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Hanno_Lefmann">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithms"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Geometry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Combinatorics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Theoretical_Computer_Science"/>
-    <researchee:researcherName>Hanno_Lefmann</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Discrete_Mathematics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graphs"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Combinatorial_Optimization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithm_Development"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graph_Τheory"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithm_Analysis"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation">
-    <researchee:expertiseName>Computer_Graphics_and_Animation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evgeny_Kataev">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Coordination_Chemistry"/>
-    <researchee:researcherName>Evgeny_Kataev</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Host_Guest_Chemistry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Molecular_Recognition"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Receptors"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Macrocycles"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fluorescence"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Welf-Guntram_Drossel">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Noise_Analysis"/>
-    <researchee:researcherName>Welf-Guntram_Drossel</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Acoustic_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modal_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Structural_Vibration"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Multibody_System_Dynamics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Automotive_Industry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Finite_Element_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Vibration_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Acoustics_and_Acoustic_Engineering"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Finite_Element_Modeling"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Adsorption">
-    <researchee:expertiseName>Adsorption</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computer_Programming">
-    <researchee:expertiseName>Computer_Programming</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jan-Frederik_Pietschmann">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Applied_Mathematics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Mathematics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modeling"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Modeling"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Modelling"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Engineering,_Applied_and_Computational_Mathematics"/>
-    <researchee:researcherName>Jan-Frederik_Pietschmann</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Stoll">
     <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Simulation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optimization"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Modeling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Engineering,_Applied_and_Computational_Mathematics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Data_Science"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modeling_and_Simulation"/>
+    <researchee:researcherName>Martin_Stoll</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithms"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Modelling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Statistics"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computational_Chemistry">
-    <researchee:expertiseName>Computational_Chemistry</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Winfried_Thielmann">
-    <researchee:researcherName>Winfried_Thielmann</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sports_Injuries">
-    <researchee:expertiseName>Sports_Injuries</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#X-ray_Diffraction">
-    <researchee:expertiseName>X-ray_Diffraction</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Maximilian_Eibl">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#audiovisual_media"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval"/>
+    <researchee:researcherName>Maximilian_Eibl</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Human-Computer_Interaction"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Physical_Chemistry">
     <researchee:expertiseName>Physical_Chemistry</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heinrich_Lang">
-    <researchee:researcherName>Heinrich_Lang</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#GPU_Programming">
-    <researchee:expertiseName>GPU_Programming</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexander_Hasse">
-    <researchee:researcherName>Alexander_Hasse</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Unwerth">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fuel_Cell_Drivetrains"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modeling"/>
-    <researchee:researcherName>Thomas_Unwerth</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fuel_Cells"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Hydrogen_Storage"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Energy_Storage"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Advanced_Powertrains"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Milani">
-    <researchee:researcherName>Thomas_Milani</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#3D_Computer_Graphics">
-    <researchee:expertiseName>3D_Computer_Graphics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optics">
-    <researchee:expertiseName>Optics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Matthias_Werner">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characteristics"/>
-    <researchee:researcherName>Matthias_Werner</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Semiconductor_Device_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Automotive_Industry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Finance"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanomaterials"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Finance">
-    <researchee:expertiseName>Finance</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexander_Gallus">
-    <researchee:researcherName>Alexander_Gallus</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christoph_Tegenkamp">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Physical_Chemistry"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Condensed_Matter_Physics"/>
-    <researchee:researcherName>Christoph_Tegenkamp</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Density_Functional_Theory"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Electronic_Structure"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graphene"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Solid_State_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Spectroscopy"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Adsorption"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanotechnology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christoph_Helmberg">
-    <researchee:researcherName>Christoph_Helmberg</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Australasia">
-    <researchee:expertiseName>Australasia</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evidence_Based_Medicine">
-    <researchee:expertiseName>Evidence_Based_Medicine</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Combinatorial_Optimization">
-    <researchee:expertiseName>Combinatorial_Optimization</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Lampke">
-    <researchee:researcherName>Thomas_Lampke</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Anja_Strobel">
-    <researchee:researcherName>Anja_Strobel</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Primary_Care_Physicians">
-    <researchee:expertiseName>Primary_Care_Physicians</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Systematic_Reviews">
-    <researchee:expertiseName>Systematic_Reviews</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexander_Auer">
-    <researchee:researcherName>Alexander_Auer</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#DNA_Nanotechnology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#DNA_Origami"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Super_Resolution_Microscopy"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Single_Molecule_Imaging"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Arnulf_Möbius">
-    <researchee:researcherName>Arnulf_Möbius</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Surface_Science">
-    <researchee:expertiseName>Surface_Science</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computational_Neuroscience">
-    <researchee:expertiseName>Computational_Neuroscience</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials_Engineering">
-    <researchee:expertiseName>Materials_Engineering</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#apl._Prof._Dr.-Ing._habil._Daisy_Nestler">
-    <researchee:researcherName>apl._Prof._Dr.-Ing._habil._Daisy_Nestler</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cognitive_Neuroscience">
-    <researchee:expertiseName>Cognitive_Neuroscience</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ulrike_Thomas">
-    <researchee:researcherName>Ulrike_Thomas</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Graphs">
-    <researchee:expertiseName>Graphs</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Finite_Element_Analysis">
-    <researchee:expertiseName>Finite_Element_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Günter_Daniel_Rey">
-    <researchee:researcherName>Günter_Daniel_Rey</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Weigel">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Critical_Phenomena"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Phase_Transitions"/>
-    <researchee:researcherName>Martin_Weigel</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Soft_Computing"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Statistical_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#GPU"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Carsten_Deibel">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Photonics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Photovoltaics"/>
-    <researchee:researcherName>Carsten_Deibel</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Energy"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Energy_Conversion"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Solar_Cells"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Condensed_Matter_Physics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Mathematics">
-    <researchee:expertiseName>Numerical_Mathematics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Functional_Analysis">
-    <researchee:expertiseName>Functional_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fred_Hamker">
-    <researchee:researcherName>Fred_Hamker</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Neuroinformatics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computational_Neuroscience"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognitive_Neuroscience"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Neural_Circuits"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Theoretical_Neuroscience"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Stoll">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Data_Science"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Statistics"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Modelling"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Engineering,_Applied_and_Computational_Mathematics"/>
-    <researchee:researcherName>Martin_Stoll</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Modeling"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Simulation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithms"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optimization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modeling_and_Simulation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Advanced_Powertrains">
-    <researchee:expertiseName>Advanced_Powertrains</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web_Development">
-    <researchee:expertiseName>Web_Development</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Annika_Goeze">
-    <researchee:researcherName>Annika_Goeze</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Robert_Magerle">
-    <researchee:researcherName>Robert_Magerle</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Automotive_Industry">
-    <researchee:expertiseName>Automotive_Industry</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Udo_Rudolph">
-    <researchee:researcherName>Udo_Rudolph</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Information_and_Communication_Technology">
-    <researchee:expertiseName>Information_and_Communication_Technology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software_Engineering">
-    <researchee:expertiseName>Software_Engineering</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Angelika_Bullinger-Hoffmann">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Creativity_and_Innovation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Usability"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Design_Thinking"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#User_Studies"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Creative_Thinking"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#User_Experience"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Interaction"/>
-    <researchee:researcherName>Angelika_Bullinger-Hoffmann</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Prototyping"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Product_Design_and_Development"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Rapid_Prototyping"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Maximilian_Eibl">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval"/>
-    <researchee:researcherName>Maximilian_Eibl</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#audiovisual_media"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Human-Computer_Interaction"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Uta_Freiberg">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fractal_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Stochastic"/>
-    <researchee:researcherName>Uta_Freiberg</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Stochastic_Processes"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Differentiation"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fractal_Dimension"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graphs"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fractals"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Groß">
-    <researchee:researcherName>Michael_Groß</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alloys">
-    <researchee:expertiseName>Alloys</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Knee_Arthroplasty">
-    <researchee:expertiseName>Knee_Arthroplasty</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Basler">
-    <researchee:researcherName>Thomas_Basler</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heiner_Rindermann">
-    <researchee:researcherName>Heiner_Rindermann</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Photovoltaics">
-    <researchee:expertiseName>Photovoltaics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Janet_Siegmund">
-    <researchee:researcherName>Janet_Siegmund</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Klaus_Mößner">
-    <researchee:researcherName>Klaus_Mößner</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Discrete_Mathematics">
-    <researchee:expertiseName>Discrete_Mathematics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heat_Treatment">
-    <researchee:expertiseName>Heat_Treatment</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Acoustics_and_Acoustic_Engineering">
-    <researchee:expertiseName>Acoustics_and_Acoustic_Engineering</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#apl._Prof._Dr._Grischa_Vercamer">
-    <researchee:researcherName>apl._Prof._Dr._Grischa_Vercamer</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Angela_Thränhardt">
-    <researchee:researcherName>Angela_Thränhardt</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heidrun_Friese">
-    <researchee:researcherName>Heidrun_Friese</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Industrial_Management">
-    <researchee:expertiseName>Industrial_Management</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#GPU">
-    <researchee:expertiseName>GPU</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Solid_State_Physics">
-    <researchee:expertiseName>Solid_State_Physics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology">
-    <researchee:expertiseName>Thin_Films_and_Nanotechnology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Simulation">
-    <researchee:expertiseName>Numerical_Simulation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Schwarz">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Australasia"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Ethnography"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Narrative"/>
-    <researchee:researcherName>Thomas_Schwarz</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Narrative_Analysis"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cultural_Studies"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Energy_Storage">
-    <researchee:expertiseName>Energy_Storage</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Trauma_Surgery">
-    <researchee:expertiseName>Trauma_Surgery</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Coordination_Chemistry">
-    <researchee:expertiseName>Coordination_Chemistry</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Surface_Characterization">
-    <researchee:expertiseName>Surface_Characterization</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Machine_Learning">
-    <researchee:expertiseName>Machine_Learning</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software_Development">
-    <researchee:expertiseName>Software_Development</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sound">
-    <researchee:expertiseName>Sound</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Interaction">
-    <researchee:expertiseName>Interaction</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Teaching_and_Learning">
-    <researchee:expertiseName>Teaching_and_Learning</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Super_Resolution_Microscopy">
-    <researchee:expertiseName>Super_Resolution_Microscopy</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mathematical_Analysis">
-    <researchee:expertiseName>Mathematical_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Theoretical_Computer_Science">
-    <researchee:expertiseName>Theoretical_Computer_Science</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Daniel_Potts">
-    <researchee:researcherName>Daniel_Potts</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Embedded_Systems">
-    <researchee:expertiseName>Embedded_Systems</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jan_Mehner">
-    <researchee:researcherName>Jan_Mehner</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Josef_Schmied">
-    <researchee:researcherName>Josef_Schmied</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computational_Materials_Science">
-    <researchee:expertiseName>Computational_Materials_Science</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Günter_Radons">
-    <researchee:researcherName>Günter_Radons</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stefan_Streif">
-    <researchee:researcherName>Stefan_Streif</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Object-Oriented_Programming">
-    <researchee:expertiseName>Object-Oriented_Programming</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Robert_Kreitz">
-    <researchee:researcherName>Robert_Kreitz</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Narrative_Analysis">
-    <researchee:expertiseName>Narrative_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Sevenheck">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Geometry"/>
-    <researchee:researcherName>Christian_Sevenheck</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Eric_Linhart">
-    <researchee:researcherName>Eric_Linhart</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Group_Theory">
-    <researchee:expertiseName>Group_Theory</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Engineering,_Applied_and_Computational_Mathematics">
-    <researchee:expertiseName>Engineering,_Applied_and_Computational_Mathematics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bertram_Wagner">
-    <researchee:researcherName>Bertram_Wagner</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Virtual_Reality">
-    <researchee:expertiseName>Virtual_Reality</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanoscience">
+    <researchee:expertiseName>Nanoscience</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Semiconductor">
     <researchee:expertiseName>Semiconductor</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Protzel">
-    <researchee:researcherName>Peter_Protzel</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evaluation">
+    <researchee:expertiseName>Evaluation</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#MATLAB">
-    <researchee:expertiseName>MATLAB</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jan-Frederik_Pietschmann">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modeling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Modelling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
+    <researchee:researcherName>Jan-Frederik_Pietschmann</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Simulation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Modeling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Mathematics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Engineering,_Applied_and_Computational_Mathematics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Applied_Mathematics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Numerical_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Analysis"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cloud_Computing">
-    <researchee:expertiseName>Cloud_Computing</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#apl._Prof._Dr.-Ing._habil._Daisy_Nestler">
+    <researchee:researcherName>apl._Prof._Dr.-Ing._habil._Daisy_Nestler</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#audiovisual_media">
-    <researchee:expertiseName>audiovisual_media</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Analysis">
+    <researchee:expertiseName>Analysis</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mathematical_Programming">
-    <researchee:expertiseName>Mathematical_Programming</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Basler">
+    <researchee:researcherName>Thomas_Basler</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Werner_Goedel">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Conducting_Polymers"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Surface_Science"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Water_Purification_Technologies"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Membrane_Separation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Membrane_Technology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Filtration"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Membranes"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Polymers"/>
+    <researchee:researcherName>Werner_Goedel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Machine_Learning">
+    <researchee:expertiseName>Machine_Learning</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computational_Neuroscience">
+    <researchee:expertiseName>Computational_Neuroscience</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Uta_Freiberg">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fractal_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fractal_Dimension"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Stochastic"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fractals"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graphs"/>
+    <researchee:researcherName>Uta_Freiberg</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Stochastic_Processes"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Differentiation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Georgeta_Salvan">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanomaterials"/>
+    <researchee:researcherName>Georgeta_Salvan</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#X-ray_Diffraction"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optoelectronics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optics_and_Photonics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Hanno_Lefmann">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithms"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graph_Τheory"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithm_Development"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Discrete_Mathematics"/>
+    <researchee:researcherName>Hanno_Lefmann</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Theoretical_Computer_Science"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Combinatorics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graphs"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algorithm_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Geometry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Combinatorial_Optimization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#User_Experience">
+    <researchee:expertiseName>User_Experience</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Creativity_and_Innovation">
+    <researchee:expertiseName>Creativity_and_Innovation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Anja_Strobel">
+    <researchee:researcherName>Anja_Strobel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexandra_Bendixen">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Experimental_Psychology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Memory"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Teaching_and_Learning"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognition"/>
+    <researchee:researcherName>Alexandra_Bendixen</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Learning"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Sound"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognitive_Psychology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Acoustics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognitive_Neuroscience"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Sleep,_Memory_and_Learning"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algebra">
+    <researchee:expertiseName>Algebra</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Theoretical_Neuroscience">
+    <researchee:expertiseName>Theoretical_Neuroscience</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Frank-Lothar_Kroll">
+    <researchee:researcherName>Frank-Lothar_Kroll</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evidence_Based_Medicine">
+    <researchee:expertiseName>Evidence_Based_Medicine</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Winfried_Thielmann">
+    <researchee:researcherName>Winfried_Thielmann</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Information_Technology">
+    <researchee:expertiseName>Information_Technology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Phase_Transitions">
+    <researchee:expertiseName>Phase_Transitions</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computational_Materials_Science">
+    <researchee:expertiseName>Computational_Materials_Science</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Klaus_Stolz">
+    <researchee:researcherName>Klaus_Stolz</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Robert_Magerle">
+    <researchee:researcherName>Robert_Magerle</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sleep,_Memory_and_Learning">
+    <researchee:expertiseName>Sleep,_Memory_and_Learning</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Andreas_Undisz">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials_Science"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Alloys"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Semiconductor"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mechanical_Testing"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Metals"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
     <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Heat_Treatment"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials_Engineering"/>
     <researchee:researcherName>Andreas_Undisz</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mechanical_Testing"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Semiconductor"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Metals"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Alloys"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials_Engineering"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials_Science"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ethnography">
-    <researchee:expertiseName>Ethnography</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heinrich_Lang">
+    <researchee:researcherName>Heinrich_Lang</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Prototyping">
-    <researchee:expertiseName>Prototyping</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Seyller">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanomaterials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Solid_State_Physics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Electronic_Structure"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Experimental_Physics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Surface_Characterization"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
+    <researchee:researcherName>Thomas_Seyller</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials_Science"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alejandro_Masrur">
-    <researchee:researcherName>Alejandro_Masrur</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Finite_Element_Modeling">
+    <researchee:expertiseName>Finite_Element_Modeling</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Creative_Thinking">
-    <researchee:expertiseName>Creative_Thinking</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Sommer">
+    <researchee:researcherName>Michael_Sommer</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanotechnology">
+    <researchee:expertiseName>Nanotechnology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ralph_Mayer">
+    <researchee:researcherName>Ralph_Mayer</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Information_and_Communication_Technology">
+    <researchee:expertiseName>Information_and_Communication_Technology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Health_Outcomes">
+    <researchee:expertiseName>Health_Outcomes</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Virtual_Reality">
+    <researchee:expertiseName>Virtual_Reality</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Routing">
     <researchee:expertiseName>Routing</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Graph_Τheory">
-    <researchee:expertiseName>Graph_Τheory</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Mehring">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Family_Medicine"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Primary_Care"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Primary_Care_Physicians"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Medical_Education"/>
+    <researchee:researcherName>Michael_Mehring</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Health_Outcomes"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Primary_Care_Medicine"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Systematic_Reviews"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Evidence_Based_Medicine"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wittgenstein">
-    <researchee:expertiseName>Wittgenstein</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evgeny_Kataev">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Host_Guest_Chemistry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Receptors"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Macrocycles"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fluorescence"/>
+    <researchee:researcherName>Evgeny_Kataev</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Coordination_Chemistry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Molecular_Recognition"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Knee_Surgery">
-    <researchee:expertiseName>Knee_Surgery</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algorithm_Analysis">
+    <researchee:expertiseName>Algorithm_Analysis</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Birgit_Awiszus">
-    <researchee:researcherName>Birgit_Awiszus</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Vladimir_Shikhman">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Programming"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Convex_Optimization"/>
+    <researchee:researcherName>Vladimir_Shikhman</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Host_Guest_Chemistry">
-    <researchee:expertiseName>Host_Guest_Chemistry</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wolfram_Hardt">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Evaluation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Embedded_Systems"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optimization"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Wireless_Sensor_Network"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Routing"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software_Engineering"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Car"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Prototyping"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Rapid_Prototyping"/>
+    <researchee:researcherName>Wolfram_Hardt</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Günter_Radons">
+    <researchee:researcherName>Günter_Radons</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Guido_Brunnett">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Object_Recognition"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#GPU_Programming"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#3D_Reconstruction"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#3D_Modeling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Object_Tracking"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#CAD"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation"/>
+    <researchee:researcherName>Guido_Brunnett</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Virtual_Reality"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Augmented_Reality"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#3D_Computer_Graphics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computer_Programming">
+    <researchee:expertiseName>Computer_Programming</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Stollmann">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Algebra"/>
+    <researchee:researcherName>Peter_Stollmann</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Topology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Differentiation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Group_Theory"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Geometry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Measurement"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Functional_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Pure_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Schwarz">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Narrative_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cultural_Studies"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Australasia"/>
+    <researchee:researcherName>Thomas_Schwarz</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Ethnography"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Narrative"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Statistics">
+    <researchee:expertiseName>Statistics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bertram_Wagner">
+    <researchee:researcherName>Bertram_Wagner</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fred_Hamker">
+    <researchee:researcherName>Fred_Hamker</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Neural_Circuits"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Neuroinformatics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computational_Neuroscience"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Theoretical_Neuroscience"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cognitive_Neuroscience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Groß">
+    <researchee:researcherName>Michael_Groß</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Daniel_Potts">
+    <researchee:researcherName>Daniel_Potts</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Oliver_Ernst">
+    <researchee:researcherName>Oliver_Ernst</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Angelika_Bullinger-Hoffmann">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Usability"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Design_Thinking"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Interaction"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Creative_Thinking"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Creativity_and_Innovation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Product_Design_and_Development"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#User_Experience"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Prototyping"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Rapid_Prototyping"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#User_Studies"/>
+    <researchee:researcherName>Angelika_Bullinger-Hoffmann</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jennifer_Schluer">
+    <researchee:researcherName>Jennifer_Schluer</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Gaedke">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Object-Oriented_Programming"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computer_Programming"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software_Programming"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Information_Technology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software_Development"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web_Development"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#SQL"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#User_Experience"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Cloud_Computing"/>
+    <researchee:researcherName>Martin_Gaedke</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Information_and_Communication_Technology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Carsten_Deibel">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Photovoltaics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Energy"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Solar_Cells"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Energy_Conversion"/>
+    <researchee:researcherName>Carsten_Deibel</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Photonics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Condensed_Matter_Physics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algorithm_Development">
+    <researchee:expertiseName>Algorithm_Development</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Matthias_Werner">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Film_Deposition"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characterization"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Semiconductor_Device_Physics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanomaterials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Automotive_Industry"/>
+    <researchee:researcherName>Matthias_Werner</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Finance"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Material_Characteristics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Danny_Kowerko">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#MATLAB"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#RNA"/>
+    <researchee:researcherName>Danny_Kowerko</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Applied_Mathematics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fluorescence"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Biochemistry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Image_Processing"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Optics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Machine_Learning"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Spectroscopy"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Experimental_Physics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Madhukar_Chandra">
+    <researchee:researcherName>Madhukar_Chandra</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jörn_Ihlemann">
+    <researchee:researcherName>Jörn_Ihlemann</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Molecular_Recognition">
+    <researchee:expertiseName>Molecular_Recognition</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wolfgang_Einhäuser-Treyer">
+    <researchee:researcherName>Wolfgang_Einhäuser-Treyer</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Ohler">
+    <researchee:researcherName>Peter_Ohler</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#RNA">
+    <researchee:expertiseName>RNA</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Family_Medicine">
+    <researchee:expertiseName>Family_Medicine</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Primary_Care">
+    <researchee:expertiseName>Primary_Care</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanostructured_Materials">
+    <researchee:expertiseName>Nanostructured_Materials</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Milani">
+    <researchee:researcherName>Thomas_Milani</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Rudolf_Müller">
+    <researchee:researcherName>Michael_Rudolf_Müller</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Photonics">
+    <researchee:expertiseName>Photonics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Water_Purification_Technologies">
+    <researchee:expertiseName>Water_Purification_Technologies</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Finance">
+    <researchee:expertiseName>Finance</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Lampke">
+    <researchee:researcherName>Thomas_Lampke</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Statistical_Physics">
+    <researchee:expertiseName>Statistical_Physics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#DNA_Origami">
+    <researchee:expertiseName>DNA_Origami</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Teresa_Paula_Pinheiro">
+    <researchee:researcherName>Teresa_Paula_Pinheiro</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Prototyping">
+    <researchee:expertiseName>Prototyping</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Gangolf_Hirtz">
+    <researchee:researcherName>Gangolf_Hirtz</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Papsdorf">
+    <researchee:researcherName>Christian_Papsdorf</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Analysis">
+    <researchee:expertiseName>Numerical_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Gudula_Rünger">
+    <researchee:researcherName>Gudula_Rünger</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Welf-Guntram_Drossel">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Acoustic_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Multibody_System_Dynamics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Vibration_Analysis"/>
+    <researchee:researcherName>Welf-Guntram_Drossel</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Acoustics_and_Acoustic_Engineering"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Finite_Element_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Structural_Vibration"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Noise_Analysis"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Automotive_Industry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Finite_Element_Modeling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modal_Analysis"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Design_Thinking">
+    <researchee:expertiseName>Design_Thinking</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sibylle_Gemming">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Density_Functional_Theory"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Electronic_Structure"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanostructures"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computational_Materials_Science"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanoscience"/>
+    <researchee:researcherName>Sibylle_Gemming</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanostructured_Materials"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Computational_Chemistry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Semiconductor_Nanostructure"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanoelectronics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Marian_Nebelin">
+    <researchee:researcherName>Marian_Nebelin</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Dietrich_R._T._Zahn">
+    <researchee:researcherName>Dietrich_R._T._Zahn</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Udo_Rudolph">
+    <researchee:researcherName>Udo_Rudolph</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Data_Science">
+    <researchee:expertiseName>Data_Science</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexander_Gallus">
+    <researchee:researcherName>Alexander_Gallus</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stefan_Spange">
+    <researchee:researcherName>Stefan_Spange</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jan_Mehner">
+    <researchee:researcherName>Jan_Mehner</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Surface_Science">
+    <researchee:expertiseName>Surface_Science</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Discrete_Mathematics">
+    <researchee:expertiseName>Discrete_Mathematics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Narrative">
+    <researchee:expertiseName>Narrative</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Augmented_Reality">
+    <researchee:expertiseName>Augmented_Reality</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Georg_Jahn">
+    <researchee:researcherName>Georg_Jahn</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Simulation">
+    <researchee:expertiseName>Simulation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alois_Pichler">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Wittgenstein"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Edition"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Digital_Humanities"/>
+    <researchee:researcherName>Alois_Pichler</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Textual_Criticism"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#TEI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Topology">
+    <researchee:expertiseName>Topology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Coordination_Chemistry">
+    <researchee:expertiseName>Coordination_Chemistry</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Combinatorics">
+    <researchee:expertiseName>Combinatorics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Andreas_Goerdt">
+    <researchee:researcherName>Andreas_Goerdt</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Unwerth">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Hydrogen_Storage"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fuel_Cells"/>
+    <researchee:researcherName>Thomas_Unwerth</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Fuel_Cell_Drivetrains"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Energy_Storage"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Advanced_Powertrains"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Modeling"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christoph_Tegenkamp">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Electronic_Structure"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Spectroscopy"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Graphene"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Nanotechnology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Materials"/>
+    <researchee:researcherName>Christoph_Tegenkamp</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Condensed_Matter_Physics"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Physical_Chemistry"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Density_Functional_Theory"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Adsorption"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Solid_State_Physics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Günter_Wozniak">
+    <researchee:researcherName>Günter_Wozniak</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Biochemistry">
+    <researchee:expertiseName>Biochemistry</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Functional_Analysis">
+    <researchee:expertiseName>Functional_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stefan_Streif">
+    <researchee:researcherName>Stefan_Streif</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computational_Chemistry">
+    <researchee:expertiseName>Computational_Chemistry</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#User_Studies">
+    <researchee:expertiseName>User_Studies</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Roland_Herzog">
+    <researchee:researcherName>Roland_Herzog</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heat_Treatment">
+    <researchee:expertiseName>Heat_Treatment</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Weigel">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#GPU"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Critical_Phenomena"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Simulation"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Phase_Transitions"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Soft_Computing"/>
+    <researchee:researcherName>Martin_Weigel</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Statistical_Physics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Automotive_Industry">
+    <researchee:expertiseName>Automotive_Industry</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Car">
+    <researchee:expertiseName>Car</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Theoretical_Computer_Science">
+    <researchee:expertiseName>Theoretical_Computer_Science</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mathematical_Programming">
+    <researchee:expertiseName>Mathematical_Programming</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Maik_Berger">
+    <researchee:researcherName>Maik_Berger</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Image_Processing">
+    <researchee:expertiseName>Image_Processing</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#X-ray_Diffraction">
+    <researchee:expertiseName>X-ray_Diffraction</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Energy_Conversion">
+    <researchee:expertiseName>Energy_Conversion</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Eric_Linhart">
+    <researchee:researcherName>Eric_Linhart</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Primary_Care_Medicine">
+    <researchee:expertiseName>Primary_Care_Medicine</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optimization">
+    <researchee:expertiseName>Optimization</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials_Engineering">
+    <researchee:expertiseName>Materials_Engineering</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Human-Computer_Interaction">
+    <researchee:expertiseName>Human-Computer_Interaction</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Karl_Heinz_Hoffmann">
     <researchee:researcherName>Karl_Heinz_Hoffmann</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Usability">
-    <researchee:expertiseName>Usability</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Density_Functional_Theory">
+    <researchee:expertiseName>Density_Functional_Theory</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Experimental_Psychology">
-    <researchee:expertiseName>Experimental_Psychology</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Measurement">
+    <researchee:expertiseName>Measurement</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Image_Processing">
-    <researchee:expertiseName>Image_Processing</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ulrike_Thomas">
+    <researchee:researcherName>Ulrike_Thomas</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#audiovisual_media">
+    <researchee:expertiseName>audiovisual_media</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Primary_Care_Physicians">
+    <researchee:expertiseName>Primary_Care_Physicians</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martina_Hentschel">
+    <researchee:researcherName>Martina_Hentschel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Modal_Analysis">
+    <researchee:expertiseName>Modal_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanomaterials">
+    <researchee:expertiseName>Nanomaterials</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Vibration_Analysis">
+    <researchee:expertiseName>Vibration_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Semiconductor_Nanostructure">
+    <researchee:expertiseName>Semiconductor_Nanostructure</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optics_and_Photonics">
+    <researchee:expertiseName>Optics_and_Photonics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Henry_Schulz">
+    <researchee:researcherName>Henry_Schulz</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Lothar_Kroll">
+    <researchee:researcherName>Lothar_Kroll</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials_Science">
+    <researchee:expertiseName>Materials_Science</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Tino_Ullrich">
+    <researchee:researcherName>Tino_Ullrich</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Simulation">
+    <researchee:expertiseName>Numerical_Simulation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Soft_Computing">
+    <researchee:expertiseName>Soft_Computing</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software_Programming">
+    <researchee:expertiseName>Software_Programming</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#GPU_Programming">
+    <researchee:expertiseName>GPU_Programming</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mario_Kusch">
+    <researchee:researcherName>Mario_Kusch</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Structural_Vibration">
+    <researchee:expertiseName>Structural_Vibration</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ralph_Riedel">
+    <researchee:researcherName>Ralph_Riedel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#apl._Prof._Dr._Grischa_Vercamer">
+    <researchee:researcherName>apl._Prof._Dr._Grischa_Vercamer</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Josef_Schmied">
+    <researchee:researcherName>Josef_Schmied</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algorithms">
+    <researchee:expertiseName>Algorithms</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christoph_Helmberg">
+    <researchee:researcherName>Christoph_Helmberg</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Holger_Cebulla">
+    <researchee:researcherName>Holger_Cebulla</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#3D_Computer_Graphics">
+    <researchee:expertiseName>3D_Computer_Graphics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Acoustic_Analysis">
+    <researchee:expertiseName>Acoustic_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Solar_Cells">
+    <researchee:expertiseName>Solar_Cells</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#rer._nat._Isabelle_Roth-Panke">
+    <researchee:researcherName>rer._nat._Isabelle_Roth-Panke</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval">
+    <researchee:expertiseName>Multimedia_Information_Retrieval</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ralf_Werner">
+    <researchee:researcherName>Ralf_Werner</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optics">
+    <researchee:expertiseName>Optics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Neuroinformatics">
+    <researchee:expertiseName>Neuroinformatics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Henning_Laux">
+    <researchee:researcherName>Henning_Laux</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stochastic">
+    <researchee:expertiseName>Stochastic</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Guntram_Wagner">
+    <researchee:researcherName>Guntram_Wagner</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Surface_Characterization">
+    <researchee:expertiseName>Surface_Characterization</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Host_Guest_Chemistry">
+    <researchee:expertiseName>Host_Guest_Chemistry</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Semiconductor_Device_Physics">
+    <researchee:expertiseName>Semiconductor_Device_Physics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Markus_Golder">
+    <researchee:researcherName>Markus_Golder</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Finite_Element_Analysis">
+    <researchee:expertiseName>Finite_Element_Analysis</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mathematical_Modelling">
     <researchee:expertiseName>Mathematical_Modelling</researchee:expertiseName>
@@ -745,636 +788,515 @@
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fractals">
     <researchee:expertiseName>Fractals</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Madhukar_Chandra">
-    <researchee:researcherName>Madhukar_Chandra</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Filtration">
-    <researchee:expertiseName>Filtration</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fuel_Cell_Drivetrains">
-    <researchee:expertiseName>Fuel_Cell_Drivetrains</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Membrane_Separation">
-    <researchee:expertiseName>Membrane_Separation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#John_Thomas_Horstmann">
-    <researchee:researcherName>John_Thomas_Horstmann</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Neural_Circuits">
-    <researchee:expertiseName>Neural_Circuits</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#TEI">
-    <researchee:expertiseName>TEI</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#3D_Reconstruction">
-    <researchee:expertiseName>3D_Reconstruction</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algorithm_Analysis">
-    <researchee:expertiseName>Algorithm_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Olfa_Kanoun">
-    <researchee:researcherName>Olfa_Kanoun</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Embedded_Systems">
+    <researchee:expertiseName>Embedded_Systems</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stephan_Odenwald">
     <researchee:researcherName>Stephan_Odenwald</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Solar_Cells">
-    <researchee:expertiseName>Solar_Cells</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Critical_Phenomena">
+    <researchee:expertiseName>Critical_Phenomena</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algorithms">
-    <researchee:expertiseName>Algorithms</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Object_Tracking">
-    <researchee:expertiseName>Object_Tracking</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Family_Medicine">
-    <researchee:expertiseName>Family_Medicine</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Design_Thinking">
-    <researchee:expertiseName>Design_Thinking</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fluorescence">
-    <researchee:expertiseName>Fluorescence</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mario_Kusch">
-    <researchee:researcherName>Mario_Kusch</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanostructures">
-    <researchee:expertiseName>Nanostructures</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Differentiation">
-    <researchee:expertiseName>Differentiation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Schreiber">
-    <researchee:researcherName>Michael_Schreiber</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Georg_Jahn">
-    <researchee:researcherName>Georg_Jahn</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Textual_Criticism">
-    <researchee:expertiseName>Textual_Criticism</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Experimental_Psychology">
+    <researchee:expertiseName>Experimental_Psychology</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#André_Windisch">
     <researchee:researcherName>André_Windisch</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Membranes">
-    <researchee:expertiseName>Membranes</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Vladimir_Shikhman">
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Mathematical_Programming"/>
-    <researchee:researcherName>Vladimir_Shikhman</researchee:researcherName>
-    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Convex_Optimization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Molecular_Recognition">
-    <researchee:expertiseName>Molecular_Recognition</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Finite_Element_Modeling">
-    <researchee:expertiseName>Finite_Element_Modeling</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanomaterials">
-    <researchee:expertiseName>Nanomaterials</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Markus_Golder">
-    <researchee:researcherName>Markus_Golder</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#SQL">
-    <researchee:expertiseName>SQL</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stefan_Garsztecki">
-    <researchee:researcherName>Stefan_Garsztecki</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Dix">
-    <researchee:researcherName>Martin_Dix</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Oliver_Schmidt">
-    <researchee:researcherName>Oliver_Schmidt</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Matthias_Niedobitek">
-    <researchee:researcherName>Matthias_Niedobitek</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Wagner">
-    <researchee:researcherName>Martin_Wagner</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Henning_Laux">
-    <researchee:researcherName>Henning_Laux</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optics_and_Photonics">
-    <researchee:expertiseName>Optics_and_Photonics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Structural_Vibration">
-    <researchee:expertiseName>Structural_Vibration</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Modeling">
-    <researchee:expertiseName>Numerical_Modeling</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wolfgang_Schufft">
-    <researchee:researcherName>Wolfgang_Schufft</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bone">
-    <researchee:expertiseName>Bone</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Theoretical_Neuroscience">
-    <researchee:expertiseName>Theoretical_Neuroscience</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Electronic_Structure">
-    <researchee:expertiseName>Electronic_Structure</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Object_Recognition">
-    <researchee:expertiseName>Object_Recognition</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christoph_Fasbender">
-    <researchee:researcherName>Christoph_Fasbender</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#3D_Modeling">
-    <researchee:expertiseName>3D_Modeling</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Single_Molecule_Imaging">
-    <researchee:expertiseName>Single_Molecule_Imaging</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Macrocycles">
-    <researchee:expertiseName>Macrocycles</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ariyan_Javan_Peykar">
-    <researchee:researcherName>Ariyan_Javan_Peykar</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Isabelle_van_der_Bom">
-    <researchee:researcherName>Isabelle_van_der_Bom</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fractal_Analysis">
-    <researchee:expertiseName>Fractal_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Lothar_Kroll">
-    <researchee:researcherName>Lothar_Kroll</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Soft_Computing">
-    <researchee:expertiseName>Soft_Computing</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Olav_Hellwig">
-    <researchee:researcherName>Olav_Hellwig</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wolfgang_Einhäuser-Treyer">
-    <researchee:researcherName>Wolfgang_Einhäuser-Treyer</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Edition">
-    <researchee:expertiseName>Edition</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Klaus_Stolz">
-    <researchee:researcherName>Klaus_Stolz</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Graphene">
-    <researchee:expertiseName>Graphene</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanoelectronics">
-    <researchee:expertiseName>Nanoelectronics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#User_Studies">
-    <researchee:expertiseName>User_Studies</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Maiwald">
-    <researchee:researcherName>Christian_Maiwald</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#PD_Dr._Merja_Mahrt">
-    <researchee:researcherName>PD_Dr._Merja_Mahrt</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Frank-Lothar_Kroll">
-    <researchee:researcherName>Frank-Lothar_Kroll</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Marian_Nebelin">
-    <researchee:researcherName>Marian_Nebelin</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Vibration_Analysis">
-    <researchee:expertiseName>Vibration_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#habil._Franziska_Bocklisch">
-    <researchee:researcherName>habil._Franziska_Bocklisch</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology">
-    <researchee:expertiseName>Neurobiology_and_Brain_Physiology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sleep,_Memory_and_Learning">
-    <researchee:expertiseName>Sleep,_Memory_and_Learning</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Philipp_Reiter">
-    <researchee:researcherName>Philipp_Reiter</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jennifer_Schluer">
-    <researchee:researcherName>Jennifer_Schluer</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Simulation">
-    <researchee:expertiseName>Simulation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Tino_Ullrich">
-    <researchee:researcherName>Tino_Ullrich</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Narrative">
-    <researchee:expertiseName>Narrative</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ulrich_Heinkel">
-    <researchee:researcherName>Ulrich_Heinkel</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Energy_Conversion">
-    <researchee:expertiseName>Energy_Conversion</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Clauss">
-    <researchee:researcherName>Martin_Clauss</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ulrich_Theodor_Schwarz">
-    <researchee:researcherName>Ulrich_Theodor_Schwarz</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Sedlmeier">
-    <researchee:researcherName>Peter_Sedlmeier</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Birgit_Glorius">
-    <researchee:researcherName>Birgit_Glorius</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Modal_Analysis">
-    <researchee:expertiseName>Modal_Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Knee">
-    <researchee:expertiseName>Knee</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Topology">
-    <researchee:expertiseName>Topology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Rudolf_Müller">
-    <researchee:researcherName>Michael_Rudolf_Müller</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Papsdorf">
-    <researchee:researcherName>Christian_Papsdorf</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Production">
-    <researchee:expertiseName>Production</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Logistics">
-    <researchee:expertiseName>Logistics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Bauschert">
-    <researchee:researcherName>Thomas_Bauschert</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Health_Outcomes">
-    <researchee:expertiseName>Health_Outcomes</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Water_Purification_Technologies">
-    <researchee:expertiseName>Water_Purification_Technologies</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Receptors">
-    <researchee:expertiseName>Receptors</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jochen_Mayerl">
-    <researchee:researcherName>Jochen_Mayerl</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Semiconductor_Nanostructure">
-    <researchee:expertiseName>Semiconductor_Nanostructure</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Creativity_and_Innovation">
-    <researchee:expertiseName>Creativity_and_Innovation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Learning">
-    <researchee:expertiseName>Learning</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Product_Design_and_Development">
-    <researchee:expertiseName>Product_Design_and_Development</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bertolt_Meyer">
-    <researchee:researcherName>Bertolt_Meyer</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fractal_Dimension">
-    <researchee:expertiseName>Fractal_Dimension</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Object-Oriented_Programming">
+    <researchee:expertiseName>Object-Oriented_Programming</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexander_Auer">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#DNA_Nanotechnology"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Single_Molecule_Imaging"/>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#DNA_Origami"/>
+    <researchee:researcherName>Alexander_Auer</researchee:researcherName>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Super_Resolution_Microscopy"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Digital_Humanities">
     <researchee:expertiseName>Digital_Humanities</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Semiconductor_Device_Physics">
-    <researchee:expertiseName>Semiconductor_Device_Physics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanoscience">
-    <researchee:expertiseName>Nanoscience</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Conducting_Polymers">
-    <researchee:expertiseName>Conducting_Polymers</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optimization">
-    <researchee:expertiseName>Optimization</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software_Programming">
-    <researchee:expertiseName>Software_Programming</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Günter_Wozniak">
-    <researchee:researcherName>Günter_Wozniak</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Gudula_Rünger">
-    <researchee:researcherName>Gudula_Rünger</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Gala_Rebane">
-    <researchee:researcherName>Gala_Rebane</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Combinatorics">
-    <researchee:expertiseName>Combinatorics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Energy">
-    <researchee:expertiseName>Energy</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Analysis">
-    <researchee:expertiseName>Analysis</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Critical_Phenomena">
-    <researchee:expertiseName>Critical_Phenomena</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Neuroinformatics">
-    <researchee:expertiseName>Neuroinformatics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Kommissarische_Leitung:_Dr._Andreas_Ihle">
-    <researchee:researcherName>Kommissarische_Leitung:_Dr._Andreas_Ihle</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ellen_Fricke">
-    <researchee:researcherName>Ellen_Fricke</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Henry_Schulz">
-    <researchee:researcherName>Henry_Schulz</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Rapid_Prototyping">
-    <researchee:expertiseName>Rapid_Prototyping</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Memory">
-    <researchee:expertiseName>Memory</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stochastic">
-    <researchee:expertiseName>Stochastic</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Laux">
-    <researchee:researcherName>Thomas_Laux</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Kai_Oppermann">
-    <researchee:researcherName>Kai_Oppermann</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Operations_Management">
-    <researchee:expertiseName>Operations_Management</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Measurement">
-    <researchee:expertiseName>Measurement</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Roland_Herzog">
-    <researchee:researcherName>Roland_Herzog</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Hydrogen_Storage">
-    <researchee:expertiseName>Hydrogen_Storage</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algebra">
-    <researchee:expertiseName>Algebra</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cognitive_Psychology">
-    <researchee:expertiseName>Cognitive_Psychology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Material_Characterization">
-    <researchee:expertiseName>Material_Characterization</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stephan_Mühlig">
-    <researchee:researcherName>Stephan_Mühlig</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Metals">
-    <researchee:expertiseName>Metals</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evaluation">
-    <researchee:expertiseName>Evaluation</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Andreas_Goerdt">
-    <researchee:researcherName>Andreas_Goerdt</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Geometry">
-    <researchee:expertiseName>Geometry</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Statistics">
-    <researchee:expertiseName>Statistics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Production_Management">
-    <researchee:expertiseName>Production_Management</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Gehde">
-    <researchee:researcherName>Michael_Gehde</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Verena_Kräusel">
-    <researchee:researcherName>Verena_Kräusel</researchee:researcherName>
-  </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Markus_Hertwig">
     <researchee:researcherName>Markus_Hertwig</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cultural_Studies">
-    <researchee:expertiseName>Cultural_Studies</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Advanced_Powertrains">
+    <researchee:expertiseName>Advanced_Powertrains</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Maik_Berger">
-    <researchee:researcherName>Maik_Berger</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Acoustics_and_Acoustic_Engineering">
+    <researchee:expertiseName>Acoustics_and_Acoustic_Engineering</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ralf_Werner">
-    <researchee:researcherName>Ralf_Werner</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heiner_Rindermann">
+    <researchee:researcherName>Heiner_Rindermann</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#DNA_Origami">
-    <researchee:expertiseName>DNA_Origami</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Combinatorial_Optimization">
+    <researchee:expertiseName>Combinatorial_Optimization</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Biochemistry">
-    <researchee:expertiseName>Biochemistry</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Object_Tracking">
+    <researchee:expertiseName>Object_Tracking</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Applied_Mathematics">
-    <researchee:expertiseName>Applied_Mathematics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Membrane_Technology">
-    <researchee:expertiseName>Membrane_Technology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Medical_Education">
-    <researchee:expertiseName>Medical_Education</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Klaus-Dieter_Stöwe">
-    <researchee:researcherName>Klaus-Dieter_Stöwe</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stefan_Spange">
-    <researchee:researcherName>Stefan_Spange</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Algorithm_Development">
-    <researchee:expertiseName>Algorithm_Development</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Frank_Asbrock">
-    <researchee:researcherName>Frank_Asbrock</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Lean_Manufacturing">
-    <researchee:expertiseName>Lean_Manufacturing</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cecile_Sandten">
-    <researchee:researcherName>Cecile_Sandten</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Augmented_Reality">
-    <researchee:expertiseName>Augmented_Reality</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#PD_Dr._Christian_Schweiger_">
-    <researchee:researcherName>PD_Dr._Christian_Schweiger_</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Car">
-    <researchee:expertiseName>Car</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Knee_Injuries">
-    <researchee:expertiseName>Knee_Injuries</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Information_Technology">
-    <researchee:expertiseName>Information_Technology</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Lean_Management">
-    <researchee:expertiseName>Lean_Management</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bernhard_Koring">
-    <researchee:researcherName>Bernhard_Koring</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sound">
+    <researchee:expertiseName>Sound</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Volker_Bank">
     <researchee:researcherName>Volker_Bank</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fuel_Cells">
-    <researchee:expertiseName>Fuel_Cells</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Conducting_Polymers">
+    <researchee:expertiseName>Conducting_Polymers</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Single_Molecule_Imaging">
+    <researchee:expertiseName>Single_Molecule_Imaging</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christoph_Fasbender">
+    <researchee:researcherName>Christoph_Fasbender</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Olfa_Kanoun">
+    <researchee:researcherName>Olfa_Kanoun</researchee:researcherName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bernhard_Wunderle">
     <researchee:researcherName>Bernhard_Wunderle</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanotechnology">
-    <researchee:expertiseName>Nanotechnology</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Maiwald">
+    <researchee:researcherName>Christian_Maiwald</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Primary_Care">
-    <researchee:expertiseName>Primary_Care</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bertolt_Meyer">
+    <researchee:researcherName>Bertolt_Meyer</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Primary_Care_Medicine">
-    <researchee:expertiseName>Primary_Care_Medicine</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#PD_Dr._Christian_Schweiger_">
+    <researchee:researcherName>PD_Dr._Christian_Schweiger_</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Material_Characteristics">
-    <researchee:expertiseName>Material_Characteristics</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stefan_Garsztecki">
+    <researchee:researcherName>Stefan_Garsztecki</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Spectroscopy">
-    <researchee:expertiseName>Spectroscopy</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Sedlmeier">
+    <researchee:researcherName>Peter_Sedlmeier</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Condensed_Matter_Physics">
-    <researchee:expertiseName>Condensed_Matter_Physics</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Edition">
+    <researchee:expertiseName>Edition</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Experimental_Physics">
-    <researchee:expertiseName>Experimental_Physics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Arthroplasty">
-    <researchee:expertiseName>Arthroplasty</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mechanical_Testing">
-    <researchee:expertiseName>Mechanical_Testing</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Human-Computer_Interaction">
-    <researchee:expertiseName>Human-Computer_Interaction</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thin_Films">
-    <researchee:expertiseName>Thin_Films</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optoelectronics">
-    <researchee:expertiseName>Optoelectronics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Statistical_Physics">
-    <researchee:expertiseName>Statistical_Physics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cartilage">
-    <researchee:expertiseName>Cartilage</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Arved_Carl_Hübler">
-    <researchee:researcherName>Arved_Carl_Hübler</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Sommer">
-    <researchee:researcherName>Michael_Sommer</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cognition">
-    <researchee:expertiseName>Cognition</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#rer._nat._Isabelle_Roth-Panke">
-    <researchee:researcherName>rer._nat._Isabelle_Roth-Panke</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wireless_Sensor_Network">
-    <researchee:expertiseName>Wireless_Sensor_Network</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Kai_Oppermann">
+    <researchee:researcherName>Kai_Oppermann</researchee:researcherName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Polymers">
     <researchee:expertiseName>Polymers</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Guntram_Wagner">
-    <researchee:researcherName>Guntram_Wagner</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#MATLAB">
+    <researchee:expertiseName>MATLAB</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Density_Functional_Theory">
-    <researchee:expertiseName>Density_Functional_Theory</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#3D_Reconstruction">
+    <researchee:expertiseName>3D_Reconstruction</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Dietrich_R._T._Zahn">
-    <researchee:researcherName>Dietrich_R._T._Zahn</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Teaching_and_Learning">
+    <researchee:expertiseName>Teaching_and_Learning</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martina_Hentschel">
-    <researchee:researcherName>Martina_Hentschel</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cognitive_Neuroscience">
+    <researchee:expertiseName>Cognitive_Neuroscience</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fracture">
-    <researchee:expertiseName>Fracture</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ellen_Fricke">
+    <researchee:researcherName>Ellen_Fricke</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Modeling">
-    <researchee:expertiseName>Modeling</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Arnulf_Möbius">
+    <researchee:researcherName>Arnulf_Möbius</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval">
-    <researchee:expertiseName>Multimedia_Information_Retrieval</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Rapid_Prototyping">
+    <researchee:expertiseName>Rapid_Prototyping</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Kriwy">
-    <researchee:researcherName>Peter_Kriwy</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Janet_Siegmund">
+    <researchee:researcherName>Janet_Siegmund</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stochastic_Processes">
-    <researchee:expertiseName>Stochastic_Processes</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Clauss">
+    <researchee:researcherName>Martin_Clauss</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Data_Science">
-    <researchee:expertiseName>Data_Science</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Membrane_Technology">
+    <researchee:expertiseName>Membrane_Technology</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Photonics">
-    <researchee:expertiseName>Photonics</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thin_Film_Deposition">
-    <researchee:expertiseName>Thin_Film_Deposition</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials_Science">
-    <researchee:expertiseName>Materials_Science</researchee:expertiseName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#RNA">
-    <researchee:expertiseName>RNA</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Gehde">
+    <researchee:researcherName>Michael_Gehde</researchee:researcherName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Pure_Mathematics">
     <researchee:expertiseName>Pure_Mathematics</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Andreas_Schubert">
-    <researchee:researcherName>Andreas_Schubert</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Narrative_Analysis">
+    <researchee:expertiseName>Narrative_Analysis</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bernadette_Malinowski">
-    <researchee:researcherName>Bernadette_Malinowski</researchee:researcherName>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sophie_Gröger">
-    <researchee:researcherName>Sophie_Gröger</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology">
+    <researchee:expertiseName>Neurobiology_and_Brain_Physiology</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Multibody_System_Dynamics">
     <researchee:expertiseName>Multibody_System_Dynamics</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Teresa_Paula_Pinheiro">
-    <researchee:researcherName>Teresa_Paula_Pinheiro</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software_Engineering">
+    <researchee:expertiseName>Software_Engineering</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Ohler">
-    <researchee:researcherName>Peter_Ohler</researchee:researcherName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Jochen_Mayerl">
+    <researchee:researcherName>Jochen_Mayerl</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanostructured_Materials">
-    <researchee:expertiseName>Nanostructured_Materials</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#John_Thomas_Horstmann">
+    <researchee:researcherName>John_Thomas_Horstmann</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Convex_Optimization">
-    <researchee:expertiseName>Convex_Optimization</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mechanical_Testing">
+    <researchee:expertiseName>Mechanical_Testing</researchee:expertiseName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Modeling_and_Simulation">
-    <researchee:expertiseName>Modeling_and_Simulation</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alexander_Hasse">
+    <researchee:researcherName>Alexander_Hasse</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Klaus_Mößner">
+    <researchee:researcherName>Klaus_Mößner</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Energy">
+    <researchee:expertiseName>Energy</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stochastic_Processes">
+    <researchee:expertiseName>Stochastic_Processes</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heidrun_Friese">
+    <researchee:researcherName>Heidrun_Friese</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fractal_Analysis">
+    <researchee:expertiseName>Fractal_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Spectroscopy">
+    <researchee:expertiseName>Spectroscopy</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Michael_Schreiber">
+    <researchee:researcherName>Michael_Schreiber</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Interaction">
+    <researchee:expertiseName>Interaction</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Learning">
+    <researchee:expertiseName>Learning</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Adsorption">
+    <researchee:expertiseName>Adsorption</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web_Development">
+    <researchee:expertiseName>Web_Development</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Graph_Τheory">
+    <researchee:expertiseName>Graph_Τheory</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Günter_Daniel_Rey">
+    <researchee:researcherName>Günter_Daniel_Rey</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Group_Theory">
+    <researchee:expertiseName>Group_Theory</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fuel_Cell_Drivetrains">
+    <researchee:expertiseName>Fuel_Cell_Drivetrains</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Energy_Storage">
+    <researchee:expertiseName>Energy_Storage</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Lehn">
     <researchee:researcherName>Christian_Lehn</researchee:researcherName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Acoustic_Analysis">
-    <researchee:expertiseName>Acoustic_Analysis</researchee:expertiseName>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Optoelectronics">
+    <researchee:expertiseName>Optoelectronics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Kriwy">
+    <researchee:researcherName>Peter_Kriwy</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Convex_Optimization">
+    <researchee:expertiseName>Convex_Optimization</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ulrich_Theodor_Schwarz">
+    <researchee:researcherName>Ulrich_Theodor_Schwarz</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#SQL">
+    <researchee:expertiseName>SQL</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cognition">
+    <researchee:expertiseName>Cognition</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#TEI">
+    <researchee:expertiseName>TEI</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bernhard_Koring">
+    <researchee:researcherName>Bernhard_Koring</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Super_Resolution_Microscopy">
+    <researchee:expertiseName>Super_Resolution_Microscopy</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Acoustics">
+    <researchee:expertiseName>Acoustics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Arved_Carl_Hübler">
+    <researchee:researcherName>Arved_Carl_Hübler</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Birgit_Awiszus">
+    <researchee:researcherName>Birgit_Awiszus</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Material_Characterization">
+    <researchee:expertiseName>Material_Characterization</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Annika_Goeze">
+    <researchee:researcherName>Annika_Goeze</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Sophie_Gröger">
+    <researchee:researcherName>Sophie_Gröger</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Material_Characteristics">
+    <researchee:expertiseName>Material_Characteristics</researchee:expertiseName>
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Markus_Richter">
     <researchee:researcherName>Markus_Richter</researchee:researcherName>
   </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Membranes">
+    <researchee:expertiseName>Membranes</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Photovoltaics">
+    <researchee:expertiseName>Photovoltaics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Macrocycles">
+    <researchee:expertiseName>Macrocycles</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Solid_State_Physics">
+    <researchee:expertiseName>Solid_State_Physics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Modeling">
+    <researchee:expertiseName>Numerical_Modeling</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#PD_Dr._Merja_Mahrt">
+    <researchee:researcherName>PD_Dr._Merja_Mahrt</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Product_Design_and_Development">
+    <researchee:expertiseName>Product_Design_and_Development</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Laux">
+    <researchee:researcherName>Thomas_Laux</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ethnography">
+    <researchee:expertiseName>Ethnography</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#3D_Modeling">
+    <researchee:expertiseName>3D_Modeling</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Filtration">
+    <researchee:expertiseName>Filtration</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Philipp_Reiter">
+    <researchee:researcherName>Philipp_Reiter</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fuel_Cells">
+    <researchee:expertiseName>Fuel_Cells</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Kommissarische_Leitung:_Dr._Andreas_Ihle">
+    <researchee:researcherName>Kommissarische_Leitung:_Dr._Andreas_Ihle</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Andreas_Schubert">
+    <researchee:researcherName>Andreas_Schubert</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Robert_Kreitz">
+    <researchee:researcherName>Robert_Kreitz</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Frank_Asbrock">
+    <researchee:researcherName>Frank_Asbrock</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanoelectronics">
+    <researchee:expertiseName>Nanoelectronics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Neural_Circuits">
+    <researchee:expertiseName>Neural_Circuits</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#habil._Franziska_Bocklisch">
+    <researchee:researcherName>habil._Franziska_Bocklisch</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Gala_Rebane">
+    <researchee:researcherName>Gala_Rebane</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Experimental_Physics">
+    <researchee:expertiseName>Experimental_Physics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Metals">
+    <researchee:expertiseName>Metals</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Condensed_Matter_Physics">
+    <researchee:expertiseName>Condensed_Matter_Physics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Wagner">
+    <researchee:researcherName>Martin_Wagner</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Australasia">
+    <researchee:expertiseName>Australasia</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wittgenstein">
+    <researchee:expertiseName>Wittgenstein</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Birgit_Glorius">
+    <researchee:researcherName>Birgit_Glorius</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Usability">
+    <researchee:expertiseName>Usability</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin_Dix">
+    <researchee:researcherName>Martin_Dix</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Graphs">
+    <researchee:expertiseName>Graphs</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Applied_Mathematics">
+    <researchee:expertiseName>Applied_Mathematics</researchee:expertiseName>
+  </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Harald_Kuhn">
     <researchee:researcherName>Harald_Kuhn</researchee:researcherName>
   </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cecile_Sandten">
+    <researchee:researcherName>Cecile_Sandten</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Alejandro_Masrur">
+    <researchee:researcherName>Alejandro_Masrur</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Angela_Thränhardt">
+    <researchee:researcherName>Angela_Thränhardt</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Medical_Education">
+    <researchee:expertiseName>Medical_Education</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Membrane_Separation">
+    <researchee:expertiseName>Membrane_Separation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Stephan_Mühlig">
+    <researchee:researcherName>Stephan_Mühlig</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Verena_Kräusel">
+    <researchee:researcherName>Verena_Kräusel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wolfgang_Schufft">
+    <researchee:researcherName>Wolfgang_Schufft</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fluorescence">
+    <researchee:expertiseName>Fluorescence</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation">
+    <researchee:expertiseName>Computer_Graphics_and_Animation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software_Development">
+    <researchee:expertiseName>Software_Development</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Modeling_and_Simulation">
+    <researchee:expertiseName>Modeling_and_Simulation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Textual_Criticism">
+    <researchee:expertiseName>Textual_Criticism</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cognitive_Psychology">
+    <researchee:expertiseName>Cognitive_Psychology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thin_Films">
+    <researchee:expertiseName>Thin_Films</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Marc_Armbrüster">
+    <researchee:researcherName>Marc_Armbrüster</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Graphene">
+    <researchee:expertiseName>Graphene</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Klaus-Dieter_Stöwe">
+    <researchee:researcherName>Klaus-Dieter_Stöwe</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ariyan_Javan_Peykar">
+    <researchee:researcherName>Ariyan_Javan_Peykar</researchee:researcherName>
+  </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#CAD">
     <researchee:expertiseName>CAD</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology">
+    <researchee:expertiseName>Thin_Films_and_Nanotechnology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Oliver_Schmidt">
+    <researchee:researcherName>Oliver_Schmidt</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thomas_Bauschert">
+    <researchee:researcherName>Thomas_Bauschert</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Systematic_Reviews">
+    <researchee:expertiseName>Systematic_Reviews</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Numerical_Mathematics">
+    <researchee:expertiseName>Numerical_Mathematics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Bernadette_Malinowski">
+    <researchee:researcherName>Bernadette_Malinowski</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Receptors">
+    <researchee:expertiseName>Receptors</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Geometry">
+    <researchee:expertiseName>Geometry</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cultural_Studies">
+    <researchee:expertiseName>Cultural_Studies</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Object_Recognition">
+    <researchee:expertiseName>Object_Recognition</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Memory">
+    <researchee:expertiseName>Memory</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Noise_Analysis">
+    <researchee:expertiseName>Noise_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Wireless_Sensor_Network">
+    <researchee:expertiseName>Wireless_Sensor_Network</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Differentiation">
+    <researchee:expertiseName>Differentiation</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#DNA_Nanotechnology">
+    <researchee:expertiseName>DNA_Nanotechnology</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials">
+    <researchee:expertiseName>Materials</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Thin_Film_Deposition">
+    <researchee:expertiseName>Thin_Film_Deposition</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Electronic_Structure">
+    <researchee:expertiseName>Electronic_Structure</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Ulrich_Heinkel">
+    <researchee:researcherName>Ulrich_Heinkel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Modeling">
+    <researchee:expertiseName>Modeling</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Christian_Sevenheck">
+    <researchee:researcherName>Christian_Sevenheck</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Cloud_Computing">
+    <researchee:expertiseName>Cloud_Computing</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Peter_Protzel">
+    <researchee:researcherName>Peter_Protzel</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Hydrogen_Storage">
+    <researchee:expertiseName>Hydrogen_Storage</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Mathematical_Analysis">
+    <researchee:expertiseName>Mathematical_Analysis</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Engineering,_Applied_and_Computational_Mathematics">
+    <researchee:expertiseName>Engineering,_Applied_and_Computational_Mathematics</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#GPU">
+    <researchee:expertiseName>GPU</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Fractal_Dimension">
+    <researchee:expertiseName>Fractal_Dimension</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Isabelle_van_der_Bom">
+    <researchee:researcherName>Isabelle_van_der_Bom</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Creative_Thinking">
+    <researchee:expertiseName>Creative_Thinking</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Nanostructures">
+    <researchee:expertiseName>Nanostructures</researchee:expertiseName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Olav_Hellwig">
+    <researchee:researcherName>Olav_Hellwig</researchee:researcherName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Matthias_Niedobitek">
+    <researchee:researcherName>Matthias_Niedobitek</researchee:researcherName>
   </rdf:Description>
 </rdf:RDF>

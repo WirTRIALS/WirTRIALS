@@ -3,6 +3,7 @@ import rdflib
 import requests
 
 g = rdflib.Graph()
+#g.parse("demo_database.rdf")
 g.parse("database.rdf")
 n = 5
 while n > 0:

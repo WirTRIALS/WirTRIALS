@@ -27,17 +27,19 @@ from name import getName
 from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal
 
-
 g = Graph()
 n = Namespace("http://wirtrials.app.web/researchee#")
 g.bind("researchee", n)
 namelist = getName()
+
+print("namelist has been got")
+
 for name in namelist:
     s = URIRef(n+name)
     p = URIRef(n+"researcherName")
     o = Literal(name)
     g.add((s,p,o))          #create a triple for researcher's name
-#    expList = getExpertiseTest(name)
+#    expList = getExpertiseDemo(name)
     expList = getExpertise(name)
     for exp in expList:
         s2 = URIRef(n+exp)
@@ -47,4 +49,8 @@ for name in namelist:
         p3 = URIRef(n+"hasExpertise")
         g.add((s,p3,s2))    #create a triple for researcher's expertise
 
+print("RDF graph has been built")
+
 g.serialize(destination="database.rdf", format="xml")
+#g.serialize(destination="demo_database.rdf", format="xml")
+print("RDF graph has been written into database.rdf")
