@@ -1,4 +1,3 @@
-
 import rdflib
 import requests
 
