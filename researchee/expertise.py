@@ -45,4 +45,5 @@ def inputFullname():
     fullname = input("Enter Fullname:(For example: Martin_Gaedke) ")
     expertlistOfName = getExpertise(fullname)
     print(expertlistOfName)
-# print(getExpertise('Martin_Gaedke'))
+    
+#print(getExpertise('Martin_Gaedke'))

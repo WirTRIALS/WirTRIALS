@@ -10,9 +10,11 @@ import name
 
 def getName():
     faculty_list = ["naturwissenschaften/professuren.html","informatik/professuren.php","mathematik/professuren/prof.de.php","wirtschaft/fakultaet/professuren.php","mb/professuren.php","phil/professuren.php","etit/profs/index.php","hsw/professuren/index.php"]
+    faculty_name = ["Natural_Sciences","Computer_Science","Mathematics","Economic_and Business_Administration","Mechanical_Engineering","Humanities","Electrical_Engineering_and_Infomation_Technology","Behavioural_and_Social_Sciences"]
     name_list = []
-    for f in faculty_list:
-        r = requests.get('https://www.tu-chemnitz.de/'+f)
+    i = 0
+    while i < 8:
+        r = requests.get('https://www.tu-chemnitz.de/'+faculty_list[i])
         soup = BeautifulSoup(r.text, 'html.parser')
         prof_list = soup.find_all("ul",class_="tucal-proflist")
         for li in prof_list:
@@ -25,7 +27,8 @@ def getName():
                 while fullname[0].startswith("Univ.") or fullname[0].startswith("Dr") or fullname[0].startswith("Prof.") or fullname[0].startswith("Jun."):
                     fullname.pop(0)
                 name = '_'.join(fullname)
-                
-                name_list.append(name)
-            
+                nameAndFaculty = name + '&' + faculty_name[i]
+                name_list.append(nameAndFaculty)
+        i += 1   
     return name_list
+#print(getName())

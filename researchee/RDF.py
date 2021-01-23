@@ -26,7 +26,9 @@
 from name import getName
 from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal
+import random, time
 
+    
 g = Graph()
 n = Namespace("http://wirtrials.app.web/researchee#")
 g.bind("researchee", n)
@@ -34,18 +36,42 @@ namelist = getName()
 
 print("namelist has been got")
 
-for name in namelist:
+s = URIRef(n+"Economic_and_Business_Administration")
+p = URIRef(n+"facultyName")
+o = Literal("Economic_and Business_Administration")
+g.add((s,p,o))         #create a triple for faculty's name
+for nameAndFaculty in namelist:
+    name = nameAndFaculty.split('&')[0]
+    faculty = nameAndFaculty.split('&')[1]
     s = URIRef(n+name)
     p = URIRef(n+"researcherName")
     o = Literal(name)
-    g.add((s,p,o))          #create a triple for researcher's name
+    g.add((s,p,o))            #create a triple for researcher's name
+    
+    s3 = URIRef(n+faculty)
+    p4 = URIRef(n+"facultyName")
+    o3 = Literal(faculty)
+    g.add((s3,p4,o3))         #create a triple for faculty's name
+    
+    p4 = URIRef(n+"belongsTo")
+    g.add((s,p4,s3))          #create a triple for researcher's faculty
+    
+ 
 #    expList = getExpertiseDemo(name)
+    delay = 10 * random.random() + 10
+    time.sleep(delay)
+    print("after " + str(delay) + " seconds, now extracting " + name)
+    
     expList = getExpertise(name)
+
+    
     for exp in expList:
+        print("    " + exp)
         s2 = URIRef(n+exp)
         p2 = URIRef(n+"expertiseName")
         o2 = Literal(exp)
         g.add((s2,p2,o2))   #create a triple for expertise's name
+        
         p3 = URIRef(n+"hasExpertise")
         g.add((s,p3,s2))    #create a triple for researcher's expertise
 
