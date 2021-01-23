@@ -1,36 +1,33 @@
-#This module contains a function, which could make a file consisting researcher's name and his/her expertise. The file is in the format of RDF. In function, name.getName() and expertise.getExpertise() would be used.
-#Function Name: makeRDF()
-#Parameters: empty
-#Return Value: empty
+#This module contains a procedure, which would create a file consisting of the researcher's name and his/her expertise. The file is in the format of RDF. In procedure, name.getName() and expertise.getExpertise() would be used.
 
-#RDF file for researchers name
+
+#RDF file as database
 #<rdf:RDF
 # xmlns:researchee="http://wirtrials.app.web/researchee#"
 # xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#researcher1">
-#   <researchee:name>Martin Gaedke</researchee:name>
-#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#expertise1"/>
-#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#expertise3"/>  
-# </rdf:Description>
-#</rdf:RDF>
 
-#RDF file for expertise
-#<rdf:RDF
-# xmlns:researchee="http://wirtrials.app.web/researchee#"
-# xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#expertise1">
-#   <researchee:name>Web engineering</researchee:name>
+# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Martin-Gaedke">
+#   <researchee:researcherName>Martin-Gaedke</researchee:researcherName>
+#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web-Engineering"/>
+#   <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software-Engineering"/>  
 # </rdf:Description>
+
+# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web-Engineering">
+#   <researchee:expertiseName>Web-Engineering</researchee:expertiseName>
+# </rdf:Description>
+
+# <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software-Engineering">
+#   <researchee:expertiseName>Software-Engineering</researchee:expertiseName>
+# </rdf:Description>
+
 #</rdf:RDF>
 
 
 from name import getName
-from expertise import getExpertise,getExpertiseTest
+from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal
 import random, time
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     
 g = Graph()
 n = Namespace("http://wirtrials.app.web/researchee#")
@@ -83,32 +80,3 @@ print("RDF graph has been built")
 g.serialize(destination="database.rdf", format="xml")
 #g.serialize(destination="demo_database.rdf", format="xml")
 print("RDF graph has been written into database.rdf")
-=======
-=======
->>>>>>> b2e1249872c432d2e42e43dfb147e1be22c2579c
-def makeRDF():
-
-    g = Graph()
-    n = Namespace("http://wirtrials.app.web/researchee#")
-    g.bind("researchee", n)
-    namelist = getName()
-    for name in namelist:
-        s = URIRef(n+name)
-        p = URIRef(n+"name")
-        o = Literal(name)
-        g.add((s,p,o))          #create a triple for researcher's name
-        expList = getExpertiseTest(name)
-#        expList = getExpertise(name)
-        for exp in expList:
-            s2 = URIRef(n+exp)
-            o2 = Literal(exp)
-            g.add((s2,p,o2))    #create a triple for expertise's name
-            p2 = URIRef(n+"hasExpertise")
-            g.add((s,p2,s2))    #create a triple for researcher's expertise
-        break;
-<<<<<<< HEAD
-    g.serialize(destination="database.rdf", format="xml")
->>>>>>> b2e1249 (UI to show researchers profile, publications, expertise and co-authors. Bug fixes)
-=======
-    g.serialize(destination="database.rdf", format="xml")
->>>>>>> b2e1249872c432d2e42e43dfb147e1be22c2579c
