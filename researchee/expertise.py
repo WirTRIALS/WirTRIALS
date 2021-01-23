@@ -14,6 +14,7 @@ def getExpertise(name):
         expertise_list["data"].append(ex)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def getExpertiseDemo(name):
     list = ["web_engineering","software_engineering"]
     return list
@@ -27,3 +28,6 @@ def inputFullname():
 =======
     return expertise_list
 >>>>>>> b2e1249 (UI to show researchers profile, publications, expertise and co-authors. Bug fixes)
+=======
+    return expertise_list
+>>>>>>> b2e1249872c432d2e42e43dfb147e1be22c2579c

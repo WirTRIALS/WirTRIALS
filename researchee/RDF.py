@@ -30,6 +30,7 @@ from rdflib import Graph,Namespace,URIRef,Literal
 import random, time
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 g = Graph()
 n = Namespace("http://wirtrials.app.web/researchee#")
@@ -83,6 +84,8 @@ g.serialize(destination="database.rdf", format="xml")
 #g.serialize(destination="demo_database.rdf", format="xml")
 print("RDF graph has been written into database.rdf")
 =======
+=======
+>>>>>>> b2e1249872c432d2e42e43dfb147e1be22c2579c
 def makeRDF():
 
     g = Graph()
@@ -103,5 +106,9 @@ def makeRDF():
             p2 = URIRef(n+"hasExpertise")
             g.add((s,p2,s2))    #create a triple for researcher's expertise
         break;
+<<<<<<< HEAD
     g.serialize(destination="database.rdf", format="xml")
 >>>>>>> b2e1249 (UI to show researchers profile, publications, expertise and co-authors. Bug fixes)
+=======
+    g.serialize(destination="database.rdf", format="xml")
+>>>>>>> b2e1249872c432d2e42e43dfb147e1be22c2579c
