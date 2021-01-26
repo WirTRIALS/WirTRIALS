@@ -1,4 +1,4 @@
-#This module contains a procedure, which would create a file consisting of the researcher's name and his/her expertise. The file is in the format of RDF. In procedure, name.getName() and expertise.getExpertise() would be used.
+#This module contains a procedure, which would create a file consisting of the researcher's name and his/her expertise. The file is in the format of RDF. In procedure, name.getAllName() and expertise.getExpertise() would be used.
 
 
 #RDF file as database
@@ -23,16 +23,16 @@
 #</rdf:RDF>
 
 
-from name import getName
+from name import getAllName
 from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal
 import random, time
 
-    
+
 g = Graph()
 n = Namespace("http://wirtrials.app.web/researchee#")
 g.bind("researchee", n)
-namelist = getName()
+namelist = getAllName()
 
 print("namelist has been got")
 
@@ -63,10 +63,8 @@ for nameAndFaculty in namelist:
     print("after " + str(delay) + " seconds, now extracting " + name)
     
     expList = getExpertise(name)
-
     
     for exp in expList:
-        print("    " + exp)
         s2 = URIRef(n+exp)
         p2 = URIRef(n+"expertiseName")
         o2 = Literal(exp)
