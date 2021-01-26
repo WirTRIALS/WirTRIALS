@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 #This module contains a procedure, which would create a file consisting of the researcher's name and his/her expertise. The file is in the format of RDF. In procedure, name.getAllName() and expertise.getExpertise() would be used.
-=======
-#This module contains a function, which could make a file consisting researcher's name and his/her expertise. The file is in the format of RDF. In function, name.getName() and expertise.getExpertise() would be used.
-#Function Name: makeRDF()
-#Parameters: empty
-#Return Value: empty
->>>>>>> a3df2674926963986d71fdb71b145879aadaa8df
+
 
 #RDF file for researchers name
 #<rdf:RDF
@@ -28,18 +22,12 @@
 #</rdf:RDF>
 
 
-<<<<<<< HEAD
 from name import getAllName
 from expertise import getExpertise
-=======
-from name import getName
-from expertise import getExpertise,getExpertiseTest
->>>>>>> a3df2674926963986d71fdb71b145879aadaa8df
 from rdflib import Graph,Namespace,URIRef,Literal
 import random, time
 
 
-<<<<<<< HEAD
 g = Graph()
 n = Namespace("http://wirtrials.app.web/researchee#")
 g.bind("researchee", n)
@@ -89,26 +77,3 @@ print("RDF graph has been built")
 g.serialize(destination="database.rdf", format="xml")
 #g.serialize(destination="demo_database.rdf", format="xml")
 print("RDF graph has been written into database.rdf")
-=======
-def makeRDF():
-
-    g = Graph()
-    n = Namespace("http://wirtrials.app.web/researchee#")
-    g.bind("researchee", n)
-    namelist = getName()
-    for name in namelist:
-        s = URIRef(n+name)
-        p = URIRef(n+"name")
-        o = Literal(name)
-        g.add((s,p,o))          #create a triple for researcher's name
-        expList = getExpertiseTest(name)
-#        expList = getExpertise(name)
-        for exp in expList:
-            s2 = URIRef(n+exp)
-            o2 = Literal(exp)
-            g.add((s2,p,o2))    #create a triple for expertise's name
-            p2 = URIRef(n+"hasExpertise")
-            g.add((s,p2,s2))    #create a triple for researcher's expertise
-        break;
-    g.serialize(destination="database.rdf", format="xml")
->>>>>>> a3df2674926963986d71fdb71b145879aadaa8df

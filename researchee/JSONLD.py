@@ -40,7 +40,7 @@ for nameAndFaculty in namelist:
     g.add((s3,p3,o3))         #create a triple for professorship's name
     
     p7 = URIRef("type")
-    o7 = URIRef(researchee+"professorship")
+    o7 = URIRef(researchee+"Professorship")
     g.add((s3,p7,o7))            #create a triple for professorship's type
     
     p4 = URIRef("memberOf")
@@ -56,15 +56,16 @@ for nameAndFaculty in namelist:
         g.add((s5,p5,o5))   #create a triple for expertise's name
         
         p8 = URIRef("type")
-        o8 = URIRef(researchee+"expertise")
+        o8 = URIRef(researchee+"Expertise")
         g.add((s5,p8,o8))   #create a triple for expertise's type
         
         p6 = URIRef("knowsAbout")
         g.add((s,p6,s5))    #create a triple for researcher's expertise
 
+
     
 print("RDF graph has been built")
-context = {"@vocab": schema, "type": "rdf:type" }
+context = {"@vocab": schema , "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "type": "rdf:type" }
 g.serialize(destination = "database2.json", context = context, format = "json-ld")
 #g.serialize(destination="demo_database.rdf", format="xml")
 print("RDF graph has been written into database2.json")

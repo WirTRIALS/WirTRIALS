@@ -1,339 +1,71 @@
 {
   "@context": {
     "@vocab": "http://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "type": "rdf:type"
   },
   "@graph": [
     {
-      "@id": "http://wirtrials.app.web/researchee#André_Windisch",
-      "jobTitle": {
-        "@id": "http://wirtrials.app.web/researchee#Professor"
-      },
-      "knowsAbout": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Circuits_and_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Electrical_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Hardware"
-        }
-      ],
-      "memberOf": {
-        "@id": "http://wirtrials.app.web/researchee#Avionics_Software-Systems"
-      },
-      "name": "André_Windisch"
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Pattern_Recognition",
-      "name": "Pattern_Recognition",
+      "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing",
+      "name": "Mathematics_of_Computing",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#CAD",
-      "name": "CAD",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Occupational_Medicine/Industrial_Medicine",
-      "name": "Occupational_Medicine/Industrial_Medicine",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems",
-      "name": "Multimedia_Information_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision",
-      "name": "Image_Processing_and_Computer_Vision",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Methodology_of_the_Social_Sciences",
-      "name": "Methodology_of_the_Social_Sciences",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Business_Strategy/Leadership",
-      "name": "Business_Strategy/Leadership",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Circuits_and_Systems",
-      "name": "Circuits_and_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Avionics_Software-Systems",
-      "name": "Avionics_Software-Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Image_Processing",
-      "name": "Image_Processing",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Information_Systems_and_Communication_Service",
-      "name": "Information_Systems_and_Communication_Service",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Biochemistry",
-      "name": "Biochemistry",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Mathematics,_general",
-      "name": "Mathematics,_general",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Human_Resource_Management",
-      "name": "Human_Resource_Management",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Neural_Circuits",
-      "name": "Neural_Circuits",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computational_Linguistics",
-      "name": "Computational_Linguistics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Cryptology",
-      "name": "Cryptology",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#real_time_systems",
-      "name": "real_time_systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Danny_Kowerko",
-      "jobTitle": {
-        "@id": "http://wirtrials.app.web/researchee#Professor"
-      },
-      "knowsAbout": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#machine_learning"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#RNA"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Experimental_Physics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#single_molecule_spectroscopy"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Applications"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Image_Processing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#MATLAB"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Fluorescence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#ophthalmology"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Optics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Applied_Mathematics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Human_Resource_Management"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Audio_image_video_processing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Biochemistry"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Machine_Learning"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Spectroscopy"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Robotics_and_Automation"
-        }
-      ],
-      "memberOf": {
-        "@id": "http://wirtrials.app.web/researchee#Media_Computing"
-      },
-      "name": "Danny_Kowerko"
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Combinatorial_Optimization",
-      "name": "Combinatorial_Optimization",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#Web_Development",
       "name": "Web_Development",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Theoretical_Computer_Science/Information_Security",
-      "name": "Theoretical_Computer_Science/Information_Security",
+      "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks",
+      "name": "Computer_Systems_Organization_and_Communication_Networks",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Hardware",
-      "name": "Computer_Hardware",
+      "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems",
+      "name": "Software_Engineering/Programming_and_Operating_Systems",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters",
-      "name": "Programming_Languages,_Compilers,_Interpreters",
+      "@id": "http://wirtrials.app.web/researchee#Nanomaterials",
+      "name": "Nanomaterials",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Information_Technology",
-      "name": "Information_Technology",
+      "@id": "http://wirtrials.app.web/researchee#Information_Systems_and_Communication_Service",
+      "name": "Information_Systems_and_Communication_Service",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#3D_Computer_Graphics",
-      "name": "3D_Computer_Graphics",
+      "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl.Internet)",
+      "name": "Information_Systems_Applications_(incl.Internet)",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Embedded_Systems",
-      "name": "Embedded_Systems",
+      "@id": "http://wirtrials.app.web/researchee#Engineering_Design",
+      "name": "Engineering_Design",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Prototyping",
-      "name": "Prototyping",
+      "@id": "http://wirtrials.app.web/researchee#Data_Structures",
+      "name": "Data_Structures",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Popular_Computer_Science",
-      "name": "Popular_Computer_Science",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis",
-      "name": "Computational_Mathematics_and_Numerical_Analysis",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -343,40 +75,46 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Semiconductor_Device_Physics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery"
+          "@id": "http://wirtrials.app.web/researchee#Thin_Films"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Sociology,_general"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Endocrinology"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Materials"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Material_Characteristics"
-        },
-        {
           "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence"
         },
         {
+          "@id": "http://wirtrials.app.web/researchee#Material_Characterization"
+        },
+        {
           "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Pharmacology/Toxicology"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Environmental_Health"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Thin_Film_Deposition"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Business_Strategy/Leadership"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Biomedicine,_general"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Semiconductor_Device_Physics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Human_Resource_Management"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Finance"
@@ -385,52 +123,46 @@
           "@id": "http://wirtrials.app.web/researchee#Nanomaterials"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Business_Strategy/Leadership"
+          "@id": "http://wirtrials.app.web/researchee#Material_Characteristics"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Thin_Film_Deposition"
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Management"
+          "@id": "http://wirtrials.app.web/researchee#Materials"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Automotive_Industry"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Social_Sciences,_general"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Pharmacology/Toxicology"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
+          "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Biomedicine,_general"
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+          "@id": "http://wirtrials.app.web/researchee#Endocrinology"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Occupational_Medicine/Industrial_Medicine"
+          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Environmental_Health"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Thin_Films"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Human_Resource_Management"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Communication_Studies"
+          "@id": "http://wirtrials.app.web/researchee#Management"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Material_Characterization"
+          "@id": "http://wirtrials.app.web/researchee#Communication_Studies"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Automotive_Industry"
+          "@id": "http://wirtrials.app.web/researchee#Occupational_Medicine/Industrial_Medicine"
         }
       ],
       "memberOf": {
@@ -439,66 +171,359 @@
       "name": "Matthias_Werner"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Machine_Learning",
-      "name": "Machine_Learning",
+      "@id": "http://wirtrials.app.web/researchee#Martin_Gaedke",
+      "jobTitle": {
+        "@id": "http://wirtrials.app.web/researchee#Professor"
+      },
+      "knowsAbout": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Object-Oriented_Programming"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Popular_Computer_Science"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_and_Communication_Service"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Service_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Technology"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computers_and_Education"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Web_Development"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Human_Computer_Interaction"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Development"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_and_Communication_Technology"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#User_Experience"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#IT_in_Business"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Programming"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Coding_and_Information_Theory"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#SQL"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Database_Management"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Hyper-Connected_Society"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Programming"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Cloud_Computing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Social_and_Behavioral_Sciences"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Administrative_Data_Processing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Serverless_Computing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Web_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
+        }
+      ],
+      "memberOf": {
+        "@id": "http://wirtrials.app.web/researchee#Distributed_and_Self-organizing_Systems"
+      },
+      "name": "Martin_Gaedke"
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computational_Neuroscience",
+      "name": "Computational_Neuroscience",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Engineering_Design",
-      "name": "Engineering_Design",
+      "@id": "http://wirtrials.app.web/researchee#Graph_Τheory",
+      "name": "Graph_Τheory",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Complexity",
-      "name": "Complexity",
+      "@id": "http://wirtrials.app.web/researchee#Computer_Hardware",
+      "name": "Computer_Hardware",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Sociology,_general",
-      "name": "Sociology,_general",
+      "@id": "http://wirtrials.app.web/researchee#Audio_image_video_processing",
+      "name": "Audio_image_video_processing",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Programming",
-      "name": "Computer_Programming",
+      "@id": "http://wirtrials.app.web/researchee#Cloud_Computing",
+      "name": "Cloud_Computing",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Information_and_Communication_Technology",
-      "name": "Information_and_Communication_Technology",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Finance",
-      "name": "Finance",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Distributed_and_Self-organizing_Systems",
-      "name": "Distributed_and_Self-organizing_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#Augmented_Reality",
       "name": "Augmented_Reality",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Applied_Mathematics",
+      "name": "Applied_Mathematics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Fluorescence",
+      "name": "Fluorescence",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling",
+      "name": "Simulation_and_Modeling",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#machine_learning",
+      "name": "machine_learning",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Simulation",
+      "name": "Simulation",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery",
+      "name": "Data_Mining_and_Knowledge_Discovery",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#ophthalmology",
+      "name": "ophthalmology",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Algorithms",
+      "name": "Algorithms",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Popular_Computer_Science",
+      "name": "Popular_Computer_Science",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Material_Characteristics",
+      "name": "Material_Characteristics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages",
+      "name": "Mathematical_Logic_and_Formal_Languages",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#André_Windisch",
+      "jobTitle": {
+        "@id": "http://wirtrials.app.web/researchee#Professor"
+      },
+      "knowsAbout": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Hardware"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Electrical_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Circuits_and_Systems"
+        }
+      ],
+      "memberOf": {
+        "@id": "http://wirtrials.app.web/researchee#Avionics_Software-Systems"
+      },
+      "name": "André_Windisch"
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Communications_Engineering,_Networks",
+      "name": "Communications_Engineering,_Networks",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#CAD",
+      "name": "CAD",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Human_Computer_Interaction",
+      "name": "Human_Computer_Interaction",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#MATLAB",
+      "name": "MATLAB",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#IT_in_Business",
+      "name": "IT_in_Business",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Theoretical_Computer_Science/Information_Security",
+      "name": "Theoretical_Computer_Science/Information_Security",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Optics",
+      "name": "Optics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Programming_Techniques",
+      "name": "Programming_Techniques",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology",
+      "name": "Neurobiology_and_Brain_Physiology",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Architectures_and_Systems",
+      "name": "Computer_Architectures_and_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Automotive_Engineering",
+      "name": "Automotive_Engineering",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Biomedicine,_general",
+      "name": "Biomedicine,_general",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -508,19 +533,16 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+          "@id": "http://wirtrials.app.web/researchee#Automotive_Software_and_Systems"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Cyber-Physical_Systems"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Automotive_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Communications_Engineering,_Networks"
-        },
-        {
           "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Performance_and_Reliability"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computer_Architectures"
@@ -529,13 +551,16 @@
           "@id": "http://wirtrials.app.web/researchee#Control,_Robotics,_Mechatronics"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Automotive_Software_and_Systems"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Embedded_Systems"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Performance_and_Reliability"
+          "@id": "http://wirtrials.app.web/researchee#Communications_Engineering,_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Automotive_Engineering"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Real-Time_Systems"
@@ -547,118 +572,127 @@
       "name": "Alejandro_Masrur"
     },
     {
+      "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence",
+      "name": "Artificial_Intelligence",
+      "type": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Professorship"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Expertise"
+        }
+      ]
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Engineering",
+      "name": "Computer_Engineering",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems",
+      "name": "Management_of_Computing_and_Information_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
       "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general",
       "name": "Computer_Science,_general",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Data_Structures",
-      "name": "Data_Structures",
+      "@id": "http://wirtrials.app.web/researchee#Distributed_and_Self-organizing_Systems",
+      "name": "Distributed_and_Self-organizing_Systems",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Fred_Hamker",
-      "jobTitle": {
-        "@id": "http://wirtrials.app.web/researchee#Professor"
-      },
-      "knowsAbout": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#Engineering_Design"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Neuroinformatics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Industrial_and_Production_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Neurosciences"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Neurobiology"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Occupational_Medicine/Industrial_Medicine"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Theoretical_Neuroscience"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Probability_and_Statistics_in_Computer_Science"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Animal_Models"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Medicine/Public_Health,_general"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Pattern_Recognition"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Neuroscience"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Cognitive_Neuroscience"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Neural_Circuits"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Database_Management"
-        }
-      ],
-      "memberOf": {
-        "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-      },
-      "name": "Fred_Hamker"
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#machine_learning",
-      "name": "machine_learning",
+      "@id": "http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology",
+      "name": "Thin_Films_and_Nanotechnology",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Robotics_and_Automation",
-      "name": "Robotics_and_Automation",
+      "@id": "http://wirtrials.app.web/researchee#Thin_Films",
+      "name": "Thin_Films",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Car",
+      "name": "Car",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Materials",
+      "name": "Materials",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis",
+      "name": "Algorithm_Analysis",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Combinatorics",
+      "name": "Combinatorics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity",
+      "name": "Algorithm_Analysis_and_Problem_Complexity",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#User_Experience",
+      "name": "User_Experience",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Sociology,_general",
+      "name": "Sociology,_general",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Experimental_Physics",
+      "name": "Experimental_Physics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Methodology_of_the_Social_Sciences",
+      "name": "Methodology_of_the_Social_Sciences",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics_in_Computer_Science",
+      "name": "Discrete_Mathematics_in_Computer_Science",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -668,46 +702,46 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Human_factor_in_computer_science_and …"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Systems_and_Data_Security"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Data-driven_Science,_Modeling_and_Theory_Building"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
-        },
-        {
           "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Methodology_of_the_Social_Sciences"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+          "@id": "http://wirtrials.app.web/researchee#Human_factor_in_computer_science_and …"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Methodology_of_the_Social_Sciences"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
+          "@id": "http://wirtrials.app.web/researchee#Systems_and_Data_Security"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Data-driven_Science,_Modeling_and_Theory_Building"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
         }
       ],
       "memberOf": {
@@ -716,431 +750,248 @@
       "name": "Janet_Siegmund"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics_in_Computer_Science",
-      "name": "Discrete_Mathematics_in_Computer_Science",
+      "@id": "http://wirtrials.app.web/researchee#Neural_Circuits",
+      "name": "Neural_Circuits",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#3D_Reconstruction",
-      "name": "3D_Reconstruction",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Natural_Language_Processing_(NLP)",
-      "name": "Natural_Language_Processing_(NLP)",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computers_and_Education",
-      "name": "Computers_and_Education",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Martin_Gaedke",
-      "jobTitle": {
-        "@id": "http://wirtrials.app.web/researchee#Professor"
-      },
-      "knowsAbout": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#Serverless_Computing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Technology"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Programming"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Popular_Computer_Science"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Object-Oriented_Programming"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Web_Development"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Programming"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#SQL"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Database_Management"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computers_and_Education"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Hyper-Connected_Society"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Coding_and_Information_Theory"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#User_Experience"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Development"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#IT_in_Business"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Service_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Human_Computer_Interaction"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Social_and_Behavioral_Sciences"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Web_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_and_Communication_Service"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Administrative_Data_Processing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_and_Communication_Technology"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Cloud_Computing"
-        }
-      ],
-      "memberOf": {
-        "@id": "http://wirtrials.app.web/researchee#Distributed_and_Self-organizing_Systems"
-      },
-      "name": "Martin_Gaedke"
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Pharmacology/Toxicology",
-      "name": "Pharmacology/Toxicology",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Software_Engineering",
-      "name": "Software_Engineering",
-      "type": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#professorship"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#expertise"
-        }
-      ]
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#e-learning",
-      "name": "e-learning",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Social_Sciences,_general",
-      "name": "Social_Sciences,_general",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages",
-      "name": "Mathematical_Logic_and_Formal_Languages",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Practical_Computer_Science",
-      "name": "Practical_Computer_Science",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation",
-      "name": "Computer_System_Implementation",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Automotive_Engineering",
-      "name": "Automotive_Engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Performance_and_Reliability",
-      "name": "Performance_and_Reliability",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Virtual_Reality",
-      "name": "Virtual_Reality",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence",
-      "name": "Artificial_Intelligence",
-      "type": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#expertise"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#professorship"
-        }
-      ]
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Software_Development",
-      "name": "Software_Development",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Foundations",
-      "name": "Mathematical_Logic_and_Foundations",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence",
-      "name": "Computational_Intelligence",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Neuroinformatics",
-      "name": "Neuroinformatics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Fluorescence",
-      "name": "Fluorescence",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs",
-      "name": "Logics_and_Meanings_of_Programs",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Rapid_Prototyping",
-      "name": "Rapid_Prototyping",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#RNA",
-      "name": "RNA",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Semiconductor_Device_Physics",
-      "name": "Semiconductor_Device_Physics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation",
-      "name": "Theory_of_Computation",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Thin_Films",
-      "name": "Thin_Films",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl.Internet)",
-      "name": "Information_Systems_Applications_(incl.Internet)",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Systems_and_Data_Security",
-      "name": "Systems_and_Data_Security",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computers_and_Society",
-      "name": "Computers_and_Society",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Simulation",
-      "name": "Simulation",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Combinatorics",
-      "name": "Combinatorics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Processor_Architectures",
-      "name": "Processor_Architectures",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Electrical_Engineering",
-      "name": "Electrical_Engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#Wireless_Sensor_Network",
       "name": "Wireless_Sensor_Network",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Automotive_Industry",
-      "name": "Automotive_Industry",
+      "@id": "http://wirtrials.app.web/researchee#Cryptology",
+      "name": "Cryptology",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Object_Recognition",
-      "name": "Object_Recognition",
+      "@id": "http://wirtrials.app.web/researchee#Applications_of_Mathematics",
+      "name": "Applications_of_Mathematics",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#SQL",
-      "name": "SQL",
+      "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics",
+      "name": "Discrete_Mathematics",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#single_molecule_spectroscopy",
-      "name": "single_molecule_spectroscopy",
+      "@id": "http://wirtrials.app.web/researchee#Software_Development",
+      "name": "Software_Development",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval",
-      "name": "Information_Storage_and_Retrieval",
+      "@id": "http://wirtrials.app.web/researchee#Cognitive_Psychology",
+      "name": "Cognitive_Psychology",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Communication_Studies",
-      "name": "Communication_Studies",
+      "@id": "http://wirtrials.app.web/researchee#Embedded_Systems",
+      "name": "Embedded_Systems",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Object_Tracking",
-      "name": "Object_Tracking",
+      "@id": "http://wirtrials.app.web/researchee#Business_Strategy/Leadership",
+      "name": "Business_Strategy/Leadership",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Media_Computing",
-      "name": "Media_Computing",
+      "@id": "http://wirtrials.app.web/researchee#Models_and_Principles",
+      "name": "Models_and_Principles",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Visualization",
-      "name": "Visualization",
+      "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Foundations",
+      "name": "Mathematical_Logic_and_Foundations",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Neurobiology",
+      "name": "Neurobiology",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Imaging,_Vision,_Pattern_Recognition_and_Graphics",
+      "name": "Computer_Imaging,_Vision,_Pattern_Recognition_and_Graphics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Graphs",
+      "name": "Graphs",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Machine_Learning",
+      "name": "Machine_Learning",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Programming",
+      "name": "Computer_Programming",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computation_by_Abstract_Devices",
+      "name": "Computation_by_Abstract_Devices",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#RNA",
+      "name": "RNA",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation",
+      "name": "Computer_Graphics_and_Animation",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Industrial_and_Production_Engineering",
+      "name": "Industrial_and_Production_Engineering",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Systems_and_Data_Security",
+      "name": "Systems_and_Data_Security",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Spectroscopy",
+      "name": "Spectroscopy",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Neurosciences",
+      "name": "Neurosciences",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Endocrinology",
+      "name": "Endocrinology",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Virtual_Reality",
+      "name": "Virtual_Reality",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Administrative_Data_Processing",
+      "name": "Computer_Appl._in_Administrative_Data_Processing",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Natural_Language_Processing_(NLP)",
+      "name": "Natural_Language_Processing_(NLP)",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computers_and_Education",
+      "name": "Computers_and_Education",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval",
+      "name": "Multimedia_Information_Retrieval",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Complexity",
+      "name": "Complexity",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation",
+      "name": "Theory_of_Computation",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Optimization",
+      "name": "Optimization",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Service_Engineering",
+      "name": "Service_Engineering",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computational_Linguistics",
+      "name": "Computational_Linguistics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Hyper-Connected_Society",
+      "name": "Hyper-Connected_Society",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -1150,73 +1001,73 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Models_and_Principles"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Linguistics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Hardware"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Human-Computer_Interaction"
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Hardware"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Cognitive_Psychology"
+          "@id": "http://wirtrials.app.web/researchee#Computational_Linguistics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Human-Computer_Interaction"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Applications"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#audiovisual_media"
+          "@id": "http://wirtrials.app.web/researchee#Pattern_Recognition"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Pattern_Recognition"
+          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems"
+          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Natural_Language_Processing_(NLP)"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Database_Management"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Database_Management"
+          "@id": "http://wirtrials.app.web/researchee#Cognitive_Psychology"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#audiovisual_media"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Applications"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Models_and_Principles"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Natural_Language_Processing_(NLP)"
         }
       ],
       "memberOf": {
@@ -1225,467 +1076,66 @@
       "name": "Maximilian_Eibl"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Models_and_Principles",
-      "name": "Models_and_Principles",
+      "@id": "http://wirtrials.app.web/researchee#Object_Tracking",
+      "name": "Object_Tracking",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Medicine/Public_Health,_general",
-      "name": "Medicine/Public_Health,_general",
+      "@id": "http://wirtrials.app.web/researchee#Social_Sciences,_general",
+      "name": "Social_Sciences,_general",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Cognitive_Neuroscience",
-      "name": "Cognitive_Neuroscience",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling",
-      "name": "Simulation_and_Modeling",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Numeric_Computing",
-      "name": "Numeric_Computing",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Database_Management",
-      "name": "Database_Management",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Graphics",
-      "name": "Computer_Graphics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Engineering",
-      "name": "Computer_Engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Cyber-Physical_Systems",
-      "name": "Cyber-Physical_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Algorithm_Development",
-      "name": "Algorithm_Development",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Programming_Techniques",
-      "name": "Programming_Techniques",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology",
-      "name": "Neurobiology_and_Brain_Physiology",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Optimization",
-      "name": "Optimization",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis",
-      "name": "Algorithm_Analysis",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Experimental_Physics",
-      "name": "Experimental_Physics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#computer_engineering",
-      "name": "computer_engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Applications_of_Mathematics",
-      "name": "Applications_of_Mathematics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Material_Characterization",
-      "name": "Material_Characterization",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks",
-      "name": "Computer_Systems_Organization_and_Communication_Networks",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Human_factor_in_computer_science_and …",
-      "name": "Human_factor_in_computer_science_and …",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Retrieval",
-      "name": "Multimedia_Information_Retrieval",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Management",
-      "name": "Management",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Animal_Models",
-      "name": "Animal_Models",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Automotive_Software_and_Systems",
-      "name": "Automotive_Software_and_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#3D_Modeling",
-      "name": "3D_Modeling",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Industrial_and_Production_Engineering",
-      "name": "Industrial_and_Production_Engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#audiovisual_media",
       "name": "audiovisual_media",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Social_and_Behavioral_Sciences",
-      "name": "Computer_Appl._in_Social_and_Behavioral_Sciences",
+      "@id": "http://wirtrials.app.web/researchee#Human_factor_in_computer_science_and …",
+      "name": "Human_factor_in_computer_science_and …",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Applications",
-      "name": "Computer_Applications",
+      "@id": "http://wirtrials.app.web/researchee#Information_Technology",
+      "name": "Information_Technology",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Architectures_and_Systems",
-      "name": "Computer_Architectures_and_Systems",
+      "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation",
+      "name": "Computer_System_Implementation",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Operating_Systems",
-      "name": "Operating_Systems",
+      "@id": "http://wirtrials.app.web/researchee#Thin_Film_Deposition",
+      "name": "Thin_Film_Deposition",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Communications_Engineering,_Networks",
-      "name": "Communications_Engineering,_Networks",
+      "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision",
+      "name": "Image_Processing_and_Computer_Vision",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Web_Engineering",
-      "name": "Web_Engineering",
+      "@id": "http://wirtrials.app.web/researchee#Pattern_Recognition",
+      "name": "Pattern_Recognition",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Service_Engineering",
-      "name": "Service_Engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Spectroscopy",
-      "name": "Spectroscopy",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Graph_Τheory",
-      "name": "Graph_Τheory",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction",
-      "name": "User_Interfaces_and_Human_Computer_Interaction",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Administrative_Data_Processing",
-      "name": "Computer_Appl._in_Administrative_Data_Processing",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems",
-      "name": "Software_Engineering/Programming_and_Operating_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Optics",
-      "name": "Optics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computational_Science_and_Engineering",
-      "name": "Computational_Science_and_Engineering",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Imaging,_Vision,_Pattern_Recognition_and_Graphics",
-      "name": "Computer_Imaging,_Vision,_Pattern_Recognition_and_Graphics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems",
-      "name": "Management_of_Computing_and_Information_Systems",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Material_Characteristics",
-      "name": "Material_Characteristics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Architectures",
-      "name": "Computer_Architectures",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics",
-      "name": "Discrete_Mathematics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Gudula_Rünger",
-      "jobTitle": {
-        "@id": "http://wirtrials.app.web/researchee#Professor"
-      },
-      "knowsAbout": [
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Techniques"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Communications_Engineering,_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Science_and_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Processor_Architectures"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Numeric_Computing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Database_Management"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#System_Performance_and_Evaluation"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Complexity"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
-        }
-      ],
-      "memberOf": {
-        "@id": "http://wirtrials.app.web/researchee#Practical_Computer_Science"
-      },
-      "name": "Gudula_Rünger"
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Cloud_Computing",
-      "name": "Cloud_Computing",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Biomedicine,_general",
-      "name": "Biomedicine,_general",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Evaluation",
-      "name": "Evaluation",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Nanomaterials",
-      "name": "Nanomaterials",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#System_Performance_and_Evaluation",
-      "name": "System_Performance_and_Evaluation",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Materials",
-      "name": "Materials",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Routing",
-      "name": "Routing",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Graphics_and_Visualization",
-      "name": "Computer_Graphics_and_Visualization",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Environmental_Health",
-      "name": "Environmental_Health",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Cognitive_Psychology",
-      "name": "Cognitive_Psychology",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -1695,85 +1145,85 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Algorithm_Development"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Numeric_Computing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Coding_and_Information_Theory"
+          "@id": "http://wirtrials.app.web/researchee#Geometry"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Cryptology"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics_in_Computer_Science"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Algorithms"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Mathematics,_general"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Geometry"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Combinatorics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Theoretical_Computer_Science"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Combinatorial_Optimization"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+          "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Graphs"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Graph_Τheory"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Techniques"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Data_Structures"
+          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics"
+          "@id": "http://wirtrials.app.web/researchee#Coding_and_Information_Theory"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Numeric_Computing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics_in_Computer_Science"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Theoretical_Computer_Science"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Algorithms"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computation_by_Abstract_Devices"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Probability_and_Statistics_in_Computer_Science"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Combinatorial_Optimization"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Programming_Techniques"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Mathematics,_general"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Graph_Τheory"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Algorithm_Development"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Data_Structures"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Combinatorics"
         }
       ],
       "memberOf": {
@@ -1782,80 +1232,194 @@
       "name": "Hanno_Lefmann"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Thin_Films_and_Nanotechnology",
-      "name": "Thin_Films_and_Nanotechnology",
+      "@id": "http://wirtrials.app.web/researchee#Rapid_Prototyping",
+      "name": "Rapid_Prototyping",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems",
-      "name": "Special_Purpose_and_Application-Based_Systems",
+      "@id": "http://wirtrials.app.web/researchee#Computational_Science_and_Engineering",
+      "name": "Computational_Science_and_Engineering",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Serverless_Computing",
+      "name": "Serverless_Computing",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Mathematics,_general",
+      "name": "Mathematics,_general",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#Human-Computer_Interaction",
       "name": "Human-Computer_Interaction",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#User_Experience",
-      "name": "User_Experience",
+      "@id": "http://wirtrials.app.web/researchee#real_time_systems",
+      "name": "real_time_systems",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Coding_and_Information_Theory",
-      "name": "Coding_and_Information_Theory",
+      "@id": "http://wirtrials.app.web/researchee#Performance_and_Reliability",
+      "name": "Performance_and_Reliability",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity",
-      "name": "Algorithm_Analysis_and_Problem_Complexity",
+      "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Social_and_Behavioral_Sciences",
+      "name": "Computer_Appl._in_Social_and_Behavioral_Sciences",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Biochemistry",
+      "name": "Biochemistry",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#GPU_Programming",
+      "name": "GPU_Programming",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#Geometry",
       "name": "Geometry",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing",
-      "name": "Mathematics_of_Computing",
+      "@id": "http://wirtrials.app.web/researchee#Routing",
+      "name": "Routing",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Algorithms",
-      "name": "Algorithms",
+      "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems",
+      "name": "Special_Purpose_and_Application-Based_Systems",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design",
-      "name": "Computer-Aided_Engineering_(CAD,_CAE)_and_Design",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
+      "@id": "http://wirtrials.app.web/researchee#Danny_Kowerko",
+      "jobTitle": {
+        "@id": "http://wirtrials.app.web/researchee#Professor"
+      },
+      "knowsAbout": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Machine_Learning"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#ophthalmology"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Spectroscopy"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Human_Resource_Management"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Applied_Mathematics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#single_molecule_spectroscopy"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#machine_learning"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Robotics_and_Automation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Fluorescence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Biochemistry"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Applications"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#RNA"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#MATLAB"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Image_Processing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Optics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Experimental_Physics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Audio_image_video_processing"
+        }
+      ],
+      "memberOf": {
+        "@id": "http://wirtrials.app.web/researchee#Media_Computing"
+      },
+      "name": "Danny_Kowerko"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Audio_image_video_processing",
-      "name": "Audio_image_video_processing",
+      "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis",
+      "name": "Computational_Mathematics_and_Numerical_Analysis",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -1865,40 +1429,16 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Techniques"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
-        },
-        {
           "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Data_Structures"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computation_by_Abstract_Devices"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Foundations"
+          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
@@ -1907,19 +1447,43 @@
           "@id": "http://wirtrials.app.web/researchee#Numeric_Computing"
         },
         {
+          "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics_in_Computer_Science"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity"
+        },
+        {
           "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Foundations"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computation_by_Abstract_Devices"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Discrete_Mathematics_in_Computer_Science"
+          "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Programming_Techniques"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Mathematical_Logic_and_Formal_Languages"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Data_Structures"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Combinatorics"
@@ -1931,170 +1495,268 @@
       "name": "Andreas_Goerdt"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)",
-      "name": "Information_Systems_Applications_(incl._Internet)",
+      "@id": "http://wirtrials.app.web/researchee#3D_Modeling",
+      "name": "3D_Modeling",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#ophthalmology",
-      "name": "ophthalmology",
+      "@id": "http://wirtrials.app.web/researchee#Computer_Applications",
+      "name": "Computer_Applications",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Wolfram_Hardt",
+      "@id": "http://wirtrials.app.web/researchee#Avionics_Software-Systems",
+      "name": "Avionics_Software-Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Software_Engineering",
+      "name": "Software_Engineering",
+      "type": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Expertise"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Professorship"
+        }
+      ]
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Real-Time_Systems",
+      "name": "Real-Time_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Graphics",
+      "name": "Computer_Graphics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Media_Informatics",
+      "name": "Media_Informatics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Processor_Architectures",
+      "name": "Processor_Architectures",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Visualization",
+      "name": "Visualization",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Evaluation",
+      "name": "Evaluation",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Neuroinformatics",
+      "name": "Neuroinformatics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Fred_Hamker",
       "jobTitle": {
         "@id": "http://wirtrials.app.web/researchee#Professor"
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Evaluation"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Embedded_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#e-learning"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Hardware"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Optimization"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#IT_in_Business"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Prototyping"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
+          "@id": "http://wirtrials.app.web/researchee#Occupational_Medicine/Industrial_Medicine"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+          "@id": "http://wirtrials.app.web/researchee#Database_Management"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#computer_engineering"
+          "@id": "http://wirtrials.app.web/researchee#Computational_Neuroscience"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_and_Communication_Service"
+          "@id": "http://wirtrials.app.web/researchee#Medicine/Public_Health,_general"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#rapid_prototyping"
+          "@id": "http://wirtrials.app.web/researchee#Probability_and_Statistics_in_Computer_Science"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Car"
+          "@id": "http://wirtrials.app.web/researchee#Cognitive_Neuroscience"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Routing"
+          "@id": "http://wirtrials.app.web/researchee#Neurobiology_and_Brain_Physiology"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Rapid_Prototyping"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Wireless_Sensor_Network"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+          "@id": "http://wirtrials.app.web/researchee#Theoretical_Neuroscience"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Applications"
+          "@id": "http://wirtrials.app.web/researchee#Animal_Models"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Simulation"
+          "@id": "http://wirtrials.app.web/researchee#Neuroinformatics"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Circuits_and_Systems"
+          "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#real_time_systems"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computers_and_Education"
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design"
+          "@id": "http://wirtrials.app.web/researchee#Neural_Circuits"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
+          "@id": "http://wirtrials.app.web/researchee#Industrial_and_Production_Engineering"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems"
+          "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation"
+          "@id": "http://wirtrials.app.web/researchee#Neurobiology"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Automotive_Engineering"
+          "@id": "http://wirtrials.app.web/researchee#Special_Purpose_and_Application-Based_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Pattern_Recognition"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Engineering_Design"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Image_Processing_and_Computer_Vision"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Neurosciences"
         }
       ],
       "memberOf": {
-        "@id": "http://wirtrials.app.web/researchee#Computer_Engineering"
+        "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
       },
-      "name": "Wolfram_Hardt"
+      "name": "Fred_Hamker"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#GPU_Programming",
-      "name": "GPU_Programming",
+      "@id": "http://wirtrials.app.web/researchee#Electrical_Engineering",
+      "name": "Electrical_Engineering",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Data_Mining_and_Knowledge_Discovery",
-      "name": "Data_Mining_and_Knowledge_Discovery",
+      "@id": "http://wirtrials.app.web/researchee#Combinatorial_Optimization",
+      "name": "Combinatorial_Optimization",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Thin_Film_Deposition",
-      "name": "Thin_Film_Deposition",
+      "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks",
+      "name": "Computer_Communication_Networks",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#MATLAB",
-      "name": "MATLAB",
+      "@id": "http://wirtrials.app.web/researchee#Theoretical_Computer_Science",
+      "name": "Theoretical_Computer_Science",
+      "type": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Expertise"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Professorship"
+        }
+      ]
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Material_Characterization",
+      "name": "Material_Characterization",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Neurosciences",
-      "name": "Neurosciences",
+      "@id": "http://wirtrials.app.web/researchee#Software_Programming",
+      "name": "Software_Programming",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Neurobiology",
-      "name": "Neurobiology",
+      "@id": "http://wirtrials.app.web/researchee#Medicine/Public_Health,_general",
+      "name": "Medicine/Public_Health,_general",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#SQL",
+      "name": "SQL",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters",
+      "name": "Programming_Languages,_Compilers,_Interpreters",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Environmental_Health",
+      "name": "Environmental_Health",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#e-learning",
+      "name": "e-learning",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Animal_Models",
+      "name": "Animal_Models",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Automotive_Software_and_Systems",
+      "name": "Automotive_Software_and_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
@@ -2104,25 +1766,28 @@
       },
       "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#Augmented_Reality"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Engineering_Design"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Geometry"
+          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#GPU_Programming"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#CAD"
+          "@id": "http://wirtrials.app.web/researchee#3D_Computer_Graphics"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Visualization"
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+          "@id": "http://wirtrials.app.web/researchee#Virtual_Reality"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation"
@@ -2134,64 +1799,61 @@
           "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl.Internet)"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Imaging,_Vision,_Pattern_Recognition_and_Graphics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Graphics"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Object_Tracking"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#3D_Reconstruction"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Industrial_and_Production_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling"
+          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#3D_Modeling"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
+          "@id": "http://wirtrials.app.web/researchee#Computational_Science_and_Engineering"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl.Internet)"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#3D_Computer_Graphics"
+          "@id": "http://wirtrials.app.web/researchee#CAD"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Applications_of_Mathematics"
         },
         {
+          "@id": "http://wirtrials.app.web/researchee#Object_Tracking"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Imaging,_Vision,_Pattern_Recognition_and_Graphics"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Industrial_and_Production_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Visualization"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Geometry"
+        },
+        {
           "@id": "http://wirtrials.app.web/researchee#Object_Recognition"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Computational_Science_and_Engineering"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems"
-        },
-        {
-          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
+          "@id": "http://wirtrials.app.web/researchee#Simulation_and_Modeling"
         },
         {
           "@id": "http://wirtrials.app.web/researchee#Computer_Appl._in_Administrative_Data_Processing"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#Virtual_Reality"
+          "@id": "http://wirtrials.app.web/researchee#3D_Reconstruction"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Augmented_Reality"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Engineering_Design"
         }
       ],
       "memberOf": {
@@ -2200,162 +1862,501 @@
       "name": "Guido_Brunnett"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computation_by_Abstract_Devices",
-      "name": "Computation_by_Abstract_Devices",
+      "@id": "http://wirtrials.app.web/researchee#Practical_Computer_Science",
+      "name": "Practical_Computer_Science",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Hyper-Connected_Society",
-      "name": "Hyper-Connected_Society",
+      "@id": "http://wirtrials.app.web/researchee#Semiconductor_Device_Physics",
+      "name": "Semiconductor_Device_Physics",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Probability_and_Statistics_in_Computer_Science",
-      "name": "Probability_and_Statistics_in_Computer_Science",
+      "@id": "http://wirtrials.app.web/researchee#Automotive_Industry",
+      "name": "Automotive_Industry",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Car",
-      "name": "Car",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Human_Computer_Interaction",
-      "name": "Human_Computer_Interaction",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Theoretical_Neuroscience",
-      "name": "Theoretical_Neuroscience",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Computational_Neuroscience",
-      "name": "Computational_Neuroscience",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#rapid_prototyping",
-      "name": "rapid_prototyping",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Control,_Robotics,_Mechatronics",
-      "name": "Control,_Robotics,_Mechatronics",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Data-driven_Science,_Modeling_and_Theory_Building",
-      "name": "Data-driven_Science,_Modeling_and_Theory_Building",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#IT_in_Business",
-      "name": "IT_in_Business",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
       "@id": "http://wirtrials.app.web/researchee#Object-Oriented_Programming",
       "name": "Object-Oriented_Programming",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Software_Programming",
-      "name": "Software_Programming",
+      "@id": "http://wirtrials.app.web/researchee#Coding_and_Information_Theory",
+      "name": "Coding_and_Information_Theory",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks",
-      "name": "Computer_Communication_Networks",
+      "@id": "http://wirtrials.app.web/researchee#Operating_Systems",
+      "name": "Operating_Systems",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Media_Informatics",
-      "name": "Media_Informatics",
+      "@id": "http://wirtrials.app.web/researchee#Computers_and_Society",
+      "name": "Computers_and_Society",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#professorship"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Serverless_Computing",
-      "name": "Serverless_Computing",
+      "@id": "http://wirtrials.app.web/researchee#Logics_and_Meanings_of_Programs",
+      "name": "Logics_and_Meanings_of_Programs",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Computer_Graphics_and_Animation",
-      "name": "Computer_Graphics_and_Animation",
-      "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
-      }
-    },
-    {
-      "@id": "http://wirtrials.app.web/researchee#Theoretical_Computer_Science",
-      "name": "Theoretical_Computer_Science",
-      "type": [
+      "@id": "http://wirtrials.app.web/researchee#Wolfram_Hardt",
+      "jobTitle": {
+        "@id": "http://wirtrials.app.web/researchee#Professor"
+      },
+      "knowsAbout": [
         {
-          "@id": "http://wirtrials.app.web/researchee#professorship"
+          "@id": "http://wirtrials.app.web/researchee#real_time_systems"
         },
         {
-          "@id": "http://wirtrials.app.web/researchee#expertise"
+          "@id": "http://wirtrials.app.web/researchee#computer_engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Simulation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_and_Communication_Service"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Automotive_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Circuits_and_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computers_and_Education"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Hardware"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Routing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#IT_in_Business"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Embedded_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Applications"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Car"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Evaluation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#e-learning"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Management_of_Computing_and_Information_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Prototyping"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Wireless_Sensor_Network"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#rapid_prototyping"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Rapid_Prototyping"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computers_and_Society"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Optimization"
         }
-      ]
+      ],
+      "memberOf": {
+        "@id": "http://wirtrials.app.web/researchee#Computer_Engineering"
+      },
+      "name": "Wolfram_Hardt"
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Real-Time_Systems",
-      "name": "Real-Time_Systems",
+      "@id": "http://wirtrials.app.web/researchee#single_molecule_spectroscopy",
+      "name": "single_molecule_spectroscopy",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Applied_Mathematics",
-      "name": "Applied_Mathematics",
+      "@id": "http://wirtrials.app.web/researchee#Probability_and_Statistics_in_Computer_Science",
+      "name": "Probability_and_Statistics_in_Computer_Science",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Graphs",
-      "name": "Graphs",
+      "@id": "http://wirtrials.app.web/researchee#Computational_Intelligence",
+      "name": "Computational_Intelligence",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     },
     {
-      "@id": "http://wirtrials.app.web/researchee#Endocrinology",
-      "name": "Endocrinology",
+      "@id": "http://wirtrials.app.web/researchee#Algorithm_Development",
+      "name": "Algorithm_Development",
       "type": {
-        "@id": "http://wirtrials.app.web/researchee#expertise"
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Cyber-Physical_Systems",
+      "name": "Cyber-Physical_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#computer_engineering",
+      "name": "computer_engineering",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Occupational_Medicine/Industrial_Medicine",
+      "name": "Occupational_Medicine/Industrial_Medicine",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Information_Storage_and_Retrieval",
+      "name": "Information_Storage_and_Retrieval",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Theoretical_Neuroscience",
+      "name": "Theoretical_Neuroscience",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Media_Computing",
+      "name": "Media_Computing",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer-Aided_Engineering_(CAD,_CAE)_and_Design",
+      "name": "Computer-Aided_Engineering_(CAD,_CAE)_and_Design",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#3D_Reconstruction",
+      "name": "3D_Reconstruction",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Architectures",
+      "name": "Computer_Architectures",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Computer_Graphics_and_Visualization",
+      "name": "Computer_Graphics_and_Visualization",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Professorship"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Data-driven_Science,_Modeling_and_Theory_Building",
+      "name": "Data-driven_Science,_Modeling_and_Theory_Building",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Pharmacology/Toxicology",
+      "name": "Pharmacology/Toxicology",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Robotics_and_Automation",
+      "name": "Robotics_and_Automation",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Cognitive_Neuroscience",
+      "name": "Cognitive_Neuroscience",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Prototyping",
+      "name": "Prototyping",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Web_Engineering",
+      "name": "Web_Engineering",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Finance",
+      "name": "Finance",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Information_and_Communication_Technology",
+      "name": "Information_and_Communication_Technology",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Object_Recognition",
+      "name": "Object_Recognition",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#3D_Computer_Graphics",
+      "name": "3D_Computer_Graphics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Communication_Studies",
+      "name": "Communication_Studies",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Image_Processing",
+      "name": "Image_Processing",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Gudula_Rünger",
+      "jobTitle": {
+        "@id": "http://wirtrials.app.web/researchee#Professor"
+      },
+      "knowsAbout": [
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering/Programming_and_Operating_Systems"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Science,_general"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Programming_Languages,_Compilers,_Interpreters"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Theory_of_Computation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#System_Performance_and_Evaluation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Communications_Engineering,_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Processor_Architectures"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Algorithm_Analysis_and_Problem_Complexity"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Complexity"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Numeric_Computing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computational_Science_and_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Database_Management"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Systems_Organization_and_Communication_Networks"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computational_Mathematics_and_Numerical_Analysis"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Artificial_Intelligence"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_System_Implementation"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Software_Engineering"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Programming_Techniques"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Mathematics_of_Computing"
+        },
+        {
+          "@id": "http://wirtrials.app.web/researchee#Computer_Communication_Networks"
+        }
+      ],
+      "memberOf": {
+        "@id": "http://wirtrials.app.web/researchee#Practical_Computer_Science"
+      },
+      "name": "Gudula_Rünger"
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Numeric_Computing",
+      "name": "Numeric_Computing",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#User_Interfaces_and_Human_Computer_Interaction",
+      "name": "User_Interfaces_and_Human_Computer_Interaction",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Information_Systems_Applications_(incl._Internet)",
+      "name": "Information_Systems_Applications_(incl._Internet)",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Multimedia_Information_Systems",
+      "name": "Multimedia_Information_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Human_Resource_Management",
+      "name": "Human_Resource_Management",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Circuits_and_Systems",
+      "name": "Circuits_and_Systems",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#System_Performance_and_Evaluation",
+      "name": "System_Performance_and_Evaluation",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#rapid_prototyping",
+      "name": "rapid_prototyping",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Management",
+      "name": "Management",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Database_Management",
+      "name": "Database_Management",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
+      }
+    },
+    {
+      "@id": "http://wirtrials.app.web/researchee#Control,_Robotics,_Mechatronics",
+      "name": "Control,_Robotics,_Mechatronics",
+      "type": {
+        "@id": "http://wirtrials.app.web/researchee#Expertise"
       }
     }
   ]
