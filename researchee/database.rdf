@@ -3,6 +3,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:researchee="http://wirtrials.app.web/researchee#"
 >
+<<<<<<< HEAD
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Materials_Chemistry">
     <researchee:expertiseName>Materials_Chemistry</researchee:expertiseName>
   </rdf:Description>
@@ -1642,5 +1643,17 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Evaluation">
     <researchee:expertiseName>Evaluation</researchee:expertiseName>
+=======
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Heinrich-Lang">
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Web-Engineering"/>
+    <researchee:name>Heinrich-Lang</researchee:name>
+    <researchee:hasExpertise rdf:resource="http://wirtrials.app.web/researchee#Software-Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Web-Engineering">
+    <researchee:name>Web-Engineering</researchee:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://wirtrials.app.web/researchee#Software-Engineering">
+    <researchee:name>Software-Engineering</researchee:name>
+>>>>>>> a3df2674926963986d71fdb71b145879aadaa8df
   </rdf:Description>
 </rdf:RDF>

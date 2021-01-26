@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #This module contains a function, which could get all the expertises of a researher.
 #Function Name: getExpertiseFromResearchgate(),getExpertiseFromSpringer()
 #Parameters: a string which contains researcher's name
@@ -23,8 +24,13 @@ def getExpertiseOfAllNameList():
         if len(expertList)!=0:
             print(nl)
             print(expertList)
+=======
+from bs4 import BeautifulSoup
+import requests
+>>>>>>> a3df2674926963986d71fdb71b145879aadaa8df
 
 def getExpertise(name):
+<<<<<<< HEAD
 
     delay = 5 * random.random() + 5
     time.sleep(delay)
@@ -105,3 +111,16 @@ def test():
         
         
 #test()
+=======
+    r = requests.get('https://www.researchgate.net/profile/'+name)
+    soup = BeautifulSoup(r.text, 'html.parser')
+    expertise = soup.findAll("a", {"class": "profile-about__badge"})
+    expertise_list = {"data": []}
+
+    for i in expertise:
+        ex = {}
+        ex["expertise"] = i.get_text()
+        expertise_list["data"].append(ex)
+
+    return expertise_list
+>>>>>>> a3df2674926963986d71fdb71b145879aadaa8df

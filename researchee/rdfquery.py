@@ -1,5 +1,6 @@
-
+#getting name from RDF using sparql
 import rdflib
+<<<<<<< HEAD
 
 g = rdflib.Graph()
 #g.parse("demo_database.rdf")
@@ -133,3 +134,21 @@ Please enter your instruction:'''
         for row in qres:
             print("  %s" % row)
     print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+=======
+import  requests
+g = rdflib.Graph()
+
+g.parse("dummy.rdf")
+
+qres = g.query(
+    """SELECT DISTINCT ?name ?expertise
+       WHERE {
+         ?a researchee:name ?name .
+         ?a researchee:hasExpertise ?expertise .
+       }""")
+print("Name   |  expertise")
+for row in qres:
+    print("%s  |  %s" % row)
+
+    #incomplete still working
+>>>>>>> a3df2674926963986d71fdb71b145879aadaa8df
