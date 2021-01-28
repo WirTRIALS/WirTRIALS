@@ -53,12 +53,55 @@ def getName(facultyid):
 
     return name_list
 
+
+def getNameFromOsgInformatik():
+    faculty_name = "Computer_Science"
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/"]
+    professorship = "Operating_System_Group"
+    name_list = []
+
+    r = requests.get(faculty_list[0])
+    soup = BeautifulSoup(r.text, 'html.parser')
+    prof_name = soup.find_all("h4", class_="fn")
+
+    for item in prof_name:
+        try:
+            name = item.find("a").get_text()
+        except:
+            name = item.get_text()
+
+        if name[0] == 'N' and name[1] == '.':
+            continue;
+        index = name.find('Dr.')
+        if index != -1:
+            name = name[index + 4:]
+        index = name.find('Ing.')
+        if index != -1:
+            name = name[index + 5:]
+        index = name.find('habil.')
+        if index != -1:
+            name = name[index + 7:]
+        index = name.find('nat.')
+        if index != -1:
+            name = name[index + 5:]
+
+        index = name.find('M.Sc.')
+        if index != -1:
+            name = name[index + 6:]
+
+        #print(professorship)
+        name = '_'.join(name.split(' '))
+        nameAndFaculty = name + '&' + professorship + '&' + faculty_name
+        name_list.append(nameAndFaculty)
+
+    return name_list
+
+
 def getAllName():
 
     name_list = []
     i = 0;
     while i < 8:
         name_list += getName(i)
-        
+    name_list += getNameFromOsgInformatik()
     return name_list
-
