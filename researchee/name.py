@@ -56,9 +56,10 @@ def getName(facultyid):
 
 def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en", "https://www.tu-chemnitz.de/informatik/PI/professur/mitarbeiter/index.php.en"]
-    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics", "Professorship of Practical Computer Science"]
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en", "https://www.tu-chemnitz.de/informatik/PI/professur/mitarbeiter/index.php.en", "https://www.tu-chemnitz.de/informatik/CAS/people/people.php.en"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics", "Professorship of Practical Computer Science", "Computer Architectures and Systems"]
     name_list = []
+    prof_name = []
     r = requests.get(faculty_list[faculty_id])
     soup = BeautifulSoup(r.text, 'html.parser')
     if faculty_id == 0:
@@ -72,6 +73,10 @@ def getNameFromInformatikDept(faculty_id):
        prof_name = soup.find_all("h3")
     elif faculty_id == 5:
        prof_name = soup.find_all("div", {'class': 'h4'})
+    elif faculty_id == 6:
+       parents = soup.find_all("main", {'class': 'page-content'})
+       for soup_item in parents:
+           prof_name = soup_item.find_all("p")
     else:
        prof_name = soup.find_all("h4", class_="fn")
 
@@ -171,10 +176,10 @@ def getAllName():
     # 4. Professorship of Artificial Intelligence .
     # 5. Professorship of Media Informatics
     # 6. Professorship of Practical Computer Science
-    # 7. 
+    # 7. Computer Architectures and Systems
 
     i = 0
-    while i<6:
+    while i<7:
       name_list += getNameFromInformatikDept(i)
       i=i+1
     return name_list
