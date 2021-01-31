@@ -56,8 +56,8 @@ def getName(facultyid):
 
 def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php"]
-    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professur Graphische Datenverarbeitung und Visualisierung"]
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence"]
     name_list = []
 
     r = requests.get(faculty_list[faculty_id])
@@ -68,6 +68,8 @@ def getNameFromInformatikDept(faculty_id):
        prof_name = soup.find_all("div", class_="h4")
     elif faculty_id == 2:
        prof_name = soup.find_all("h3", class_="linie")
+    else:
+       prof_name = soup.find_all("h4", class_="fn")
 
     for item in prof_name:
         try:
@@ -75,24 +77,76 @@ def getNameFromInformatikDept(faculty_id):
         except:
             name = item.get_text()
 
-        if name[0] == 'N' and name[1] == '.':
-            continue;
+        name = name.lstrip()
+        name = name.strip()
+
         index = name.find('Dr.')
         if index != -1:
-            name = name[index + 4:]
+            name = name.replace("Dr.", "")
+
+        index = name.find('Prof.')
+        if index != -1:
+            name = name.replace("Prof.", "")
+
         index = name.find('Ing.')
         if index != -1:
-            name = name[index + 5:]
+            name = name.replace("Ing.", "")
+
         index = name.find('habil.')
         if index != -1:
-            name = name[index + 7:]
+            name = name.replace("habil.", "")
+
         index = name.find('nat.')
         if index != -1:
-            name = name[index + 5:]
+            name = name.replace("nat.", "")
 
         index = name.find('M.Sc.')
         if index != -1:
-            name = name[index + 6:]
+            name = name.replace("M.Sc.", "")
+
+        index = name.find('Dipl.')
+        if index != -1:
+            name = name.replace("Dipl.", "")
+
+        index = name.find('Math.')
+        if index != -1:
+            name = name.replace("Math.", "")
+
+        index = name.find('-')
+        if index != -1:
+            name = name.replace("-", "")
+
+        index = name.find('Inf.')
+        if index != -1:
+            name = name.replace("Inf.", "")
+
+        index = name.find('(Sekretariat)')
+        if index != -1:
+            name = name.replace("(Sekretariat)", "")
+
+        # old version of normalizing text
+        # if name[0] == 'N' and name[1] == '.':
+        #     continue;
+        # index = name.find('Dr.')
+        # if index != -1:
+        #     name = name[index + 4:]
+        #
+        # index = name.find('Ing.')
+        # if index != -1:
+        #     name = name[index + 5:]
+        #
+        # index = name.find('habil.')
+        # if index != -1:
+        #     name = name[index + 7:]
+        #
+        # index = name.find('nat.')
+        # if index != -1:
+        #     name = name[index + 5:]
+        #
+        # index = name.find('M.Sc.')
+        # if index != -1:
+        #     name = name[index + 6:]
+
 
         name = name.replace("\t", "").replace("\r", "").replace("\n", "")
         #print(professorship)
@@ -115,9 +169,10 @@ def getAllName():
     # 1. Operating system
     # 2. Database Mangement System
     # 3. Professur Graphische Datenverarbeitung und Visualisierung
+    # 4. Professorship of Artificial Intelligence
 
     i = 0
-    while i<3:
+    while i<4:
       name_list += getNameFromInformatikDept(i)
       i=i+1
     return name_list
