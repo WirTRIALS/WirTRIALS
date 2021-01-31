@@ -56,8 +56,8 @@ def getName(facultyid):
 
 def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php"]
-    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme"]
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professur Graphische Datenverarbeitung und Visualisierung"]
     name_list = []
 
     r = requests.get(faculty_list[faculty_id])
@@ -66,6 +66,8 @@ def getNameFromInformatikDept(faculty_id):
        prof_name = soup.find_all("h4", class_="fn")
     elif faculty_id == 1:
        prof_name = soup.find_all("div", class_="h4")
+    elif faculty_id == 2:
+       prof_name = soup.find_all("h3", class_="linie")
 
     for item in prof_name:
         try:
@@ -92,8 +94,10 @@ def getNameFromInformatikDept(faculty_id):
         if index != -1:
             name = name[index + 6:]
 
+        name = name.replace("\t", "").replace("\r", "").replace("\n", "")
         #print(professorship)
         name = '_'.join(name.split(' '))
+        professorship[faculty_id] = '_'.join(professorship[faculty_id].split(' '))
         nameAndFaculty = name + '&' + professorship[faculty_id] + '&' + faculty_name
         name_list.append(nameAndFaculty)
 
@@ -101,14 +105,19 @@ def getNameFromInformatikDept(faculty_id):
 
 def getAllName():
     name_list = []
-    i = 0
     #fetching data from the homepage of departments
+    i = 0
     while i < 8:
         name_list += getName(i)
         i=i+1
-    i=0
-    #fetching data from Operating system and Database Mangement System group
-    while i<2:
+
+    #fetching data from
+    # 1. Operating system
+    # 2. Database Mangement System
+    # 3. Professur Graphische Datenverarbeitung und Visualisierung
+
+    i = 0
+    while i<3:
       name_list += getNameFromInformatikDept(i)
       i=i+1
     return name_list
