@@ -186,5 +186,3 @@ def getAllName():
       name_list += getNameFromInformatikDept(i)
       i=i+1
     return name_list
-rr = getAllName()
-print(rr)
