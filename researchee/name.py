@@ -56,8 +56,8 @@ def getName(facultyid):
 
 def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en"]
-    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics"]
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en", "https://www.tu-chemnitz.de/informatik/PI/professur/mitarbeiter/index.php.en"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics", "Professorship of Practical Computer Science"]
     name_list = []
     r = requests.get(faculty_list[faculty_id])
     soup = BeautifulSoup(r.text, 'html.parser')
@@ -70,6 +70,8 @@ def getNameFromInformatikDept(faculty_id):
     elif faculty_id == 4:
        prof_name = soup.find_all("div", {'class': 'mitarbeiter'})
        prof_name = soup.find_all("h3")
+    elif faculty_id == 5:
+       prof_name = soup.find_all("div", {'class': 'h4'})
     else:
        prof_name = soup.find_all("h4", class_="fn")
 
@@ -168,10 +170,11 @@ def getAllName():
     # 3. Professur Graphische Datenverarbeitung und Visualisierung
     # 4. Professorship of Artificial Intelligence .
     # 5. Professorship of Media Informatics
+    # 6. Professorship of Practical Computer Science
+    # 7. 
 
     i = 0
-    while i<5:
+    while i<6:
       name_list += getNameFromInformatikDept(i)
       i=i+1
-
     return name_list
