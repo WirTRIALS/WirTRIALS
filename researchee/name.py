@@ -56,8 +56,8 @@ def getName(facultyid):
 
 def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en", "https://www.tu-chemnitz.de/informatik/PI/professur/mitarbeiter/index.php.en", "https://www.tu-chemnitz.de/informatik/CAS/people/people.php.en", "https://www.tu-chemnitz.de/informatik/ST/professur/staff.php.en", "https://www.tu-chemnitz.de/informatik/ce/professur/staff.php.en"]
-    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics", "Professorship of Practical Computer Science", "Computer Architectures and Systems", "Software Engineering", "Computer Engineering "]
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en", "https://www.tu-chemnitz.de/informatik/PI/professur/mitarbeiter/index.php.en", "https://www.tu-chemnitz.de/informatik/CAS/people/people.php.en", "https://www.tu-chemnitz.de/informatik/ST/professur/staff.php.en", "https://www.tu-chemnitz.de/informatik/ce/professur/staff.php.en", "https://vsr.informatik.tu-chemnitz.de/about/people/"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics", "Professorship of Practical Computer Science", "Computer Architectures and Systems", "Software Engineering", "Computer Engineering", "Distributed and Self-organizing Systems"]
     name_list = []
     prof_name = []
     r = requests.get(faculty_list[faculty_id])
@@ -181,10 +181,12 @@ def getAllName():
     # 7. Computer Architectures and Systems
     # 8. Software Engineering
     # 9. Computer Engineering
+    # 10.Distributed and Self-organizing Systems
 
     i = 0
-    while i<9:
+    while i<10:
       name_list += getNameFromInformatikDept(i)
       i=i+1
     return name_list
+
 
