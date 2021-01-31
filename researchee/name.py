@@ -54,15 +54,18 @@ def getName(facultyid):
     return name_list
 
 
-def getNameFromOsgInformatik():
+def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/"]
-    professorship = "Operating_System_Group"
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme"]
     name_list = []
 
-    r = requests.get(faculty_list[0])
+    r = requests.get(faculty_list[faculty_id])
     soup = BeautifulSoup(r.text, 'html.parser')
-    prof_name = soup.find_all("h4", class_="fn")
+    if faculty_id == 0:
+       prof_name = soup.find_all("h4", class_="fn")
+    elif faculty_id == 1:
+       prof_name = soup.find_all("div", class_="h4")
 
     for item in prof_name:
         try:
@@ -91,17 +94,21 @@ def getNameFromOsgInformatik():
 
         #print(professorship)
         name = '_'.join(name.split(' '))
-        nameAndFaculty = name + '&' + professorship + '&' + faculty_name
+        nameAndFaculty = name + '&' + professorship[faculty_id] + '&' + faculty_name
         name_list.append(nameAndFaculty)
 
     return name_list
 
-
 def getAllName():
-
     name_list = []
-    i = 0;
+    i = 0
+    #fetching data from the homepage of departments
     while i < 8:
         name_list += getName(i)
-    name_list += getNameFromOsgInformatik()
+        i=i+1
+    i=0
+    #fetching data from Operating system and Database Mangement System group
+    while i<2:
+      name_list += getNameFromInformatikDept(i)
+      i=i+1
     return name_list
