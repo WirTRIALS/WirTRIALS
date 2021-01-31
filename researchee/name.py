@@ -56,10 +56,9 @@ def getName(facultyid):
 
 def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en"]
-    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence"]
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics"]
     name_list = []
-
     r = requests.get(faculty_list[faculty_id])
     soup = BeautifulSoup(r.text, 'html.parser')
     if faculty_id == 0:
@@ -68,6 +67,9 @@ def getNameFromInformatikDept(faculty_id):
        prof_name = soup.find_all("div", class_="h4")
     elif faculty_id == 2:
        prof_name = soup.find_all("h3", class_="linie")
+    elif faculty_id == 4:
+       prof_name = soup.find_all("div", {'class': 'mitarbeiter'})
+       prof_name = soup.find_all("h3")
     else:
        prof_name = soup.find_all("h4", class_="fn")
 
@@ -79,7 +81,6 @@ def getNameFromInformatikDept(faculty_id):
 
         name = name.lstrip()
         name = name.strip()
-
         index = name.find('Dr.')
         if index != -1:
             name = name.replace("Dr.", "")
@@ -111,10 +112,6 @@ def getNameFromInformatikDept(faculty_id):
         index = name.find('Math.')
         if index != -1:
             name = name.replace("Math.", "")
-
-        index = name.find('-')
-        if index != -1:
-            name = name.replace("-", "")
 
         index = name.find('Inf.')
         if index != -1:
@@ -169,10 +166,12 @@ def getAllName():
     # 1. Operating system
     # 2. Database Mangement System
     # 3. Professur Graphische Datenverarbeitung und Visualisierung
-    # 4. Professorship of Artificial Intelligence
+    # 4. Professorship of Artificial Intelligence .
+    # 5. Professorship of Media Informatics
 
     i = 0
-    while i<4:
+    while i<5:
       name_list += getNameFromInformatikDept(i)
       i=i+1
+
     return name_list
