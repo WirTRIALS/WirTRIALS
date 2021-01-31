@@ -54,15 +54,33 @@ def getName(facultyid):
     return name_list
 
 
-def getNameFromOsgInformatik():
+def getNameFromInformatikDept(faculty_id):
     faculty_name = "Computer_Science"
-    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/"]
-    professorship = "Operating_System_Group"
+    faculty_list = ["https://osg.informatik.tu-chemnitz.de/Staff/", "https://www.tu-chemnitz.de/informatik/DVS/professur/mitarbeiter.php", "https://www.tu-chemnitz.de/informatik/HomePages/GDV/professurinhaber.php", "https://www.tu-chemnitz.de/informatik/KI/staff/index.php.en", "https://www.tu-chemnitz.de/informatik/mi/team.php.en", "https://www.tu-chemnitz.de/informatik/PI/professur/mitarbeiter/index.php.en", "https://www.tu-chemnitz.de/informatik/CAS/people/people.php.en", "https://www.tu-chemnitz.de/informatik/ST/professur/staff.php.en"]
+    professorship = ["Operating_System_Group", "Professur_Datenverwaltungssysteme", "Professorship of Computer Graphics and Visualization", "Professorship of Artificial Intelligence", "Professorship of Media Informatics", "Professorship of Practical Computer Science", "Computer Architectures and Systems", "Software Engineering"]
     name_list = []
-
-    r = requests.get(faculty_list[0])
+    prof_name = []
+    r = requests.get(faculty_list[faculty_id])
     soup = BeautifulSoup(r.text, 'html.parser')
-    prof_name = soup.find_all("h4", class_="fn")
+    if faculty_id == 0:
+       prof_name = soup.find_all("h4", class_="fn")
+    elif faculty_id == 1:
+       prof_name = soup.find_all("div", class_="h4")
+    elif faculty_id == 2:
+       prof_name = soup.find_all("h3", class_="linie")
+    elif faculty_id == 4:
+       prof_name = soup.find_all("div", {'class': 'mitarbeiter'})
+       prof_name = soup.find_all("h3")
+    elif faculty_id == 5:
+       prof_name = soup.find_all("div", {'class': 'h4'})
+    elif faculty_id == 6:
+       parents = soup.find_all("main", {'class': 'page-content'})
+       for soup_item in parents:
+           prof_name = soup_item.find_all("p")
+    elif faculty_id == 7:
+        prof_name = soup.find_all("div", class_="h4")
+    else:
+       prof_name = soup.find_all("h4", class_="fn")
 
     for item in prof_name:
         try:
@@ -70,38 +88,101 @@ def getNameFromOsgInformatik():
         except:
             name = item.get_text()
 
-        if name[0] == 'N' and name[1] == '.':
-            continue;
+        name = name.lstrip()
+        name = name.strip()
         index = name.find('Dr.')
         if index != -1:
-            name = name[index + 4:]
+            name = name.replace("Dr.", "")
+
+        index = name.find('Prof.')
+        if index != -1:
+            name = name.replace("Prof.", "")
+
         index = name.find('Ing.')
         if index != -1:
-            name = name[index + 5:]
+            name = name.replace("Ing.", "")
+
         index = name.find('habil.')
         if index != -1:
-            name = name[index + 7:]
+            name = name.replace("habil.", "")
+
         index = name.find('nat.')
         if index != -1:
-            name = name[index + 5:]
+            name = name.replace("nat.", "")
 
         index = name.find('M.Sc.')
         if index != -1:
-            name = name[index + 6:]
+            name = name.replace("M.Sc.", "")
 
+        index = name.find('Dipl.')
+        if index != -1:
+            name = name.replace("Dipl.", "")
+
+        index = name.find('Math.')
+        if index != -1:
+            name = name.replace("Math.", "")
+
+        index = name.find('Inf.')
+        if index != -1:
+            name = name.replace("Inf.", "")
+
+        index = name.find('(Sekretariat)')
+        if index != -1:
+            name = name.replace("(Sekretariat)", "")
+
+        # old version of normalizing text
+        # if name[0] == 'N' and name[1] == '.':
+        #     continue;
+        # index = name.find('Dr.')
+        # if index != -1:
+        #     name = name[index + 4:]
+        #
+        # index = name.find('Ing.')
+        # if index != -1:
+        #     name = name[index + 5:]
+        #
+        # index = name.find('habil.')
+        # if index != -1:
+        #     name = name[index + 7:]
+        #
+        # index = name.find('nat.')
+        # if index != -1:
+        #     name = name[index + 5:]
+        #
+        # index = name.find('M.Sc.')
+        # if index != -1:
+        #     name = name[index + 6:]
+
+
+        name = name.replace("\t", "").replace("\r", "").replace("\n", "")
         #print(professorship)
         name = '_'.join(name.split(' '))
-        nameAndFaculty = name + '&' + professorship + '&' + faculty_name
+        professorship[faculty_id] = '_'.join(professorship[faculty_id].split(' '))
+        nameAndFaculty = name + '&' + professorship[faculty_id] + '&' + faculty_name
         name_list.append(nameAndFaculty)
 
     return name_list
 
-
 def getAllName():
-
     name_list = []
-    i = 0;
+    #fetching data from the homepage of departments
+    i = 0
     while i < 8:
         name_list += getName(i)
-    name_list += getNameFromOsgInformatik()
+        i=i+1
+
+    #fetching data from
+    # 1. Operating system
+    # 2. Database Mangement System
+    # 3. Professur Graphische Datenverarbeitung und Visualisierung
+    # 4. Professorship of Artificial Intelligence .
+    # 5. Professorship of Media Informatics
+    # 6. Professorship of Practical Computer Science
+    # 7. Computer Architectures and Systems
+    # 8. Software Engineering
+
+    i = 0
+    while i<8:
+      name_list += getNameFromInformatikDept(i)
+      i=i+1
     return name_list
