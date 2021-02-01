@@ -5,7 +5,7 @@ import random, time
 import requests
 
 g = Graph()
-#g.parse("database2.json",format="json-ld")
+g.parse("database2.json",format="json-ld")
 researchee = Namespace("http://wirtrials.app.web/researchee#")
 researchgate = Namespace("https://www.researchgate.net/profile/")
 topic = Namespace("https://www.researchgate.net/topic/")
@@ -28,10 +28,9 @@ for nameAndFaculty in namelist:
     professorship_ = '_'.join(professorship.split(' '))
     faculty = nameAndFaculty.split('&')[2]
     faculty_ = '_'.join(faculty.split(' '))
-    if name == 'Matthias Werner':
-        name_ = 'Matthias-Werner'
+
     
-    delay = 10 * random.random() + 5
+    delay = 2 * random.random() + 2
     time.sleep(delay)
     try:
         r = requests.get("https://www.researchgate.net/profile/"+name_)
@@ -39,27 +38,7 @@ for nameAndFaculty in namelist:
 
     except:
         s = URIRef(researchee+name_)
-    p = URIRef("name")
-    o = Literal(name)
-    g.add((s,p,o))              #create a triple for researcher's name
-    
-    p2 = URIRef("jobTitle")
-    o2 = URIRef(researchee+"Professor")
-    g.add((s,p2,o2))            #create a triple for researcher's position
-    
-    
-    s3 = URIRef(researchee+professorship_)
-    p3 = URIRef("name")
-    o3 = Literal(professorship)
-    g.add((s3,p3,o3))         #create a triple for professorship's name
-    
-    p7 = URIRef("type")
-    o7 = URIRef(researchee+"Professorship")
-    g.add((s3,p7,o7))            #create a triple for professorship's type
-    
-    p4 = URIRef("memberOf")
-    g.add((s,p4,s3))          #create a triple for researcher's professorship
-    
+ 
  
     expList = getExpertise(name_)
     for exp_ in expList:

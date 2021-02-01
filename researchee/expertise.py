@@ -32,24 +32,28 @@ def getExpertise(name):
     
     expertList = []
     expertList += getExpertiseFromResearchgate(name)
-    expertList += getExpertiseFromSpringer(name)
-    expertList += getExpertiseFromGooglescholar(name)
+    #expertList += getExpertiseFromSpringer(name)
+    #expertList += getExpertiseFromGooglescholar(name)
 
     return expertList
     
 def getExpertiseFromResearchgate(name):
-    r = requests.get('https://www.researchgate.net/profile/'+name)
-    # print(name)
-    expertList = []
-    soup = BeautifulSoup(r.text, 'html.parser')
+    try:
+        r = requests.get('https://www.researchgate.net/profile/'+name)
+        # print(name)
+        expertList = []
+        soup = BeautifulSoup(r.text, 'html.parser')
 
-    mydivs = soup.findAll("a", {"class": "profile-about__badge"})        
-    for title in mydivs:
-        exp = title.get_text()
-        exp = '_'.join(exp.split(' '))
-        expertList.append(exp)
-
-    return expertList
+        mydivs = soup.findAll("a", {"class": "profile-about__badge"})        
+        for title in mydivs:
+            exp = title.get_text()
+            exp = '_'.join(exp.split(' '))
+            expertList.append(exp)
+        print(expertList)
+        return expertList
+    except:
+        print(name + "has no expertise")
+        return []    
 
 def getExpertiseFromSpringer(name):
     try:
@@ -98,7 +102,7 @@ def test():
 
     for n in namelist:
         n = n.split('&')[0]
-        delay = 5 * random.random() + 5
+        delay = 8 * random.random() + 8
         time.sleep(delay)
         print("----------expersise of " + n + " is: ---------------")
         print(getExpertiseFromGooglescholar(n))

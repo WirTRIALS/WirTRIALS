@@ -8,9 +8,13 @@ g.parse("database2.json",format="json-ld")
 
 researchee = Namespace("http://wirtrials.app.web/researchee#")
 schema = Namespace("http://schema.org/")
+researchgate = Namespace("https://www.researchgate.net/profile/")
+topic = Namespace("https://www.researchgate.net/topic/")
 rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
 g.bind("researchee", researchee)
 g.bind("schema", schema)
+g.bind("researchgate", researchgate)
+g.bind("topic", topic)
 
 
 greeting = '''************************************************************
@@ -24,17 +28,16 @@ while 1:
   
 
     instruction = '''Instructions:
-Enter '0', to get all professors in our system;
+Enter '0', to get all researchers in our system;
 Enter '1', to get all professorships of faculty Computer Science;
 Enter '2', to get all expertises;
-Enter '3' and professor's name, to get all his/her expertises;
-Enter '4' and professor's name, to get his/her professorship;
-Enter '5' and professorship's name, to get all professors in it;
-Enter '6' and expertise's name, to get all professors who knows it;
-Enter '7' and professor's name, to get all colleagues in the same professorship;
+Enter '3' and researcher's name, to get all his/her expertises;
+Enter '4' and researcher's name, to get his/her professorship;
+Enter '5' and professorship's name, to get all researchers in it;
+Enter '6' and expertise's name, to get all researchers who knows it;
+Enter '7' and researcher's name, to get all colleagues in the same professorship;
 Enter 'exit', to leave the system.
-space(' ') between name should be replaced by underscore('_')
-example: 3 Martin_Gaedke
+example: 3 Martin Gaedke
 Please enter your instruction:'''
 
     print(instruction)
@@ -51,7 +54,7 @@ Please enter your instruction:'''
                 }}"""
         qres = g.query(queryStr)
         
-        description = "Professor List: "
+        description = "Researcher List: "
 
         
     elif ins == '1':
@@ -77,7 +80,8 @@ Please enter your instruction:'''
         description = "Expertise List: "
         
     elif ins.startswith('3'):
-        researcher_name = ins.split(' ')[1]
+        index = ins.index(' ')
+        researcher_name = ins[index+1:]
         queryStr = f"""SELECT DISTINCT ?expertise_name 
             WHERE {{ 
                 ?a schema:name "{researcher_name}" . 
@@ -90,7 +94,8 @@ Please enter your instruction:'''
 
         
     elif ins.startswith('4'):
-        researcher_name = ins.split(' ')[1]
+        index = ins.index(' ')
+        researcher_name = ins[index+1:]
         queryStr = f"""SELECT DISTINCT ?professorship_name 
             WHERE {{ 
                 ?a schema:name "{researcher_name}" .
@@ -102,21 +107,23 @@ Please enter your instruction:'''
         description = "Professorship of %s: " %researcher_name
     
     elif ins.startswith('5'):
-        professorship_name = ins.split(' ')[1]
-        queryStr = f"""SELECT DISTINCT ?professorship_name 
+        index = ins.index(' ')
+        professorship_name = ins[index+1:]
+        queryStr = f"""SELECT DISTINCT ?professor_name 
             WHERE {{ 
                 ?a schema:name "{professorship_name}" .
                 ?b schema:memberOf ?a . 
-                ?b schema:name ?professorship_name .
+                ?b schema:name ?professor_name .
                 }}"""
         qres = g.query(queryStr)
 
-        description = "Professors of %s: " %professorship_name    
+        description = "Researchers of %s: " %professorship_name    
     
 
     
     elif ins.startswith('6'):
-        expertise_name = ins.split(' ')[1]
+        index = ins.index(' ')
+        expertise_name = ins[index+1:]
         queryStr = f"""SELECT DISTINCT ?researcher_name 
             WHERE {{ 
                 ?a schema:name "{expertise_name}" . 
@@ -128,7 +135,8 @@ Please enter your instruction:'''
         description = "Researchers who knows %s" %expertise_name 
     
     elif ins.startswith('7'):
-        researcher_name = ins.split(' ')[1]
+        index = ins.index(' ')
+        researcher_name = ins[index+1:]
         queryStr = f"""SELECT DISTINCT ?name 
             WHERE {{ 
                 ?a schema:name "{researcher_name}" .
@@ -138,7 +146,7 @@ Please enter your instruction:'''
                 }}"""
         qres = g.query(queryStr)
         
-        description = "Professors in the same faculty with %s" %researcher_name 
+        description = "Researchers in the same faculty with %s" %researcher_name 
     
     print("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     print(description)
