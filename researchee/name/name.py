@@ -156,3 +156,78 @@ def getAllName():
       i=i+1
     #name_list += getNameFromInformatikDept(9)
     return name_list
+
+
+# for get co workers
+def coWorker():
+    coworker_list = ["chemie/anorg/mitarbeiter.php.en",  "physik/CHEMPHYS/mitglieder.php", "chemie/tech/mitarbeiter.php.en",
+                     "chemie/mc/public/mitarbeiter.php.en" , "chemie/physchem/index.html#mitarbeiter" , "chemie/elchem/seiten/mitarbeiter.php.en" , "chemie/polymer/aksommer/mitarbeiter.php.en"
+                   ]
+    name_list = []
+    for f in coworker_list:
+        r = requests.get('https://www.tu-chemnitz.de/'+f)
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        worker_list = soup.find_all("tr")
+        if f != "chemie/physchem/index.html#mitarbeiter":
+            for li in worker_list:
+                if (len(li.find_all("td")) > 0):
+                    td = li.find_all("td")[0]
+                    if (td.find("a") != None):
+                        name = td.contents[0].contents[0]
+                        if (name != "Visiting scientists"):
+                            if hasattr(name, 'contents'):
+                                name_list.append(name.contents[0].text)
+                            else:
+                                name_list.append(name)
+
+                    elif td.contents != None and td.contents[0] != " ":
+                        name_list.append(td.contents)
+
+        worker_list = soup.find_all("figure",class_="tucal-vcard")
+        for li in worker_list:
+            if (len(li.find_all("figcaption")) > 0):
+                cap = li.find_all("figcaption")[0]
+                if (len(cap.find_all("div",class_="h4")) > 0):
+                    divs = cap.find_all("div",class_="h4")
+                    name = divs[0].contents[0]
+                    name_list.append(name)
+    # coWorker_chemi()
+    return name_list
+
+
+def coWorker_chemi():
+    coworker_list = ["chemie/org/mitarbeiter.html.en"]
+    name_list = []
+    for f in coworker_list:
+        r = requests.get('https://www.tu-chemnitz.de/'+f)
+        soup = BeautifulSoup(r.text, 'html.parser')
+
+        worker_list = soup.find_all("div", {"class": ["mitarbeiter1", "mitarbeiter3"]})
+        for li in worker_list:
+            if (len(li.find_all("div")) > 0):
+                divs = li.find_all("div")
+                for div in divs:
+                    if div.contents[0].find("<") == -1:
+                        if div.contents != None and div.contents[0] != " ":
+                            name_list.append(div.contents[0])
+
+                    if(len(div.find_all("a")) > 0):
+                        a = div.find_all("a")[0]
+                        span = a.find("span")
+                        if (span != None and (len(span.contents)) > 0):
+                           name_list.append(span.contents[0])
+                    if(len(div.find_all("div")) >0 ):
+                        divv = div.find_all("div")
+                        print (divv.contents)
+                ps= li.find_all("p")
+                for p in ps:
+                    if(len(p.find_all("a")) > 0):
+                        a = p.find_all("a")[0]
+                        name_list.append(a.contents[0])
+                aas = li.find_all("a")
+                for a in aas:
+                     if(len(a.find_all("span")) > 0):
+                         span = a.find_all("span")[0]
+                         name_list.append(span.contents[0])
+    return name_list
