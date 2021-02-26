@@ -7,23 +7,6 @@ from bs4 import BeautifulSoup
 import requests
 import name
 import random, time
-import xml.etree.ElementTree as ET
-
-def mapping(expertise):
-    r = requests.get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
-    
-    myroot = ET.fromstring(r.text)
-    try:
-        mytext = myroot.find('.//{http://www.loc.gov/MARC21/slim}subfield').text
-    except:
-        mytext = ''
-    #r = requests.get("http://id.worldcat.org/fast/" + mytext[3:] + "/rdf.xml")
-    #check if the id is sensible
-
-    #print(r.text)
-    print(mytext)
-    return mytext
-mapping("Embedded_Systems")
     
     
 def getExpertiseOfAllNameList():
