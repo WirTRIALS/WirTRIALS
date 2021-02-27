@@ -42,67 +42,21 @@ def getNameFromInformatikDept():
             except:
                 name = item.get_text()
 
-
-            
-            index = name.find('Dr.')
-            if index != -1:
-                name = name.replace("Dr.", "")
-
-            index = name.find('Prof.')
-            if index != -1:
-                name = name.replace("Prof.", "")
-                
-            index = name.find('-Ing.')
-            if index != -1:
-                name = name.replace("-Ing.", "")
-                
-            index = name.find('Ing.')
-            if index != -1:
-                name = name.replace("Ing.", "")
-                
-            index = name.find('-ing.')
-            if index != -1:
-                name = name.replace("-ing.", "")
-                
-            index = name.find('habil.')
-            if index != -1:
-                name = name.replace("habil.", "")
-
-            index = name.find('nat.')
-            if index != -1:
-                name = name.replace("nat.", "")
-
-            index = name.find('M.Sc.')
-            if index != -1:
-                name = name.replace("M.Sc.", "")
-
-            index = name.find('Dipl.')
-            if index != -1:
-                name = name.replace("Dipl.", "")
-
-            index = name.find('-Math.')
-            if index != -1:
-                name = name.replace("-Math.", "")
-
-            index = name.find('-Inf.')
-            if index != -1:
-                name = name.replace("-Inf.", "")
-                
-            index = name.find('-INF.')
-            if index != -1:
-                name = name.replace("-INF.", "")
-                
-            index = name.find('(Sekretariat)')
-            if index != -1:
-                name = name.replace("(Sekretariat)", "")
-                
-            index = name.find('MBA')
-            if index != -1:
-                name = name.replace("MBA", "")
-                
-            index = name.find('(FH)')
-            if index != -1:
-                name = name.replace("(FH)", "")
+            name = name.replace("Dr.", "")
+            name = name.replace("Prof.", "")
+            name = name.replace("-Ing.", "")
+            name = name.replace("Ing.", "")
+            name = name.replace("-ing.", "")
+            name = name.replace("habil.", "")
+            name = name.replace("nat.", "")
+            name = name.replace("M.Sc.", "")
+            name = name.replace("Dipl.", "")
+            name = name.replace("-Math.", "")
+            name = name.replace("-Inf.", "")
+            name = name.replace("-INF.", "")
+            name = name.replace("(Sekretariat)", "")
+            name = name.replace("MBA", "")
+            name = name.replace("(FH)", "")
                 
             name = name.lstrip()
             name = name.strip()
@@ -129,20 +83,17 @@ def getNameFromInformatikDept():
             if index != -1:
                 name = name[index + 6:]'''
 
-
-            name = name.replace('é','e')
-            name = name.replace('ü','ue')
-            name = name.replace('ö','oe')
             
             name = name.replace("\t", "").replace("\r", "").replace("\n", "")
             #print(professorship)
             #name = '_'.join(name.split(' '))
             #professorship[pro_id] = '_'.join(professorship[pro_id].split(' '))
-            nameAndFaculty = name + '&' + pro_name[pro_id]
-            name_list.append(nameAndFaculty)
+            nameAndFaculty = name + '&' + pro_name[pro_id] + '&' + faculty_name
+            if nameAndFaculty not in name_list:
+                name_list.append(nameAndFaculty)
 
         pro_id += 1
         
     return name_list
     
-print(getNameFromInformatikDept())
+#print(getNameFromInformatikDept())

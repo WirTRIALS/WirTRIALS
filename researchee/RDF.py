@@ -46,19 +46,17 @@ def mapping(expertise):
 
 
 g = Graph()
-n = Namespace("http://wirtrials.app.web/researchee#")
-g.bind("researchee", n)
-namelist = getAllName()
+schema = Namespace("http://schema.org/")
+g.bind("schema", schema)
+namelist = getName()
 
 print("namelist has been got")
 
-s = URIRef(n+"Economic_and_Business_Administration")
-p = URIRef(n+"facultyName")
-o = Literal("Economic_and Business_Administration")
-g.add((s,p,o))         #create a triple for faculty's name
 for nameAndFaculty in namelist:
     name = nameAndFaculty.split('&')[0]
-    faculty = nameAndFaculty.split('&')[1]
+    professorship = nameAndFaculty.split('&')[1]
+    faculty = nameAndFaculty.split('&')[2]
+    
     s = URIRef(n+name)
     p = URIRef(n+"researcherName")
     o = Literal(name)
