@@ -26,22 +26,37 @@ from name import getAllName
 from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal
 import random, time
+import xml.etree.ElementTree as ET
+
+def mapping(expertise):
+    r = requests.get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
+    
+    myroot = ET.fromstring(r.text)
+    try:
+        mytext = myroot.find('.//{http://www.loc.gov/MARC21/slim}subfield').text
+    except:
+        mytext = ''
+    #r = requests.get("http://id.worldcat.org/fast/" + mytext[3:] + "/rdf.xml")
+    #check if the id is sensible
+
+    #print(r.text)
+    print(mytext)
+    return mytext
+#mapping("Embedded_Systems")
 
 
 g = Graph()
-n = Namespace("http://wirtrials.app.web/researchee#")
-g.bind("researchee", n)
-namelist = getAllName()
+schema = Namespace("http://schema.org/")
+g.bind("schema", schema)
+namelist = getName()
 
 print("namelist has been got")
 
-s = URIRef(n+"Economic_and_Business_Administration")
-p = URIRef(n+"facultyName")
-o = Literal("Economic_and Business_Administration")
-g.add((s,p,o))         #create a triple for faculty's name
 for nameAndFaculty in namelist:
     name = nameAndFaculty.split('&')[0]
-    faculty = nameAndFaculty.split('&')[1]
+    professorship = nameAndFaculty.split('&')[1]
+    faculty = nameAndFaculty.split('&')[2]
+    
     s = URIRef(n+name)
     p = URIRef(n+"researcherName")
     o = Literal(name)
