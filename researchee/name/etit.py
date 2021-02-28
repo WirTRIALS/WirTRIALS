@@ -118,8 +118,11 @@ def getNameFromETITDept():
             name_list.append(nameAndFaculty)
 
         pro_id += 1
+    print(name_list)
 
     return name_list
+
+getNameFromETITDept()
 
 '''list = getNameFromETITDept()
 for item in list:
