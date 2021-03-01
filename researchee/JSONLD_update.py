@@ -3,6 +3,7 @@ from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal,plugin,RDF
 import random, time
 import requests
+from  orcidId import getOrcidId
 
 g = Graph()
 g.parse("database2.json",format="json-ld")
@@ -22,12 +23,20 @@ print("namelist has been got")
 
 
 for nameAndFaculty in namelist:
-    name = nameAndFaculty.split('&')[0]
+    name = nameAndFaculty.split('&')[0] 
     name_ = '_'.join(name.split(' '))
     professorship = nameAndFaculty.split('&')[1]
     professorship_ = '_'.join(professorship.split(' '))
     faculty = nameAndFaculty.split('&')[2]
     faculty_ = '_'.join(faculty.split(' '))
+
+
+    #Split names from ORCID
+    splitNameForOrcid = name_.split("_")
+    givenName = splitNameForOrcid[0]
+    familyName = splitNameForOrcid[-1]
+    orcidUri = getOrcidId(givenName,familyName)
+
 
     
     delay = 2 * random.random() + 2
