@@ -12,7 +12,7 @@ def getNameFromETITDept():
     
     name_list = []
     prof_name = []
-    pro_id = 0
+    pro_id = 13
     while pro_id < len(pro_list):
         r = requests.get(pro_list[pro_id])
         soup = BeautifulSoup(r.text, 'html.parser')
@@ -24,18 +24,24 @@ def getNameFromETITDept():
         elif pro_id == 10:
             prof_name = soup.find_all("h3", class_ = 'teaser')
         elif pro_id == 12:
+            prof_name = []
             table_list = soup.find_all("table")
             for table in table_list:
                 prof_name.append(table.find("h3", {'style': 'margin:0;'}))
         elif pro_id == 13:
+            prof_name = []
             table_list = soup.find_all("div", class_ = "TeamTableCol")
             for table in table_list:
                 prof_name.append(table.find("strong"))
         elif pro_id == 15:
+            prof_name = []
             row_list = soup.find_all("tr")
             for row in row_list:
                 if row.find("td"):
-                    prof_name.append(row.find_all("td")[0])
+                    temp = row.find_all("td")[0].text.split(',')
+                    
+                    prof_name.append(temp[1]+ ' ' + temp[0])
+
         else:
             prof_name = soup.find_all("div", class_ = "h4")
         
@@ -44,7 +50,11 @@ def getNameFromETITDept():
             try:
                 name = item.find("a").get_text()
             except:
-                name = item.get_text()
+                try:
+                    name = item.get_text()
+                except:
+                    name = item
+                
 
             if name.find("Secretariat") >= 0 or name.find("Frau") >= 0:
                 continue 
@@ -118,9 +128,11 @@ def getNameFromETITDept():
             name_list.append(nameAndFaculty)
 
         pro_id += 1
+        break
 
     return name_list
-
-'''list = getNameFromETITDept()
+'''
+list = getNameFromETITDept()
 for item in list:
-    print(item.split('&')[0] + '\t' + item.split('&')[1])'''
+    print(item.split('&')[0] + '\t' + item.split('&')[1] + '\t' + item.split('&')[2])
+'''

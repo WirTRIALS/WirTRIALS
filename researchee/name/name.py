@@ -5,16 +5,18 @@
 
 from bs4 import BeautifulSoup
 import requests
-from cs import getNameFromInformatikDept
+from name.cs import getNameFromIFDept
+from name.etit import getNameFromETITDept
+from name.hsw import getNameFromHSWDept
 
 def getProfessorName():
-    faculty_list = ["naturwissenschaften/professuren.html.en","informatik/professuren.php.en","mathematik/professuren/prof.en.php","wirtschaft/fakultaet/professuren.php.en","mb/professuren.php.en","phil/professuren.php.en","etit/profs/index.php.en","hsw/professuren/index.php.en"]
+    faculty_list = ["naturwissenschaften/professuren.html.en","mathematik/professuren/prof.en.php","wirtschaft/fakultaet/professuren.php.en","mb/professuren.php.en","phil/professuren.php.en","etit/profs/index.php.en","hsw/professuren/index.php.en"]
     
-    faculty_name = ["Natural Sciences","Computer Science","Mathematics","Economic and Business Administration","Mechanical Engineering","Humanities","Electrical Engineering and Infomation Technology","Behavioural and Social Sciences"]
+    faculty_name = ["Natural Sciences","Mathematics","Economic and Business Administration","Mechanical Engineering","Humanities","Electrical Engineering and Infomation Technology","Behavioural and Social Sciences"]
     name_list = []
 
     faculty_id = 0
-    while faculty_id < 8:
+    while faculty_id < len(faculty_list):
         r = requests.get('https://www.tu-chemnitz.de/'+faculty_list[faculty_id])
         soup = BeautifulSoup(r.text, 'html.parser')
         prof_list = soup.find_all("ul",class_="tucal-proflist")
@@ -52,7 +54,7 @@ def getProfessorName():
                 #professorship = '_'.join(professorship.split(' '))
                 
                 #we append professorship and faculty to the name, seperated by &
-                nameAndFaculty = name + '&' + professorship + '&' + faculty_name[faculty_id]
+                nameAndFaculty = name + '&professor' + '&' + professorship 
                 name_list.append(nameAndFaculty)
                 
         faculty_id += 1
@@ -83,17 +85,29 @@ def getName():
     # 10.Distributed and Self-organizing Systems
 
 
-    name_list += getNameFromInformatikDept()
+    #name_list += getNameFromIFDept()
+    name_list += getNameFromETITDept()
+    #name_list += getNameFromHSWDept()
+    
     #wait to add other faculty's name lists
+    '''
     professor_list = getProfessorName()
     for name in professor_list:
-        #print(name)
         if name not in name_list:
             name_list.append(name)
-    
+        else:
+            print(name)
+    '''
     return name_list
-    
-print(getName())
+
+'''
+name_list = getName()
+count = 0
+for name in name_list:
+    count += 1
+    print(str(count) + "\t" + name)
+'''
+
 
 # for get co workers
 def coWorker():
