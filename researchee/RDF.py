@@ -179,4 +179,4 @@ def erase():
 #mark()
 #makeRDF()
 #erase()
-print(mapExpertise("Human-Computer Interactionaaaa"))
+#print(mapExpertise("Human-Computer Interaction"))

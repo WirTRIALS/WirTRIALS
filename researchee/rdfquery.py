@@ -67,6 +67,7 @@ Please enter your instruction:'''
     
     elif ins.startswith('6'):
         expertise_name = ' '.join(ins.split(' ')[1:])
+        
         queryStr = f"""SELECT DISTINCT ?researcher_name 
             WHERE {{ 
                 ?a schema:name "{expertise_name}" . 

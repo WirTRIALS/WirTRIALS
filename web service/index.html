@@ -7,9 +7,24 @@
 <body onload="showNum()">
 
 <h1>Welcome to Researchee</h1>
-<h2>we have <inline id='researcher_num'></inline> researchers, and <inline id='expertise_num'></inline> expertises so far...</h2>
+<h2>We focus on Linked Data and research information.<br>
+We have <inline id='researcher_num'></inline> researchers, and <inline id='expertise_num'></inline> expertises so far...</h2>
+<br>
+<div class='center'>
+<select id='facet' onchange="changeFacet()">
+  <option value='researcher' selected>Researcher</option>
+  <option value='expertise'>Expertise</option>
+</select>
 
+<input type="text" id="input" name="input" placeholder="input a researcher" onkeyup="liveSearch()">
+<input type="button" onclick="search()" value="SEARCH">
 
+<div id='liveResult'>
+</div>
+</div>
+
+<div class='center' id='result'>
+</div>
 
 </body>
 </html>
