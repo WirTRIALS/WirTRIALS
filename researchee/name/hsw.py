@@ -109,15 +109,8 @@ def getNameFromHSWDept():
             name_list.append(nameAndFaculty)
 
         pro_id += 1
-<<<<<<< HEAD
 
     return name_list
-=======
-    print(name_list)
-    return name_list
-    
-getNameFromHSWDept()
->>>>>>> cdce3ce0d6f4428f6f7c048953144568b3c26176
 
 '''list = getNameFromHSWDept()
 for item in list:

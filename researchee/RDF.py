@@ -7,40 +7,22 @@ from expertise import getExpertise
 from rdflib import Graph,Namespace,URIRef,Literal,RDF
 import random, time
 import xml.etree.ElementTree as ET
-<<<<<<< HEAD
 from bs4 import BeautifulSoup
 import requests
 
 def mapExpertise(expertise):
-=======
-
-def mapping(expertise):
->>>>>>> cdce3ce0d6f4428f6f7c048953144568b3c26176
     r = requests.get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
     
     myroot = ET.fromstring(r.text)
     try:
         mytext = myroot.find('.//{http://www.loc.gov/MARC21/slim}subfield').text
-<<<<<<< HEAD
         mytext = "http://experimental.worldcat.org/fast/" + mytext[3:]
     except:
         return ''
 
-=======
-    except:
-        mytext = ''
-    #r = requests.get("http://id.worldcat.org/fast/" + mytext[3:] + "/rdf.xml")
-    #check if the id is sensible
-
-    #print(r.text)
-    print(mytext)
-    return mytext
-#mapping("Embedded_Systems")
->>>>>>> cdce3ce0d6f4428f6f7c048953144568b3c26176
 
     return mytext
 
-<<<<<<< HEAD
 
 def mapName(name):
     firstName = name.split(' ')[0]
@@ -54,24 +36,6 @@ def mapName(name):
         mytext = myroot.find('.//{http://www.orcid.org/ns/expanded-search}orcid-id').text
     except:
         mytext = ''
-=======
-g = Graph()
-schema = Namespace("http://schema.org/")
-g.bind("schema", schema)
-namelist = getName()
-
-print("namelist has been got")
-
-for nameAndFaculty in namelist:
-    name = nameAndFaculty.split('&')[0]
-    professorship = nameAndFaculty.split('&')[1]
-    faculty = nameAndFaculty.split('&')[2]
-    
-    s = URIRef(n+name)
-    p = URIRef(n+"researcherName")
-    o = Literal(name)
-    g.add((s,p,o))            #create a triple for researcher's name
->>>>>>> cdce3ce0d6f4428f6f7c048953144568b3c26176
     
     if mytext == '':
         r = requests.get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20&start=0&rows=1")
