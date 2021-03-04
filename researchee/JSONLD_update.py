@@ -37,7 +37,10 @@ for nameAndFaculty in namelist:
     familyName = splitNameForOrcid[-1]
     orcidUri = getOrcidId(givenName,familyName)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cdce3ce0d6f4428f6f7c048953144568b3c26176
     
     delay = 2 * random.random() + 2
     time.sleep(delay)

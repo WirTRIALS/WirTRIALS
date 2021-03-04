@@ -19,7 +19,7 @@ def getExpertise(name):
     '''    
     expertList = []
     expertList += getExpertiseFromResearchgate(name)
-    #expertList += getExpertiseFromSpringer(name)
+    expertList += getExpertiseFromSpringer(name)
     #expertList += getExpertiseFromGooglescholar(name)
 
     return expertList
