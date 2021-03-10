@@ -24,22 +24,6 @@ def getNameFromHumanities():
         namelist = []
 
 
-<<<<<<< HEAD
-    for entry in entry_generator:
-        print(entry)
-        total_entries += 1
-        name = ''.join(entry['attributes']['cn'])
-        faculty = "Mechanical"
-        professorship = ''.join(entry['attributes']['ou'][0])
-        professorship_ = professorship.split("|")[0]
-        title = "Researcher"
-        if ''.join(entry['attributes']['title']) == "Prof.":
-            title = "Professor"
-        nameAndFaculty = name + '&' + title + '&' + professorship_
-        namelist.append(nameAndFaculty)
-    print(namelist)
-    print(total_entries)
-=======
         for entry in entry_generator:
             namse = ''.join(entry['attributes']['uid'])
             total_entries += 1
@@ -65,7 +49,6 @@ def getNameFromHumanities():
     with open("sample.json", "w") as outfile: 
         outfile.write(json_object) 
 
->>>>>>> 0625d940d9e9a8c5bb8218872775c235a5dc1109
     return(namelist)
 
 getNameFromHumanities()
