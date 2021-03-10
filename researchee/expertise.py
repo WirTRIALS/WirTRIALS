@@ -40,7 +40,7 @@ def getExpertiseFromResearchgate(name):
     while count <= 2 or flag == 0:
         try:
             
-            delay = 10 * random.random() + 10
+            delay = 5 * random.random() + 5
             time.sleep(delay)
             print("after " + str(delay) + " seconds, now extracting " + name)
             

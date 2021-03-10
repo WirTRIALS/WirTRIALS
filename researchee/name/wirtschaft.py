@@ -27,10 +27,11 @@ def getNameFromWirtschaft():
         title = "Researcher"
         if ''.join(entry['attributes']['title']) == "Prof.":
             title = "Professor"
-        print(entry['attributes']['title'])
+        #print(entry['attributes']['title'])
         nameAndFaculty = name + '&' + title + '&' + professorship_
         namelist.append(nameAndFaculty)
     print(namelist)
+    print(total_entries)
     return(namelist)
 
 getNameFromWirtschaft()

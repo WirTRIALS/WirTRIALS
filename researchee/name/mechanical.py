@@ -19,6 +19,7 @@ def getNameFromMechanical():
     namelist = []
 
     for entry in entry_generator:
+        print(entry)
         total_entries += 1
         name = ''.join(entry['attributes']['cn'])
         faculty = "Mechanical"
@@ -30,6 +31,7 @@ def getNameFromMechanical():
         nameAndFaculty = name + '&' + title + '&' + professorship_
         namelist.append(nameAndFaculty)
     print(namelist)
+    print(total_entries)
     return(namelist)
 
 getNameFromMechanical()
