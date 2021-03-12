@@ -17,7 +17,7 @@ def getNameFromHumanities():
     for keyword in combos:
         pause_counter += 1
         entry_generator = conn.extend.standard.paged_search(search_base = 'ou=Users,dc=tu-chemnitz,dc=de',
-                search_filter= '(& (objectClass=Person) (|(cn=*gaedke*)))',
+                search_filter= '(& (objectClass=Person) (|(cn=*Lars Klewe*)))',
                                                         search_scope = SUBTREE,
                                                         attributes = ['cn', 'ou', 'title','uid'],
                                                         paged_size= 200,
@@ -39,7 +39,7 @@ def getNameFromHumanities():
             nameAndFaculty = name + '&' + title + '&' + professorship_
             namelist.append(nameAndFaculty)
             print(nameAndFaculty)
-        
+            print(entry)
         if pause_counter == 2:
             delay = 0.1
             time.sleep(delay)

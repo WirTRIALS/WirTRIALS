@@ -4,11 +4,9 @@
 #Return Value: a list containing all the expertises of the researcher
 
 from bs4 import BeautifulSoup
-import requests
-import name
+from requests import get
 import random, time
-    
-
+import json
 
 def getExpertise(name):
 
@@ -18,12 +16,23 @@ def getExpertise(name):
     print("after " + str(delay) + " seconds, now extracting " + name)
     '''    
     expertList = []
-    expertList += getExpertiseFromResearchgate(name)
+    #expertList += getExpertiseFromResearchgate(name)
     #expertList += getExpertiseFromSpringer(name)
     #expertList += getExpertiseFromGooglescholar(name)
 
     return expertList
-
+    
+def getExpertiseFromMicrosoft(name):
+    
+    tuc = 'chemnitz university of technology'
+    headers = {'Ocp-Apim-Subscription-Key': '84b38efbbe4442c28184821a8a8b7795'}
+    
+    
+    r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/calchistogram?expr=Composite(And(AA.AuN=\'' + name + '\',AA.AfN=\'' + tuc + '\'))&model=latest&attributes=F.FN&count=20&offset=1', headers = headers)
+    
+    soup = BeautifulSoup(r.text, 'html.parser')
+    print(r.text)
+    
 def getExpertiseFromResearchgate(name):
     
     tuc = "Chemnitz"
@@ -141,4 +150,4 @@ def getExpertiseDemo(name):
     return list
 
     
-#getExpertiseFromResearchgate("Martin Gaedke")
+print(getExpertiseFromMicrosoft("matthias werner"))

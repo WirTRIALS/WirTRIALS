@@ -4,7 +4,7 @@ from itertools import product
 import time
 import json
 
-def getNameFromHumanities():
+def getName():
     total_entries = 0
     connection_kwargs = {
         'server': 'ldap.tu-chemnitz.de',
@@ -13,15 +13,17 @@ def getNameFromHumanities():
     conn = Connection(**connection_kwargs)
     pause_counter = 0
     combos = (''.join(i) for i in product(ascii_lowercase, repeat = 3)) # Looping through characters a-z 
+    namelist = []
     for keyword in combos:
+
         pause_counter += 1
         entry_generator = conn.extend.standard.paged_search(search_base = 'ou=Users,dc=tu-chemnitz,dc=de',
-                search_filter= '(& (objectClass=Person) (uid='+keyword+'*)(|(ou=*Fakultät*)))',
-                                                        search_scope = SUBTREE,
-                                                        attributes = ['cn', 'ou', 'title','uid'],
-                                                        paged_size= 200,
-                                                        get_operational_attributes=True)  
-        namelist = []
+                search_filter= '(& (objectClass=Person)(uid='+keyword+'*)(&(ou=*Fakultät*)(ou=*Professur*)))',
+                search_scope = SUBTREE,
+                attributes = ['cn', 'ou', 'title','uid'],
+                paged_size= 200,
+                get_operational_attributes=True)  
+
 
         for entry in entry_generator:
             #namse = ''.join(entry['attributes']['uid'])
@@ -32,27 +34,31 @@ def getNameFromHumanities():
                 if name.isascii():
                     name = entry['attributes']['cn'][1]
                 
-            faculty = entry['attributes']['ou'][0]
+            for faculty in entry['attributes']['ou']:
+                if 'Fakult' in faculty and 'professur' in faculty.lower():
+                    break
+            
+            #print(faculty)
             
             title = "Researcher"
-            if ''.join(entry['attributes']['title']) == "Prof.":
+            if "Prof." in ''.join(entry['attributes']['title']):
                 title = "Professor"
             
             nameAndFaculty = name + '&' + title + '&' + faculty
             namelist.append(nameAndFaculty)
             print(nameAndFaculty)
-
+            #print(entry)
         if pause_counter == 2:
             delay = 0.1
             time.sleep(delay)
             pause_counter = 0
         
-        
-    json_object = json.dumps(namelist) 
-
-    with open("sample.json", "w") as outfile: 
-        outfile.write(json_object) 
+    json_object = json.dumps(namelist, ensure_ascii=False) 
+    
+    with open("name_list.json", "w", encoding='utf8') as outfile: 
+        outfile.write(json_object)
+    
     print(total_entries)
     return(namelist)
 
-getNameFromHumanities()
+getName()

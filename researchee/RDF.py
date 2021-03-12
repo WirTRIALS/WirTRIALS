@@ -1,17 +1,15 @@
 #This module contains a procedure, which would create a file consisting of the researcher's name and his/her expertise. The file is in the format of RDF. In procedure, name.getName() and expertise.getExpertise() would be used.
 
 
-
-from name.name import getName
-from expertise import getExpertise
-from rdflib import Graph,Namespace,URIRef,Literal,RDF
+from rdflib import Graph,Namespace,URIRef,Literal,RDF,FOAF
+from bs4 import BeautifulSoup
+from requests import get
 import random, time
 import xml.etree.ElementTree as ET
-from bs4 import BeautifulSoup
-import requests
+import json
 
 def mapExpertise(expertise):
-    r = requests.get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
+    r = get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
     
     myroot = ET.fromstring(r.text)
     try:
@@ -23,11 +21,25 @@ def mapExpertise(expertise):
 
     return mytext
 
+def mapToWikidata(expertise):
 
+    API_ENDPOINT = "https://www.wikidata.org/w/api.php"
+
+    params = {
+        'action': 'wbsearchentities',
+        'format': 'json',
+        'language': 'en',
+        'search': expertise
+    }
+
+    r = get(API_ENDPOINT, params = params)
+
+    print(r.json()['search'][0])
+    
 def mapName(name):
     firstName = name.split(' ')[0]
     lastName = " ".join(name.split(' ')[1:])
-    r = requests.get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20AND%20affiliation-org-name%3Achemnitz&start=0&rows=1")
+    r = get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20AND%20affiliation-org-name%3Achemnitz&start=0&rows=1")
     
     #print(r.text)
     
@@ -38,7 +50,7 @@ def mapName(name):
         mytext = ''
     
     if mytext == '':
-        r = requests.get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20&start=0&rows=1")
+        r = get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20&start=0&rows=1")
         
         #print(r.text)
         
@@ -58,57 +70,68 @@ def mapName(name):
 
 
 
-def makeRDF():
+def addName():
+
+    input = open("name_list.json", "r", encoding='utf8') 
+    json_object = input.read()
+    name_list = json.loads(json_object)
+
     g = Graph()
-    g.parse("database.rdf")
+    #g.parse("database2.rdf")
 
-    schema = Namespace("http://schema.org/")
-    g.bind("schema", schema)
+    roles = Namespace("https://vocab.org/aiiso-roles/schema#")
+    aiiso = Namespace("https://vocab.org/aiiso/schema#")
+    example = Namespace("https://example.org/people/")
     
-    '''
-    for s, p, o in g.triples((None, RDF.type, schema.Person)):
-        if g.value(s,schema.knowsAbout):
-            print("has")
-            continue
-        name = g.value(s,schema.name)
-        print(name)
-    return 
-    '''
+    g.bind("roles", roles)
+    g.bind("aiiso", aiiso)
+    g.bind("example", example)
+    g.bind("foaf", FOAF)
     
-    namelist = getName()
+    for nameAndTitle in name_list:
 
-    print("namelist has been got")
-
-    for nameAndTitle in namelist:
+        #time.sleep(0.1)
+        
         print("***********************************")
         print("***********************************")
         name = nameAndTitle.split('&')[0]
         title = nameAndTitle.split('&')[1]
-        try:
-            professorship = nameAndTitle.split('&')[2]
-        except:
-            professorship = ''
+        faculty_list = nameAndTitle.split('&')[2].split(' | ')
+        
+        faculty = faculty_list[len(faculty_list)-1]
+        institute = ''
+        professorship = ''
+        
+        if len(faculty_list)>1:
+            professorship = faculty_list[0]
+        if len(faculty_list)>2:
+            institute = faculty_list[len(faculty_list)-2]
+
+
+            
+        # print(faculty)
+        # print(institute)
+        # print(professorship)
         
         nameID = mapName(name)
-        
-        print(name + " " + nameID)
         if nameID == '':
-            continue
+            nameID = example + '+'.join(name.split(' '))
+        print(nameID)
         
-        
-        g.add((URIRef(nameID),URIRef(schema + "name"),Literal(name)))
-        g.add((URIRef(nameID),URIRef(RDF.type),URIRef(schema + "Person")))
-        g.add((URIRef(nameID),URIRef(schema + "jobTitle"),Literal(title)))         
-        g.add((URIRef(nameID),URIRef(schema + "memberOf"),Literal(professorship)))
-        
+        s = URIRef(nameID)
+        g.add((s,URIRef(FOAF.name),Literal(name)))
+        g.add((s,URIRef(RDF.type),URIRef(roles + title)))
+        g.add((s,URIRef(aiiso + "ResearchGroup"),Literal(professorship)))
+        g.add((s,URIRef(aiiso + "Institute"),Literal(institute)))
+        g.add((s,URIRef(aiiso + "Faculty"),Literal(faculty)))
 
     
     print("RDF graph has been built")
 
-    g.serialize(destination="database.rdf", format="xml")
+    g.serialize(destination="database2.rdf", format="xml")
     #g.serialize(destination="demo_database.rdf", format="xml")
-    print("RDF graph has been written into database.rdf")
-
+    
+    input.close()
 
 
 def addExpertise():
@@ -172,11 +195,12 @@ def erase():
     g.parse("database.rdf")
     g.serialize(destination="database.rdf", format="xml")
     
-#mapName("Martin Gaedke")
+#print(mapName("André Langer"))
 #mapName("Matthias Werner")
 #mapName("Dang Vu Nguyen Hai")  
 #addExpertise()
 #mark()
-#makeRDF()
+#addName()
 #erase()
 #print(mapExpertise("Human-Computer Interaction"))
+#mapToWikidata('Image processing')
