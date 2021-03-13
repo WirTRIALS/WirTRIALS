@@ -1,37 +1,65 @@
-#This module contains a function, which could get all the expertises of a researher.
-#Function Name: getExpertiseFromResearchgate(),getExpertiseFromSpringer()
-#Parameters: a string which contains researcher's name
-#Return Value: a list containing all the expertises of the researcher
+#This module contains a function, which could get all the expertises of a researher and store them into a json file.
+#Function Name: getExpertise()
+#Input: name_list.json
+#Output: expertise_dict.json
 
 from bs4 import BeautifulSoup
 from requests import get
 import random, time
 import json
 
-def getExpertise(name):
+#get expertises of all names and store them into a json file
+def getExpertise():
+  
+    input = open("name_list.json", "r", encoding='utf8') 
+    json_object = input.read()
+    name_list = json.loads(json_object)
+    count = 0
+    dict = {}
+    for nameAndTitle in name_list:
 
-    '''
-    delay = 5 * random.random() + 5
-    time.sleep(delay)
-    print("after " + str(delay) + " seconds, now extracting " + name)
-    '''    
-    expertList = []
-    #expertList += getExpertiseFromResearchgate(name)
-    #expertList += getExpertiseFromSpringer(name)
-    #expertList += getExpertiseFromGooglescholar(name)
-
-    return expertList
+        count += 1
+        print(count)
+        time.sleep(10)
+        
+        #print("***********************************")
+        #print("***********************************")
+        name = nameAndTitle.split('&')[0]
+        str = getExpertiseFromMicrosoft(name)
+        
+        print(str)
+        
+        dict[nameAndTitle] = str
     
+        
+    json_object = json.dumps(dict, ensure_ascii=False) 
+    with open("expertise_dict.json", "w", encoding='utf8') as outfile: 
+        outfile.write(json_object)
+
+    input.close()
+    
+#get one's expertises as well as the occurence each expertise has in his/her papers
 def getExpertiseFromMicrosoft(name):
     
     tuc = 'chemnitz university of technology'
     headers = {'Ocp-Apim-Subscription-Key': '84b38efbbe4442c28184821a8a8b7795'}
     
+    name = name.lower().replace('-',' ')
+    name = name.replace('ä','a')
+    name = name.replace('ö','o')
+    name = name.replace('ü','u')
+    name = name.replace('é','e')
+    name = name.replace('ß','s')
+    print(name)
+
+    r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/calchistogram?expr=Composite(And(AA.AuN=\'' + name + '\',AA.AfN=\'' + tuc + '\'))&model=latest&attributes=F.FN&count=20&offset=0', headers = headers)
+    #r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr=Composite(And(AA.AuN=\'' + name + '\',AA.AfN=\'' + tuc + '\'))&model=latest&attributes=F.FN,Ti,Y,CC,AA.AuN,DOI&count=20', headers = headers)
+
+    #dict = json.loads(r.text)
+    #print(dict)
     
-    r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/calchistogram?expr=Composite(And(AA.AuN=\'' + name + '\',AA.AfN=\'' + tuc + '\'))&model=latest&attributes=F.FN&count=20&offset=1', headers = headers)
+    return r.text
     
-    soup = BeautifulSoup(r.text, 'html.parser')
-    print(r.text)
     
 def getExpertiseFromResearchgate(name):
     
@@ -41,7 +69,7 @@ def getExpertiseFromResearchgate(name):
     name = name.replace('ü','ue')
     name = name.replace('ö','oe')
     name = name.replace('ä','ae')
-    
+
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.182 Safari/537.36 Edg/88.0.705.74'}
     
     count = 1
@@ -144,10 +172,45 @@ def getExpertiseFromPublons(name):
         return expertList
     except:
         return []
-        
-def getExpertiseDemo(name):
-    list = ["web_engineering","software_engineering"]
-    return list
-
     
-print(getExpertiseFromMicrosoft("matthias werner"))
+#map expertise to WikiData
+def mapToWikidata(expertise):
+
+    API_ENDPOINT = "https://www.wikidata.org/w/api.php"
+
+    params = {
+        'action': 'wbsearchentities',
+        'format': 'json',
+        'language': 'en',
+        'search': expertise
+    }
+
+    r = get(API_ENDPOINT, params = params)
+
+    url = 'http:' + r.json()['search'][0]['url']
+    #print(url)
+    return url
+    
+def readExpertise():
+    input = open("expertise_dict.json", "r", encoding='utf8') 
+    json_object = input.read()
+    exp_dict = json.loads(json_object)
+    for key in exp_dict.keys():
+        exp = json.loads(exp_dict[key])
+        print(exp['histograms'][0]['histogram'])
+    #print(expertise_dict)
+    '''
+    for name in name_list:
+        name = name.split('&')[0].strip()
+        if name in list2:
+            print(name)
+        list2.add(name)
+    print(len(list2))
+    '''
+    input.close()
+    
+
+#getExpertise()
+mapToWikidata('Image processing')
+#readExpertise()
+#print(getExpertiseFromMicrosoft("Patrick Roßner"))

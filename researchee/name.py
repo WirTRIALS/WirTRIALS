@@ -1,9 +1,17 @@
+#This module contains a function, which could get all the names of TU Chemnitz and store them into a json file.
+#Function Name: getName()
+#Input: empty
+#Output: name_list.json
+
 from ldap3 import Server, Connection, SUBTREE, LEVEL
 from string import ascii_lowercase
 from itertools import product
+from requests import get
+import xml.etree.ElementTree as ET
 import time
 import json
 
+#get all names and store them into a json file
 def getName():
     total_entries = 0
     connection_kwargs = {
@@ -20,7 +28,7 @@ def getName():
         entry_generator = conn.extend.standard.paged_search(search_base = 'ou=Users,dc=tu-chemnitz,dc=de',
                 search_filter= '(& (objectClass=Person)(uid='+keyword+'*)(&(ou=*Fakultät*)(ou=*Professur*)))',
                 search_scope = SUBTREE,
-                attributes = ['cn', 'ou', 'title','uid'],
+                attributes = ['cn','givenName', 'sn', 'ou', 'title','uid'],
                 paged_size= 200,
                 get_operational_attributes=True)  
 
@@ -47,7 +55,7 @@ def getName():
             nameAndFaculty = name + '&' + title + '&' + faculty
             namelist.append(nameAndFaculty)
             print(nameAndFaculty)
-            #print(entry)
+            print(entry)
         if pause_counter == 2:
             delay = 0.1
             time.sleep(delay)
@@ -59,6 +67,53 @@ def getName():
         outfile.write(json_object)
     
     print(total_entries)
-    return(namelist)
+    print("name list has been written into name_list.json")
 
-getName()
+#map name to ORCiD
+def mapName(name):
+    firstName = name.split(' ')[0]
+    lastName = " ".join(name.split(' ')[1:])
+    r = get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20AND%20affiliation-org-name%3Achemnitz&start=0&rows=1")
+    
+    #print(r.text)
+    
+    myroot = ET.fromstring(r.text)
+    try:
+        mytext = myroot.find('.//{http://www.orcid.org/ns/expanded-search}orcid-id').text
+    except:
+        mytext = ''
+    
+    if mytext == '':
+        r = get("https://pub.orcid.org/v3.0/expanded-search/?q=(given-names%3A" + firstName + ")%20AND%20(family-name%3A" + lastName +")%20&start=0&rows=1")
+        
+        #print(r.text)
+        
+        myroot = ET.fromstring(r.text)
+        try:
+            mytext = myroot.find('.//{http://www.orcid.org/ns/expanded-search}orcid-id').text
+        except:
+            mytext = ''
+    
+    
+    if mytext == '':
+        return ''
+    else:
+        mytext = "https://orcid.org/" + mytext
+        #print(mytext)
+        return mytext
+
+#just for test
+def readName():
+    input = open("name_list.json", "r", encoding='utf8') 
+    json_object = input.read()
+    name_list = json.loads(json_object)
+    list2 = set()
+    for name in name_list:
+        name = name.split('&')[0].strip()
+        if name in list2:
+            print(name)
+        list2.add(name)
+    print(len(list2))
+    input.close()
+    
+#readName()
