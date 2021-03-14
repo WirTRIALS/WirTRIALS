@@ -109,10 +109,10 @@ def readName():
     name_list = json.loads(json_object)
     list2 = set()
     for name in name_list:
-        name = name.split('&')[0].strip()
-        if name in list2:
+        n = name.split('&')[0].strip()
+        if n in list2:
             print(name)
-        list2.add(name)
+        list2.add(n)
     print(len(list2))
     input.close()
     

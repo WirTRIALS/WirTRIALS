@@ -186,18 +186,38 @@ def mapToWikidata(expertise):
     }
 
     r = get(API_ENDPOINT, params = params)
+    if len(r.json()['search']) == 0:
+        return ''
 
     url = 'http:' + r.json()['search'][0]['url']
-    #print(url)
+
     return url
     
+#map expertise to FAST Linked Data
+def mapExpertise(expertise):
+    r = get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
+    
+    myroot = ET.fromstring(r.text)
+    try:
+        mytext = myroot.find('.//{http://www.loc.gov/MARC21/slim}subfield').text
+        mytext = "http://experimental.worldcat.org/fast/" + mytext[3:]
+    except:
+        return ''
+
+
+    return mytext
+
+
+#just for test
 def readExpertise():
     input = open("expertise_dict.json", "r", encoding='utf8') 
     json_object = input.read()
     exp_dict = json.loads(json_object)
+    print(len(exp_dict))
     for key in exp_dict.keys():
         exp = json.loads(exp_dict[key])
         print(exp['histograms'][0]['histogram'])
+        break
     #print(expertise_dict)
     '''
     for name in name_list:
@@ -211,6 +231,7 @@ def readExpertise():
     
 
 #getExpertise()
-mapToWikidata('Image processing')
+#print(mapToWikidata('Karush-Kuhn-Tucker conditions'))
 #readExpertise()
 #print(getExpertiseFromMicrosoft("Patrick Roßner"))
+#print(mapExpertise("Human-Computer Interaction"))

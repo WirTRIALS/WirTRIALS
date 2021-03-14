@@ -7,37 +7,9 @@ from requests import get
 import random, time
 import json
 from name import getName, mapName
-from expertise import getExpertiseFromMicrosoft
-
-#map expertise to FAST Linked Data
-def mapExpertise(expertise):
-    r = get("Http://experimental.worldcat.org/fast/search?query=oclc.topic+all+%22" + expertise +  "%22&sortKeys=usage&maximumRecords=1&httpAccept=application/xml")
-    
-    myroot = ET.fromstring(r.text)
-    try:
-        mytext = myroot.find('.//{http://www.loc.gov/MARC21/slim}subfield').text
-        mytext = "http://experimental.worldcat.org/fast/" + mytext[3:]
-    except:
-        return ''
+from expertise import getExpertiseFromMicrosoft, mapToWikidata
 
 
-    return mytext
-
-#map expertise to WikiData
-def mapToWikidata(expertise):
-
-    API_ENDPOINT = "https://www.wikidata.org/w/api.php"
-
-    params = {
-        'action': 'wbsearchentities',
-        'format': 'json',
-        'language': 'en',
-        'search': expertise
-    }
-
-    r = get(API_ENDPOINT, params = params)
-
-    print(r.json()['search'][0])
     
 def test():
 
@@ -132,37 +104,81 @@ def addName():
 
 def addExpertise():
     g = Graph()
-    g.parse("database.json",format="json-ld")
+    g.parse("database3.json",format="json-ld")
+
+    roles = Namespace("https://vocab.org/aiiso-roles/schema#")
+    aiiso = Namespace("https://vocab.org/aiiso/schema#")
+    example = Namespace("https://example.org/people/")
     schema = Namespace("http://schema.org/")
     
-    for s, p, o in g.triples((None, RDF.type, schema.Person)):
-        if g.value(s,schema.knowsAbout):
-            print("visited")
+    g.bind("roles", roles)
+    g.bind("aiiso", aiiso)
+    g.bind("example", example)
+    g.bind("schema", schema)
+    
+    input = open("expertise_dict.json", "r", encoding='utf8') 
+    json_object = input.read()
+    exp_dict = json.loads(json_object)
+    
+    for key in exp_dict.keys():
+        print(key)
+        
+        exp = json.loads(exp_dict[key])
+        if len(exp['histograms'][0]['histogram']) == 0:
             continue
+
+        name = key.split('&')[0]
+
+        professorship = key.split('&')[2].split('|')[0].strip()
+
+        for s, p, o in g.triples((None, schema.name, Literal(name))):
             
-        print("***********************************")
-        print("***********************************")
-        name = g.value(s,schema.name)
-        print(name)
+            if str(g.value(s,aiiso.ResearchGroup)) != professorship:
+                continue
+            
+            print("***********************************")
+            print("***********************************")
+            
+            exp_list = exp['histograms'][0]['histogram']
+            
+                        
+            for expertise in exp_list:
+                exp_name = expertise['value']
+                exp_count = expertise['count']
 
-        dict = getExpertiseFromMicrosoft(name)
-        #expList = dict['histograms'][0]['histogram']
-        print(dict)
-        if len(expList) != 0:
-
-            for exp in expList:
-                expID = mapToWikidata(exp)
+                time.sleep(1)
                 
-                if expID == '':
+                exp_id = mapToWikidata(exp_name)
+                
+                if exp_id == '':
                     continue
+                    
+                g.add((URIRef(exp_id),URIRef(RDF.type),URIRef(schema.DefinedTerm)))
+                g.add((URIRef(exp_id),URIRef(schema.name),Literal(exp_name)))
                 
-                g.add((URIRef(expID),URIRef(schema + "name"),Literal(exp)))
-                g.add((s,URIRef(schema + "knowsAbout"),URIRef(expID)))    
-        
-        
-        break
-            
-    #g.serialize(destination="database.rdf", format="xml")
+                
+                bn = BNode()
+                g.add((bn,URIRef(schema.identifier),URIRef(exp_id)))
+                g.add((bn,URIRef(schema.frequency),Literal(exp_count)))
+                
+                g.add((s,URIRef(schema + "knowsAbout"),bn))
+                
+
+    context = { "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "type": "rdf:type",
+    "schema": "http://schema.org/",
+    "name": "schema:name",
+    "jobTitle": "schema:jobTitle",
+    "knowsAbout": "schema:knowsAbout",
+    "aiiso": "https://vocab.org/aiiso/schema#",
+    "Faculty": "aiiso:Faculty",
+    "Institute": "aiiso:Institute",
+    "ResearchGroup": "aiiso:ResearchGroup",
+    "roles": "https://vocab.org/aiiso-roles/schema#",
+    "Researcher": "roles:Researcher",
+    "Professor": "roles:Professor",
+    "example": "https://example.org/people/"}        
+    g.serialize(destination="database3.json", context = context, format="json-ld")
     return
 
 
@@ -181,15 +197,37 @@ def mark():
 
 def erase():
     g = Graph()
-    g.parse("database.rdf")
-    g.serialize(destination="database.rdf", format="xml")
+    g.parse("database.json",format="json-ld")
+
+    roles = Namespace("https://vocab.org/aiiso-roles/schema#")
+    aiiso = Namespace("https://vocab.org/aiiso/schema#")
+    example = Namespace("https://example.org/people/")
+    schema = Namespace("http://schema.org/")
+    
+    g.bind("roles", roles)
+    g.bind("aiiso", aiiso)
+    g.bind("example", example)
+    g.bind("schema", schema)
+    context = { "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "type": "rdf:type",
+    "schema": "http://schema.org/",
+    "name": "schema:name",
+    "jobTitle": "schema:jobTitle",
+    "knowsAbout": "schema:knowsAbout",
+    "aiiso": "https://vocab.org/aiiso/schema#",
+    "Faculty": "aiiso:Faculty",
+    "Institute": "aiiso:Institute",
+    "ResearchGroup": "aiiso:ResearchGroup",
+    "roles": "https://vocab.org/aiiso-roles/schema#",
+    "Researcher": "roles:Researcher",
+    "Professor": "roles:Professor",
+    "example": "https://example.org/people/"}
+    g.serialize(destination="database.json", context = context, format="json-ld")
 
 
-#getName()
+
 #addName()
-#addExpertise()
+addExpertise()
 #mark()
-
 #erase()
-#print(mapExpertise("Human-Computer Interaction"))
-mapToWikidata('Image processing')
+
