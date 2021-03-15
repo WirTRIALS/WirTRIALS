@@ -10,13 +10,29 @@ from name import getName, mapName
 from expertise import getExpertiseFromMicrosoft, mapToWikidata
 
 
-    
+context = { "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+"schema": "http://schema.org/",
+"name": "schema:name",
+"jobTitle": "schema:jobTitle",
+"knowsAbout": "schema:knowsAbout",
+"frequency": "schema:frequency",
+"identifier": "schema:identifier",
+"Person": "schema:Person",
+"DefinedTerm": "schema:DefinedTerm",
+"aiiso": "https://vocab.org/aiiso/schema#",
+"Faculty": "aiiso:Faculty",
+"Institute": "aiiso:Institute",
+"ResearchGroup": "aiiso:ResearchGroup",
+"roles": "https://vocab.org/aiiso-roles/schema#",
+"Researcher": "roles:Researcher",
+"Professor": "roles:Professor",
+"example": "https://example.org/people/"}
+
 def test():
 
     g = Graph()
     #g.parse("database2.rdf")
 
-    
     s = URIRef('abc')
     o = BNode()
     g.add((o,URIRef('age'),Literal('30')))
@@ -41,7 +57,7 @@ def addName():
 
     g = Graph()
     #g.parse("database.json")
-
+    
     roles = Namespace("https://vocab.org/aiiso-roles/schema#")
     aiiso = Namespace("https://vocab.org/aiiso/schema#")
     example = Namespace("https://example.org/people/")
@@ -86,16 +102,15 @@ def addName():
         print(nameID)
         
         s = URIRef(nameID)
-        g.add((s,URIRef(schema.name),Literal(name)))
-        g.add((s,URIRef(RDF.type),URIRef(schema.Person)))
-        g.add((s,URIRef(schema.jobTitle),URIRef(roles + title)))
-        g.add((s,URIRef(aiiso + "ResearchGroup"),Literal(professorship)))
-        g.add((s,URIRef(aiiso + "Institute"),Literal(institute)))
-        g.add((s,URIRef(aiiso + "Faculty"),Literal(faculty)))
+        g.add((s,schema.name,Literal(name)))
+        g.add((s,RDF.type,schema.Person))
+        g.add((s,schema.jobTitle,Literal(title)))
+        g.add((s,aiiso.ResearchGroup,Literal(professorship)))
+        g.add((s,aiiso.Institute,Literal(institute)))
+        g.add((s,aiiso.Faculty,Literal(faculty)))
 
-    
     print("RDF graph has been built")
-    context = { "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#", "type": "rdf:type", "schema": "http://schema.org/", "roles": "https://vocab.org/aiiso-roles/schema#", "aiiso": "https://vocab.org/aiiso/schema#", "example": "https://example.org/people/" }
+
     g.serialize(destination="database.json", context = context, format="json-ld")
     #g.serialize(destination="demo_database.rdf", format="xml")
     
@@ -153,34 +168,17 @@ def addExpertise():
                 if exp_id == '':
                     continue
                     
-                g.add((URIRef(exp_id),URIRef(RDF.type),URIRef(schema.DefinedTerm)))
-                g.add((URIRef(exp_id),URIRef(schema.name),Literal(exp_name)))
+                g.add((URIRef(exp_id),RDF.type,schema.DefinedTerm))
+                g.add((URIRef(exp_id),schema.name,Literal(exp_name)))
                 
                 
                 bn = BNode()
-                g.add((bn,URIRef(schema.identifier),URIRef(exp_id)))
-                g.add((bn,URIRef(schema.frequency),Literal(exp_count)))
+                g.add((bn,schema.identifier,URIRef(exp_id)))
+                g.add((bn,schema.frequency,Literal(exp_count)))
                 
-                g.add((s,URIRef(schema + "knowsAbout"),bn))
-                
-
-    context = { "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "type": "rdf:type",
-    "schema": "http://schema.org/",
-    "name": "schema:name",
-    "jobTitle": "schema:jobTitle",
-    "knowsAbout": "schema:knowsAbout",
-    "aiiso": "https://vocab.org/aiiso/schema#",
-    "Faculty": "aiiso:Faculty",
-    "Institute": "aiiso:Institute",
-    "ResearchGroup": "aiiso:ResearchGroup",
-    "roles": "https://vocab.org/aiiso-roles/schema#",
-    "Researcher": "roles:Researcher",
-    "Professor": "roles:Professor",
-    "example": "https://example.org/people/"}        
-    g.serialize(destination="database3.json", context = context, format="json-ld")
-    return
-
+                g.add((s,schema.knowsAbout,bn))
+                      
+    g.serialize(destination="database.json", context = context, format="json-ld")
 
    
 def mark():
@@ -208,26 +206,14 @@ def erase():
     g.bind("aiiso", aiiso)
     g.bind("example", example)
     g.bind("schema", schema)
-    context = { "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-    "type": "rdf:type",
-    "schema": "http://schema.org/",
-    "name": "schema:name",
-    "jobTitle": "schema:jobTitle",
-    "knowsAbout": "schema:knowsAbout",
-    "aiiso": "https://vocab.org/aiiso/schema#",
-    "Faculty": "aiiso:Faculty",
-    "Institute": "aiiso:Institute",
-    "ResearchGroup": "aiiso:ResearchGroup",
-    "roles": "https://vocab.org/aiiso-roles/schema#",
-    "Researcher": "roles:Researcher",
-    "Professor": "roles:Professor",
-    "example": "https://example.org/people/"}
-    g.serialize(destination="database.json", context = context, format="json-ld")
+    
+
+    g.serialize(destination="database3.json", context = context, format="json-ld")
 
 
 
-#addName()
-addExpertise()
+addName()
+#addExpertise()
 #mark()
 #erase()
 

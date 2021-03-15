@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "DefinedTerm": "schema:DefinedTerm",
+    "Faculty": "aiiso:Faculty",
+    "Institute": "aiiso:Institute",
+    "Person": "schema:Person",
+    "Professor": "roles:Professor",
+    "ResearchGroup": "aiiso:ResearchGroup",
+    "Researcher": "roles:Researcher",
+    "aiiso": "https://vocab.org/aiiso/schema#",
+    "example": "https://example.org/people/",
+    "frequency": "schema:frequency",
+    "identifier": "schema:identifier",
+    "jobTitle": "schema:jobTitle",
+    "knowsAbout": "schema:knowsAbout",
+    "name": "schema:name",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "roles": "https://vocab.org/aiiso-roles/schema#",
+    "schema": "http://schema.org/"
+  },
+  "@id": "example:Aaron+Bielejewski",
+  "@type": "Person",
+  "Faculty": "Philosophische Fakultät",
+  "Institute": "Institut für Medienforschung",
+  "ResearchGroup": "Professur Kommunikations- und Medienwissenschaft",
+  "jobTitle": "Researcher",
+  "name": "Aaron Bielejewski"
+}
