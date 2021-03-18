@@ -199,4 +199,65 @@
     aos_init();
   });
 
+// Initialize Firebase
+var firebaseConfig = {
+  apiKey: "AIzaSyBu54Ve6o5ibibRvoCljo5qTDlSFPvULgw",
+  authDomain: "contactform-28e4f.firebaseapp.com",
+  projectId: "contactform-28e4f",
+  storageBucket: "contactform-28e4f.appspot.com",
+  messagingSenderId: "952721995904",
+  appId: "1:952721995904:web:616755b3a27799caf60e65",
+  measurementId: "G-QQ4S4W4BCL"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  //Get value
+  var name = getInputVal('name');
+  var email = getInputVal('email');
+  var subject = getInputVal('subject');
+  var message = getInputVal('message');
+
+  // Save message
+  saveMessage(name, email, subject, message);
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+
+  // Hide alert
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },3000);
+
+  // Reset form
+  document.getElementById('contactForm').reset();
+}
+
+// get form value
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save to firebase database
+function saveMessage(name, email, subject, message){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    email: email,
+    subject: subject,
+    message: message
+  });
+}
+
+
 })(jQuery);
