@@ -228,19 +228,34 @@ function submitForm(e){
   var subject = getInputVal('subject');
   var message = getInputVal('message');
 
-  // Save message
-  saveMessage(name, email, subject, message);
+  if( name == '' || email == '' || subject == '' || message == '')
+	  return;
+  else{
+		  
+	  // Save message
+	  saveMessage(name, email, subject, message);
 
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
+	  // Show alert
+	  document.querySelector('.alert').style.display = 'block';
 
-  // Hide alert
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },3000);
+	  // Hide alert
+	  setTimeout(function(){
+		document.querySelector('.alert').style.display = 'none';
+	  },3000);
 
-  // Reset form
-  document.getElementById('contactForm').reset();
+	  // Reset form
+	  document.getElementById('contactForm').reset();
+	   
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+
+		}
+	  };
+	  xhttp.open("POST", "https://script.google.com/macros/s/AKfycby_jFkeG7nlhRoqeoQCA0v5H9rk7AGTsNwDGtkED6zhiH38YANhq66UV8VawAwvf9rhDQ/exec", true);
+	  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	  xhttp.send("name="+name+"&email="+email+"&subject="+subject+"&message="+message);
+  }
 }
 
 // get form value
