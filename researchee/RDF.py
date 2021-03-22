@@ -181,19 +181,9 @@ def addExpertise():
     g.serialize(destination="database.json", context = context, format="json-ld")
 
    
-def mark():
-    g = Graph()
-    g.parse("database.rdf")
-
-    schema = Namespace("http://schema.org/")
-    g.bind("schema", schema)
-    
-    for s, p, o in g.triples((None, RDF.type, schema.Person)):
-        g.add((s,URIRef(schema + "traversed"),Literal("No")))
-    g.serialize(destination="database.rdf", format="xml")
 
 
-def erase():
+def jsonToXML():
     g = Graph()
     g.parse("database.json",format="json-ld")
 
@@ -208,12 +198,11 @@ def erase():
     g.bind("schema", schema)
     
 
-    g.serialize(destination="database3.json", context = context, format="json-ld")
+    g.serialize(destination="database.xml", format="xml")
 
 
 
-addName()
+#addName()
 #addExpertise()
-#mark()
-#erase()
+jsonToXML()
 

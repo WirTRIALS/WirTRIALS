@@ -116,4 +116,4 @@ def readName():
     print(len(list2))
     input.close()
     
-#readName()
+readName()
