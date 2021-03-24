@@ -229,7 +229,20 @@ def readExpertise():
     '''
     input.close()
     
-
+def getSecondLevelExpertise():
+    headers = {'Ocp-Apim-Subscription-Key': '84b38efbbe4442c28184821a8a8b7795'}
+    r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr=FL=0&model=latest&offset=0&count=20&attributes=FL,FC.FN', headers = headers)
+    json_object = json.loads(r.text)
+    entities = json_object['entities']
+    exp_list=[]
+    for entity in entities:
+        for exp in entity['FC']:
+            exp_list.append(exp['FN'])
+    json_object = json.dumps(exp_list) 
+    print(len(exp_list))
+    with open("2nd_level_expertise_list.json", "w", encoding='utf8') as outfile: 
+        outfile.write(json_object)
+getSecondLevelExpertise()        
 #getExpertise()
 #print(mapToWikidata('Karush-Kuhn-Tucker conditions'))
 #readExpertise()
