@@ -1,7 +1,7 @@
 # This module contains a function, which could get all the expertises of a researher and store them into a json file.
-# Function Name: getExpertise()
+# Function Name: getPublications()
 # Input: name_list.json
-# Output: expertise_dict.json
+# Output: publication_dict.json
 
 from bs4 import BeautifulSoup
 from requests import get
