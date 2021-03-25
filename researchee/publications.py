@@ -1,4 +1,4 @@
-# This module contains a function, which could get all the expertises of a publications and store them into a json file.
+# This module contains a function, which could get all the  publications and store them into a json file.
 # Function Name: getPublications()
 # Input: name_list.json
 # Output: publication_dict.json
