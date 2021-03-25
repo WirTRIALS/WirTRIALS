@@ -237,7 +237,8 @@ def getSecondLevelExpertise():
     exp_list=[]
     for entity in entities:
         for exp in entity['FC']:
-            exp_list.append(exp['FN'])
+            if exp['FN'].lower() not in exp_list:
+                exp_list.append(exp['FN'].lower())
     json_object = json.dumps(exp_list) 
     print(len(exp_list))
     with open("2nd_level_expertise_list.json", "w", encoding='utf8') as outfile: 
