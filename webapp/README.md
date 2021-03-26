@@ -1,4 +1,3 @@
-
 ### The web app is built on Laravel 8.
 
 #### PHP REQUIREMENT 7.4
