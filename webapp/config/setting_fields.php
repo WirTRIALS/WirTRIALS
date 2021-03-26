@@ -23,7 +23,7 @@ return [
                 'label' => 'Footer Text', // you know what label it is
                 'rules' => 'required|min:2', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => '<a href="https://github.com/nasirkhan/laravel-starter/">Built with ♥ from Bangladesh</a>', // default value if you want
+                'value' => '', // default value if you want
             ],
             [
                 'type'  => 'checkbox', // input fields type
@@ -121,7 +121,7 @@ return [
                 'label' => 'Meta Site Name', // you know what label it is
                 'rules' => 'required', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'Awesome Laravel | A Laravel Starter Project', // default value if you want
+                'value' => '', // default value if you want
             ],
             [
                 'type'  => 'text', // input fields type
@@ -130,7 +130,7 @@ return [
                 'label' => 'Meta Description', // you know what label it is
                 'rules' => 'required', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'A CMS like modular starter application project built with Laravel.', // default value if you want
+                'value' => '', // default value if you want
             ],
             [
                 'type'  => 'text', // input fields type
@@ -139,7 +139,7 @@ return [
                 'label' => 'Meta Keyword', // you know what label it is
                 'rules' => 'required', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'Web Application, Laravel,Laravel starter,Bootstrap,Admin,Template,Open,Source, nasir khan, nasirkhan', // default value if you want
+                'value' => '', // default value if you want
             ],
             [
                 'type'  => 'text', // input fields type
@@ -157,7 +157,7 @@ return [
                 'label' => 'Meta Facebook App Id', // you know what label it is
                 'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => '569561286532601', // default value if you want
+                'value' => '', // default value if you want
             ],
             [
                 'type'  => 'text', // input fields type
@@ -166,7 +166,7 @@ return [
                 'label' => 'Meta Twitter Site Account', // you know what label it is
                 'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => '@nasir8891', // default value if you want
+                'value' => '', // default value if you want
             ],
             [
                 'type'  => 'text', // input fields type
@@ -175,7 +175,7 @@ return [
                 'label' => 'Meta Twitter Creator Account', // you know what label it is
                 'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => '@nasir8891', // default value if you want
+                'value' => '', // default value if you want
             ],
         ],
     ],
@@ -192,7 +192,7 @@ return [
                 'label' => 'Google Analytics', // you know what label it is
                 'rules' => '', // validation rule of laravel
                 'class' => '', // any class for input
-                'value' => 'UA-36770598-2', // default value if you want
+                'value' => '', // default value if you want
             ],
         ],
 

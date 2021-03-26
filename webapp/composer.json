@@ -1,7 +1,7 @@
 {
-    "name": "nasirkhan/laravel-starter",
-    "description": "A CMS like modular Laravel starter project.",
-    "keywords": ["framework", "laravel", "cms", "starter", "admin", "admin dashboard"],
+    "name": "wirtrials/webapp",
+    "description": "Planspiel (Startup experience) Web Engineering project",
+    "keywords": ["framework", "laravel"],
     "license": "GPL-3.0-or-later",
     "type": "project",
     "version": "v8.3.0",

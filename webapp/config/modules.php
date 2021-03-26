@@ -153,10 +153,10 @@ return [
     */
 
     'composer' => [
-        'vendor' => 'nasirkhan',
+        'vendor' => 'swagatgyawali',
         'author' => [
-            'name' => 'Nasir Khan',
-            'email' => 'nasir8891@gmail.com',
+            'name' => 'Swagat Gyawali',
+            'email' => 'unityenator@gmail.com',
         ],
     ],
     /*
