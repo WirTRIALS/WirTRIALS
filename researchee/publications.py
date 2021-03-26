@@ -43,11 +43,11 @@ def getPublicationsFromMicrosoft(name):
     headers = {'Ocp-Apim-Subscription-Key': '97f6254b16834610995f63512ba79d7c'}
 
     name = name.lower().replace('-', ' ')
-    name = name.replace('ä', 'a')
-    name = name.replace('ö', 'o')
-    name = name.replace('ü', 'u')
-    name = name.replace('é', 'e')
-    name = name.replace('ß', 's')
+    # name = name.replace('ä', 'a')
+    # name = name.replace('ö', 'o')
+    # name = name.replace('ü', 'u')
+    # name = name.replace('é', 'e')
+    # name = name.replace('ß', 's')
     print(name)
 
 
