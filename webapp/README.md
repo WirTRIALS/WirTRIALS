@@ -1,10 +1,11 @@
 
+The web app is built on Laravel 8.
 
-####LARAVEL FRAMEWORK
 
-###PHP REQUIREMENT 7.4
 
-###MYSQL DATABASE
+### PHP REQUIREMENT 7.4
+
+### MYSQL DATABASE
 --------------------------------
 Create New database 
 
@@ -12,7 +13,7 @@ Rename .env.example to .env
 (Change database configuration & mail configuration in .env file)
 
 
-###Commands:
+### Commands:
 
 composer update
 
