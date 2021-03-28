@@ -55,9 +55,12 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
+        $userId = Auth::id();
+        $redirectTo = '/profile/'.$userId;
+
         event(new Registered($user));
         event(new UserRegistered($user));
 
-        return redirect(RouteServiceProvider::HOME);
+        return redirect($redirectTo);
     }
 }

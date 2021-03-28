@@ -150,16 +150,18 @@ $(document).ready(function(){
     nav_bar = $(".navbar-toggler-icon").is(":visible");
     if(nav_bar == true){
         
-        $(".navbar-collapse.show,a").css("color","black")
+        $(".nav-item > a").css("color","black")
+    }else{
+        $(".nav-item > a").css("color","white")
     }
 })
 
 $( window ).resize(function() {
     nav_bar = $(".navbar-toggler-icon").is(":visible");
     if(nav_bar == true){
-        $(".navbar-collapse.show,a").css("color","black")
+        $(".nav-item > a").css("color","black")
     }else{
-        $(".navbar-collapse.show,a").css("color","white")
+        $(".nav-item > a").css("color","white")
     }
 });
 </script>

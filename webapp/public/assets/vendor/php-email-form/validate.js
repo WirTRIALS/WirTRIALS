@@ -142,7 +142,7 @@
         this_form.find('.error-message').slideDown().html(msg);
       }
     }).fail( function(data){
-      console.log(data);
+      
       var error_msg = "Form submission failed!<br>";
       if(data.statusText || data.status) {
         error_msg += 'Status:';
