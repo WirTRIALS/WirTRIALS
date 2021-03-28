@@ -1,0 +1,27 @@
+
+#myChart {
+    margin-left:5% !important;
+    width: 85% !important;
+    height: 500px !important;
+    }
+    
+    #pieChart {
+    margin-left:5% !important;
+    width: 85% !important;
+    height: 500px !important;
+    }
+    
+    .fas.fa-star{
+        cursor:pointer !important;
+    }
+    
+    p{
+        margin-bottom:0.1rem!important;
+    }
+    
+    #pubs_tabs_subs{
+        padding:20px;border:1px solid #bfbfbf;box-shadow:5px 5px 5px 5px #bfbfbf;
+        overflow:scroll;display:block;max-height:0px !important;border-radius:10px !important;
+    
+    }
+    

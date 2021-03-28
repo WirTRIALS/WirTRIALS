@@ -12,36 +12,6 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 
-<style>
-
-#myChart {
-margin-left:5% !important;
-width: 85% !important;
-height: 500px !important;
-}
-
-#pieChart {
-margin-left:5% !important;
-width: 85% !important;
-height: 500px !important;
-}
-
-.fas.fa-star{
-	cursor:pointer !important;
-}
-
-p{
-	margin-bottom:0.1rem!important;
-}
-
-#pubs_tabs_subs{
-	padding:20px;border:1px solid #bfbfbf;box-shadow:5px 5px 5px 5px #bfbfbf;
-	overflow:scroll;display:block;max-height:0px !important;border-radius:10px !important;
-
-}
-
-
-</style>
 
 <p id="fav_sel_name" style="display:none">{{$name}}</p>
 <p id="facet_sel_name" style="display:none">{{$facet}}</p>
@@ -95,7 +65,7 @@ p{
 
 					</h4>
 					<a target="_blank" id="profGraph02"></a>
-					<ul>
+					<ul id="prgr03">
 						<li><h6 style="color:#21344e" id="profGraph03"></h6></li>
 						<li><h6 style="color:#21344e" id="profGraph04"></h6></li>
 						<li><h6 style="color:#21344e" id="profGraph05"></h6></li>
@@ -188,7 +158,7 @@ p{
 				var faacc = $("#facet_sel_name").text()
 				$("#input").val(favorite_name)
 				$("#facet").val(facet_name_fav)
-				debugger
+				
 				window.history.pushState({}, document.title, "/" + "product");
 
 				search(favorite_name)
@@ -408,7 +378,7 @@ p{
 
 
 function search(name) {
-debugger
+
 
 					$("#profGraph01").text("")
 					$("#profGraph02").text("")
@@ -442,10 +412,13 @@ debugger
 					$("#profGraph03").text(initData.nodes[2]["id"])
 					$("#profGraph04").text(initData.nodes[3]["id"])
 					$("#profGraph05").text(initData.nodes[4]["id"])
+
+					$("#prgr03").css("display","block")
 				}else{
 					$("#profGraph01").text((initData.nodes[0]["id"]).toUpperCase())
 					$("#profGraph02").text(initData.nodes[1]["id"])
 					$("#profGraph02").attr("href",initData.nodes[1]["id"])
+					$("#prgr03").css("display","none")
 				}
 				
 
