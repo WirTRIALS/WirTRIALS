@@ -23,6 +23,7 @@
     @stack('before-styles')
 
     <link rel="stylesheet" href="{{ mix('css/frontend.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/site.css') }}">
 
     @stack('after-styles')
 
@@ -30,7 +31,7 @@
     @stack('before-scripts')
 
     <script src="{{ mix('js/frontend.js') }}"></script>
-
+   
     @stack('after-scripts')
 </head>
 
@@ -45,7 +46,6 @@
     </main>
 
     @include('frontend.includes.footer')
-
 </body>
 
 

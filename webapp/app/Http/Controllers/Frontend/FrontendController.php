@@ -23,14 +23,19 @@ class FrontendController extends Controller
     public function product()
     {
         $name ="";
+        $facet="";
         if (!empty($_GET['name'])) {
             $name = (string)$_GET['name'];
+        }
+
+        if (!empty($_GET['facet'])) {
+            $facet = (string)$_GET['facet'];
         }
 
         $body_class = '';
         
 
-        return view('frontend.product', compact('body_class'),['name' => $name]);
+        return view('frontend.product', compact('body_class'),['name' => $name,'facet'=>$facet]);
     }
     
     public function handler(){
@@ -480,6 +485,7 @@ class FrontendController extends Controller
         $fav = new Favorites(); 
         $fav->userid = (string)Auth::id();
         $fav->professor = $request->get('name');
+        $fav->type = $request->get('facet');
         $fav->save();
         return "true";
     }
@@ -493,29 +499,6 @@ class FrontendController extends Controller
         return $res;
     }
 
-    /**
-     * Privacy Policy Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function privacy()
-    {
-        $body_class = '';
-
-        return view('frontend.privacy', compact('body_class'));
-    }
-
-    /**
-     * Terms & Conditions Page
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function terms()
-    {
-        $body_class = '';
-
-        return view('frontend.terms', compact('body_class'));
-    }
 
     public function contact(Request $request) {
 

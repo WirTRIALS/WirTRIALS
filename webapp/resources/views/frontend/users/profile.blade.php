@@ -68,7 +68,6 @@
                                         // [ 'name' => 'mobile' ],
                                         [ 'name' => 'username' ],
                                         [ 'name' => 'gender' ],
-                                        [ 'name' => 'bio' ],
                                         // [ 'name' => 'date_of_birth', 'type' => 'date'],
                                         //[ 'name' => 'url_website', 'type' => 'url' ],
                                         // [ 'name' => 'url_facebook', 'type' => 'url' ],
@@ -140,16 +139,19 @@ $(document).ready(function(){
 			method: "GET",
 			success:function(data){
                 $(data).each(function(i,v) {
-                    $name = v["professor"]
-                    css = css + "<a class='badge badge-secondary' onclick='gotoProd(\""+$name+"\")'>"+$name+"</a>"
+                    name = v["professor"]
+                    facet = v["type"]
+                    css = css + "<a class='badge badge-secondary'"+
+                     "onclick='gotoProd(\""+name+"\",\""+facet+"\")'>"+name+"</a>"
 				});
                 $("#favorites").append(css)
            }
 		})
 })
 
-function gotoProd(name){
-   window.location.href = '/product?name='+name
+function gotoProd(name,facet){
+   
+   window.location.href = '/product?name='+name+'&facet='+facet
 }
 </script>
 

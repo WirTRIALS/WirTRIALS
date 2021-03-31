@@ -12,36 +12,9 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 
-<style>
-
-#myChart {
-margin-left:5% !important;
-width: 85% !important;
-height: 500px !important;
-}
-
-#pieChart {
-margin-left:5% !important;
-width: 85% !important;
-height: 500px !important;
-}
-
-.fas.fa-star{
-	cursor:pointer !important;
-}
-
-p{
-	margin-bottom:0.1rem!important;
-}
-
-#pubs_tabs_subs{
-	padding:20px;border:1px solid #bfbfbf;box-shadow:5px 5px 5px 5px #bfbfbf;
-					overflow-y:scroll;display:block;max-height:0px !important;
-}
-
-</style>
 
 <p id="fav_sel_name" style="display:none">{{$name}}</p>
+<p id="facet_sel_name" style="display:none">{{$facet}}</p>
 <?php if (Auth::check()){ ?>
 	<p id="fav_sel_check" style="display:none">true</p>
 <?php }else{ ?>
@@ -71,7 +44,6 @@ p{
 				<div class="col-1"></div>
         </div>
     </div>
-    <div class="pattern bottom"></div>
 </section>
 
 
@@ -92,19 +64,23 @@ p{
 
 					</h4>
 					<a target="_blank" id="profGraph02"></a>
-					<h6 style="color:#21344e" id="profGraph03"></h5>
-					<h6 style="color:#21344e" id="profGraph04"></h5>
-					<h6 style="color:#21344e" id="profGraph05"></h5>
+					<ul id="prgr03">
+						<li><h6 style="color:#21344e" id="profGraph03"></h6></li>
+						<li><h6 style="color:#21344e" id="profGraph04"></h6></li>
+						<li><h6 style="color:#21344e" id="profGraph05"></h6></li>
+					</ul>
+					
+			
 
 				</div>	
 			</div>
 
 			<div class="col-7">
 				<ul style="" class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
+                    <li class="nav-itemasd">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Graph</a>
                     </li>
-					<li class="nav-item">
+					<li class="nav-itemasd">
                         <a class="nav-link" id="pubs-tab" data-toggle="tab" href="#pubs" role="tab" aria-controls="pubs" aria-selected="true">Publications</a>
                     </li>
                 </ul>
@@ -176,8 +152,14 @@ p{
 		
 		if(is_logged == "true"){
 			favorite_name = $("#fav_sel_name").text()
+			facet_name_fav = $("#facet_sel_name").text()
 			if(favorite_name){
+				var faacc = $("#facet_sel_name").text()
+				$("#input").val(favorite_name)
+				$("#facet").val(facet_name_fav)
+				
 				window.history.pushState({}, document.title, "/" + "product");
+
 				search(favorite_name)
 			}
 		}
@@ -274,8 +256,7 @@ p{
 				$(data).each(function(i,v) {
 					re_data = v["researcher"];
 					pr_data = v["professor"];
-					console.log(re_data)
-					console.log(pr_data)
+					
 
 					for(var i =0;i < re_data.length;i++){
 						re_count.push(re_data[i]["y"])
@@ -333,6 +314,9 @@ p{
 			name = $("#profGraph01").text()
 		}
 
+		facettt = $("#facet").val()
+
+		
 		
 		
 		var is_exist = 0
@@ -355,7 +339,7 @@ p{
 			
 			$.ajax({
 				url:"/favorites",
-				data:{name:name,"_token": "{{ csrf_token() }}"},
+				data:{name:name,facet:facettt,"_token": "{{ csrf_token() }}"},
 				method: "POST",
 				success:function(data){
 					
@@ -395,8 +379,6 @@ p{
 function search(name) {
 
 
-
-			
 					$("#profGraph01").text("")
 					$("#profGraph02").text("")
 					$("#profGraph02").removeAttr("href")
@@ -419,7 +401,7 @@ function search(name) {
 			success: function result(data){
 				$("#loadingDiv").css("display","none")
 				var initData = JSON.parse(data);
-				console.log(initData)
+			
 				var search_type = document.getElementById('facet').value
 
 				if(search_type == "researcher"){
@@ -429,10 +411,13 @@ function search(name) {
 					$("#profGraph03").text(initData.nodes[2]["id"])
 					$("#profGraph04").text(initData.nodes[3]["id"])
 					$("#profGraph05").text(initData.nodes[4]["id"])
+
+					$("#prgr03").css("display","block")
 				}else{
 					$("#profGraph01").text((initData.nodes[0]["id"]).toUpperCase())
 					$("#profGraph02").text(initData.nodes[1]["id"])
 					$("#profGraph02").attr("href",initData.nodes[1]["id"])
+					$("#prgr03").css("display","none")
 				}
 				
 
@@ -497,26 +482,27 @@ function search(name) {
 					url:"/publications?name="+name,
 					method: "GET",
 					success:function(data){
-						$.each(data, function( index, value ) {
-							
-							doi_link = "https://doi.org/" + value.DOI
-							pub_html = "<div style='background-color:#c1c1c1 !important' class='alert alert-secondary'><p style='color:black'><b>"+value.title+"</b></p>"
+						if(data.length > 0){
+							$.each(data, function( index, value ) {
+								doi_link = "https://doi.org/" + value.DOI
+								pub_html = "<div style='background-color:#c1c1c1 !important' class='alert alert-secondary'><p style='color:black'><b>"+value.title+"</b></p>"
 
-							if(value.DOI){
-								pub_html = pub_html + "<a style='color:#3b6ac1' target='_blank' href="+doi_link+">DOI: "+doi_link+"</a>"
-							}
-										
-							pub_html = pub_html + "<p style='color:black'>Published Date: "+value.year+"</p><p style='color:black'>Coauthors: "
-							
-							$.each(value.authors, function( i, v ) {
-								pub_html = pub_html + "<span>"+v+"</span>"+"," + " " 
-							})
-							pub_html = pub_html.substring(0, pub_html.length - 2) + "</p></div>"
-							$("#pubs_tabs_subs").append(pub_html)
-						});
-						
-						console.log(pub_html)
-						//console.log(data[301]["entities"][0]["AA"][0]["AuN"])
+								if(value.DOI){
+									pub_html = pub_html + "<a style='color:#3b6ac1' target='_blank' href="+doi_link+">DOI: "+doi_link+"</a>"
+								}
+											
+								pub_html = pub_html + "<p style='color:black'>Published Date: "+value.year+"</p><p style='color:black'>Coauthors: "
+								
+								$.each(value.authors, function( i, v ) {
+									pub_html = pub_html + "<span>"+v+"</span>"+"," + " " 
+								})
+								pub_html = pub_html.substring(0, pub_html.length - 2) + "</p></div>"
+								$("#pubs_tabs_subs").append(pub_html)
+							});
+						}else{
+							$("#pubs_tabs_subs").append("<h4>No Data Found</h4>")
+						}
+					
 				}  
 			})
 		}else{
@@ -529,7 +515,7 @@ function search(name) {
 function liveSearch() {
 	var name = document.getElementById('input').value;
 	var facet = document.getElementById('facet').value;
-	if(name.length >= 3)
+	if(name.length >= 2)
 	{
 		//var xmlhttp = new XMLHttpRequest();
 	//	xmlhttp.onreadystatechange = function() {

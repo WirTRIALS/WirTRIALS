@@ -33,7 +33,8 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        $redirectTo = request()->redirectTo;
+        $userId = Auth::id();
+        $redirectTo = '/profile/'.$userId;
 
         if ($redirectTo) {
             return redirect($redirectTo);
@@ -56,6 +57,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/login');
     }
 }
