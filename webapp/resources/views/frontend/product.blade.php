@@ -44,7 +44,6 @@
 				<div class="col-1"></div>
         </div>
     </div>
-    <div class="pattern bottom"></div>
 </section>
 
 
@@ -516,7 +515,7 @@ function search(name) {
 function liveSearch() {
 	var name = document.getElementById('input').value;
 	var facet = document.getElementById('facet').value;
-	if(name.length >= 3)
+	if(name.length >= 2)
 	{
 		//var xmlhttp = new XMLHttpRequest();
 	//	xmlhttp.onreadystatechange = function() {
@@ -571,12 +570,12 @@ function changeFacet() {
 
 function searchExpertise(name) {
 	document.getElementById('facet').value = 'expertise';
-	search(name);
+	search(name)
 }
 
 function searchResearcher(name) {
 	document.getElementById('facet').value = 'researcher';
-	search(name);
+	search(name)
 }
 
 function searchInGraph(name,group) {
@@ -590,20 +589,7 @@ function searchInGraph(name,group) {
 	}
 	else if(group == 3)
 	{
-		window.open(name);
-	}
-	else if(group == 6)
-	{
-		faculty_dict = {'Fakultät für Maschinenbau':'https://www.tu-chemnitz.de/mb/',
-		'Philosophische Fakultät':'https://www.tu-chemnitz.de/phil/',
-		'Fakultät für Elektrotechnik und Informationstechnik':'https://www.tu-chemnitz.de/etit/',
-		'Fakultät für Human- und Sozialwissenschaften':'https://www.tu-chemnitz.de/hsw/',
-		'Fakultät für Naturwissenschaften':'https://www.tu-chemnitz.de/naturwissenschaften/',
-		'Fakultät für Wirtschaftswissenschaften':'https://www.tu-chemnitz.de/wirtschaft/',
-		'Fakultät für Mathematik':'https://www.tu-chemnitz.de/mathematik/',
-		'Fakultät für Informatik':'https://www.tu-chemnitz.de/informatik/'}
-		
-		window.open(faculty_dict[name]);
+		window.open(name)
 	}
 
 }
