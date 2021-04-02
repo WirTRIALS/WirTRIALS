@@ -55,4 +55,4 @@ def getPublicationsFromMicrosoft(name):
 
     dict = json.loads(r.text)
     print(dict)
-
+    return r.text
