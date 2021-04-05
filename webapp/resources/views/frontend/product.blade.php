@@ -65,9 +65,7 @@
 					</h4>
 					<a target="_blank" id="profGraph02"></a>
 					<ul id="prgr03">
-						<li><h6 style="color:#21344e" id="profGraph03"></h6></li>
-						<li><h6 style="color:#21344e" id="profGraph04"></h6></li>
-						<li><h6 style="color:#21344e" id="profGraph05"></h6></li>
+						
 					</ul>
 					
 			
@@ -382,9 +380,9 @@ function search(name) {
 					$("#profGraph01").text("")
 					$("#profGraph02").text("")
 					$("#profGraph02").removeAttr("href")
-					$("#profGraph03").text("")
-					$("#profGraph04").text("")
-					$("#profGraph05").text("")
+					$("#profGraph03").remove()
+					$("#profGraph04").remove()
+					$("#profGraph05").remove()
 					$("#data_graph_id").css("display","block")
 
 					$("#loadingDiv").css("display","block")
@@ -405,12 +403,19 @@ function search(name) {
 				var search_type = document.getElementById('facet').value
 
 				if(search_type == "researcher"){
+				
 					$("#profGraph01").text(initData.nodes[0]["id"])
 					$("#profGraph02").text(initData.nodes[1]["id"])
 					$("#profGraph02").attr("href",initData.nodes[1]["id"])
-					$("#profGraph03").text(initData.nodes[2]["id"])
-					$("#profGraph04").text(initData.nodes[3]["id"])
-					$("#profGraph05").text(initData.nodes[4]["id"])
+					if(initData.nodes[2]['id'])
+						$("#prgr03").append("<li id='profGraph03'><h6 style='color:#21344e'>"+initData.nodes[2]['id']+"</h6></li>")
+					
+					if(initData.nodes[3]['id'])
+						$("#prgr03").append("<li id='profGraph04'><h6 style='color:#21344e'>"+initData.nodes[3]['id']+"</h6></li>")
+					
+					if(initData.nodes[4]['id'])
+						$("#prgr03").append("<li id='profGraph05'><h6 style='color:#21344e'>"+initData.nodes[4]['id']+"</h6></li>")
+					
 
 					$("#prgr03").css("display","block")
 				}else{
@@ -515,8 +520,9 @@ function search(name) {
 function liveSearch() {
 	var name = document.getElementById('input').value;
 	var facet = document.getElementById('facet').value;
-	if(name.length >= 2)
+	if(name.length >= 1)
 	{
+		debugger
 		//var xmlhttp = new XMLHttpRequest();
 	//	xmlhttp.onreadystatechange = function() {
 	//		if (this.readyState == 4 && this.status == 200) {
