@@ -3,12 +3,21 @@
 	<title>Researchee</title>
 	<link rel='stylesheet' href='styles.css'>
 	<script src='scripts.js'></script>
+	
+  <style> body { margin: 0; } </style>
+  <script src="https://unpkg.com/three@0.126.1/build/three.js"></script>
+  <script src="https://unpkg.com/three-spritetext@1.6.1/dist/three-spritetext.min.js"></script>
+
+  <script src="https://unpkg.com/3d-force-graph@1.69.1/dist/3d-force-graph.min.js"></script>
+  <!--<script src="../../dist/3d-force-graph.js"></script>-->
+  
 </head>
+
 <body onload="showNum()">
 
 <h1>Welcome to Researchee</h1>
 <h2>We focus on Linked Data and research information.<br>
-We have <inline id='researcher_num'></inline> researchers, and <inline id='expertise_num'></inline> expertises so far...</h2>
+We have <inline id='professor_num'></inline> professors, <inline id='researcher_num'></inline> researchers, and <inline id='expertise_num'></inline> expertises so far...</h2>
 <br>
 <div class='center'>
 <select id='facet' onchange="changeFacet()">
@@ -24,7 +33,12 @@ We have <inline id='researcher_num'></inline> researchers, and <inline id='exper
 </div>
 
 <div class='center' id='result'>
+
 </div>
+
+  <div id="3d-graph"></div>
+
 
 </body>
 </html>
+

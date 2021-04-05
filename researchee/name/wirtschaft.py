@@ -51,4 +51,3 @@ def getNameFromHumanities():
     return(namelist)
 
 getNameFromHumanities()
-

@@ -1,21 +1,19 @@
 
-import rdflib
 from rdflib import Graph,Namespace
 
-g = rdflib.Graph()
+g = Graph()
 #g.parse("demo_database.rdf")
-g.parse("database2.json",format="json-ld")
+g.parse("database.json",format="json-ld")
 
-researchee = Namespace("http://wirtrials.app.web/researchee#")
+roles = Namespace("https://vocab.org/aiiso-roles/schema#")
+aiiso = Namespace("https://vocab.org/aiiso/schema#")
+example = Namespace("https://example.org/people/")
 schema = Namespace("http://schema.org/")
-researchgate = Namespace("https://www.researchgate.net/profile/")
-topic = Namespace("https://www.researchgate.net/topic/")
-rdf = Namespace("http://www.w3.org/1999/02/22-rdf-syntax-ns#")
-g.bind("researchee", researchee)
-g.bind("schema", schema)
-g.bind("researchgate", researchgate)
-g.bind("topic", topic)
 
+g.bind("roles", roles)
+g.bind("aiiso", aiiso)
+g.bind("example", example)
+g.bind("schema", schema)
 
 greeting = '''************************************************************
 *                                                          *
@@ -58,10 +56,10 @@ Please enter your instruction:'''
 
         
     elif ins == '1':
-        pro = "researchee:Professorship"
+        pro = "roles:Professor"
         queryStr = f"""SELECT DISTINCT ?professorship_name 
             WHERE {{ 
-                ?a rdf:type {pro} .
+                ?a schema:jobTitle {pro} .
                 ?a schema:name ?professorship_name 
                 }}"""
         qres = g.query(queryStr)

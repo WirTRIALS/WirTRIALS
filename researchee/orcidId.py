@@ -17,6 +17,5 @@ def getOrcidId(givenName,familyName):
         parsejson = ""  #returns empty result if no orcidid found
         return parsejson
     
-    
    
 

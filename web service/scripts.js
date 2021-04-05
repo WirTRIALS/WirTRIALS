@@ -1,9 +1,12 @@
+
 function showNum() {
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			document.getElementById('researcher_num').innerHTML = this.responseText.split(' ')[0];
-			document.getElementById('expertise_num').innerHTML = this.responseText.split(' ')[1];;
+			document.getElementById('professor_num').innerHTML = this.responseText.split(' ')[0];
+			document.getElementById('researcher_num').innerHTML = this.responseText.split(' ')[1];
+			document.getElementById('expertise_num').innerHTML = this.responseText.split(' ')[2];
+
 		}
 	};
 	xmlhttp.open("GET", "handler.php?method=show_num", true);
@@ -14,10 +17,29 @@ function search() {
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			var text = this.responseText;
-			if( text.length == 0)
-				text = 'no result';
-			document.getElementById('result').innerHTML = text;
+			//document.getElementById('result').innerHTML = this.responseText;
+			var initData = JSON.parse(this.responseText);
+			
+			const elem = document.getElementById('3d-graph');
+			const Graph = ForceGraph3D()(elem)
+				.graphData(initData)
+				.linkDirectionalParticles('value')
+				.linkAutoColorBy('value')
+				.linkWidth(0.5)
+				.linkOpacity(0.3)
+				.nodeAutoColorBy('group')
+				.onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
+				.onNodeClick(node => searchInGraph(node.id,node.group))
+				.nodeThreeObject(node => {
+				  const sprite = new SpriteText(node.id);
+				  sprite.material.depthWrite = false; // make sprite background transparent
+				  sprite.color = node.color;
+				  sprite.textHeight = node.weight;
+				  return sprite;
+				});
+
+			// Spread nodes a little wider
+			Graph.d3Force('charge').strength(-500);
 		}
 	};
 	
@@ -54,16 +76,49 @@ function autofill(name) {
 }
 
 function changeFacet() {
+	if(document.getElementById('facet').value == 'expertise')
+		document.getElementById('input').placeholder = 'input an expertise';
+	else
+		document.getElementById('input').placeholder = 'input a researcher';
 	document.getElementById('input').value = '';
 	document.getElementById('liveResult').innerHTML = '';
 }
 
 function searchExpertise(name) {
 	document.getElementById('facet').value = 'expertise';
-	autofill(name)
+	autofill(name);
 }
 
 function searchResearcher(name) {
 	document.getElementById('facet').value = 'researcher';
-	autofill(name)
+	autofill(name);
+}
+
+function searchInGraph(name,group) {
+	if(group == 2)
+	{		
+		facet = document.getElementById('facet').value;
+		if(facet == 'researcher')
+			searchExpertise(name);
+		else
+			searchResearcher(name);
+	}
+	else if(group == 3)
+	{
+		window.open(name);
+	}
+	else if(group == 6)
+	{
+		faculty_dict = {'Fakultät für Maschinenbau':'https://www.tu-chemnitz.de/mb/',
+		'Philosophische Fakultät':'https://www.tu-chemnitz.de/phil/',
+		'Fakultät für Elektrotechnik und Informationstechnik':'https://www.tu-chemnitz.de/etit/',
+		'Fakultät für Human- und Sozialwissenschaften':'https://www.tu-chemnitz.de/hsw/',
+		'Fakultät für Naturwissenschaften':'https://www.tu-chemnitz.de/naturwissenschaften/',
+		'Fakultät für Wirtschaftswissenschaften':'https://www.tu-chemnitz.de/wirtschaft/',
+		'Fakultät für Mathematik':'https://www.tu-chemnitz.de/mathematik/',
+		'Fakultät für Informatik':'https://www.tu-chemnitz.de/informatik/'}
+		
+		window.open(faculty_dict[name]);
+		console.log(name);
+	}
 }
