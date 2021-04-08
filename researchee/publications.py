@@ -57,7 +57,11 @@ def getPublicationsFromMicrosoft(name):
     r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr=Composite(And(AA.AuN=\'' + name + '\',AA.AfN=\'' + tuc + '\'))&model=latest&attributes=F.FN,Ti,Y,CC,AA.AuN,DOI&count=20', headers = headers)
 
     dict = json.loads(r.text)
+
     #print(dict)
     return dict
 
 getPublications()
+
+    print(dict)
+    return r.text

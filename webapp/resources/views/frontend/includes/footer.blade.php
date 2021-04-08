@@ -14,7 +14,7 @@
                 <i class="fas fa-envelope"></i> &nbsp; wirtrials2020@gmail.com 
                 </p>
             </div>
-            <div class="col-lg-3 mb-3 mb-lg-0 text-center">
+            <div class="col-lg-3 mb-3 mb-lg-0x">
                 <h6>
                 <u>Useful Links</u>
                 </h6>

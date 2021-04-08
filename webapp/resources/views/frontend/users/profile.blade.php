@@ -30,11 +30,11 @@
                 <p class="lead">
                     Username: {{$$module_name_singular->username}}
                 </p>
-                @if ($$module_name_singular->email_verified_at == null)
+                <!-- @if ($$module_name_singular->email_verified_at == null)
                 <p class="lead">
                     <a href="{{route('frontend.users.emailConfirmationResend', $$module_name_singular->id)}}">Confirm Email</a>
                 </p>
-                @endif
+                @endif -->
 
                 @include('frontend.includes.messages')
             </div>
