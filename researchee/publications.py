@@ -24,14 +24,17 @@ def getPublications():
         # print("***********************************")
         # print("***********************************")
         name = nameAndTitle.split('&')[0]
+        #name = 'Philipp Klimant'
         str = getPublicationsFromMicrosoft(name)
 
         print(str)
 
         dict[nameAndTitle] = str
+        break
 
     json_object = json.dumps(dict, ensure_ascii=False)
-    with open("publications_dict.json", "w", encoding='utf8') as outfile:
+    print(json_object)
+    with open("publications_dict2.json", "w", encoding='utf8') as outfile:
         outfile.write(json_object)
 
     input.close()
@@ -48,11 +51,13 @@ def getPublicationsFromMicrosoft(name):
     # name = name.replace('ü', 'u')
     # name = name.replace('é', 'e')
     # name = name.replace('ß', 's')
-    print(name)
+    #print(name)
 
 
     r = get('https://api.labs.cognitive.microsoft.com/academic/v1.0/evaluate?expr=Composite(And(AA.AuN=\'' + name + '\',AA.AfN=\'' + tuc + '\'))&model=latest&attributes=F.FN,Ti,Y,CC,AA.AuN,DOI&count=20', headers = headers)
 
     dict = json.loads(r.text)
-    print(dict)
+    #print(dict)
+    return dict
 
+getPublications()

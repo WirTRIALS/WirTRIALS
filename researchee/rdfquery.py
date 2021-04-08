@@ -4,7 +4,7 @@ import rdflib
 
 g = rdflib.Graph()
 #g.parse("demo_database.rdf")
-g.parse("database.rdf")
+g.parse("database2.rdf")
 greeting = '''************************************************************
 *                                                          *
 *              Welcome to use Researchee                   *
@@ -29,6 +29,8 @@ Please enter your instruction:'''
 
     if ins == 'exit':
         break
+
+
     elif ins == '0':
         queryStr = f"""SELECT DISTINCT ?researcher_name 
             WHERE {{ 
@@ -39,7 +41,6 @@ Please enter your instruction:'''
         
         description = "Professor List: "
 
-  
 
     elif ins == '2':
         queryStr = f"""SELECT DISTINCT ?expertise_name 

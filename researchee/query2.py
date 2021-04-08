@@ -3,7 +3,8 @@ import rdflib
 
 
 g = rdflib.Graph()
-g.parse("database3.rdf")
+#g.parse("demo_database.rdf")
+g.parse("database2.rdf")
 greeting = '''************************************************************
 *                                                          *
 *              Welcome to use Researchee                   *
@@ -28,16 +29,54 @@ Please enter your instruction:'''
 
     if ins == 'exit':
         break
+
+
     elif ins == '0':
-        queryStr = f"""SELECT DISTINCT ?age 
+        queryStr = f"""SELECT DISTINCT ?researcher_name 
             WHERE {{ 
-                ?a rdf:type ?b . 
-                ?b ns1:age ?age . 
+                ?a researchee:researcherName ?researcher_name . 
+                ?a researchee:hasExpertise ?expertise . 
                 }}"""
         qres = g.query(queryStr)
         
         description = "Professor List: "
 
+
+    elif ins == '2':
+        queryStr = f"""SELECT DISTINCT ?expertise_name 
+            WHERE {{ 
+                ?a researchee:expertiseName ?expertise_name . 
+                ?b researchee:hasExpertise ?a . 
+                }}"""
+        qres = g.query(queryStr)
+        
+        description = "Expertise List: "
+        
+    elif ins.startswith('3'):
+        researcher_name = ' '.join(ins.split(' ')[1:])
+        queryStr = f"""SELECT DISTINCT ?exp 
+            WHERE {{ 
+                ?a researchee:researcherName "{researcher_name}" . 
+                ?a researchee:hasExpertise ?expertise . 
+                ?expertise researchee:expertiseName ?exp . 
+                }}"""
+        qres = g.query(queryStr)
+
+        description = "Expertises of %s: " %researcher_name
+
+    elif ins.startswith('6'):
+        expertise_name = ins.split(' ')[1
+        queryStr = f"""SELECT DISTINCT ?researcher_name 
+            WHERE {{ 
+                ?a researchee:expertiseName "{expertise_name}" . 
+                ?b researchee:hasExpertise ?a .
+                ?b researchee:researcherName ?researcher_name .
+                }}"""
+        qres = g.query(queryStr)
+        
+        description = "Professor List: "
+
+   
 
     else:
         description = "Invalid command"
