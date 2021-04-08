@@ -25,13 +25,14 @@
     <link rel="stylesheet" href="{{ mix('css/frontend.css') }}">
     <link rel="stylesheet" href="{{ asset('css/site.css') }}">
 
+
     @stack('after-styles')
 
     <!-- Scripts -->
     @stack('before-scripts')
 
     <script src="{{ mix('js/frontend.js') }}"></script>
-   
+    <script src="{{ asset('js/product.js') }}"></script>
     @stack('after-scripts')
 </head>
 

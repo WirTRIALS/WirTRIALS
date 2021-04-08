@@ -43,16 +43,15 @@ class FrontendController extends Controller
         $name = $_REQUEST["name"];
         $facet = $_REQUEST["facet"];
         
-        $str = file_get_contents(public_path("database.xml"));
-        $xml = simplexml_load_string ($str);
+        $str = file_get_contents(public_path("database.xml")); //get contents of rdf database
+        $xml = simplexml_load_string ($str); //parse xml data
         $ns = $xml->getNamespaces(true);
         
         switch ($method) {
-            case "graph_data":
-        
-                $pro_num = 0;
-                $res_num = 0;
-                $exp_num = 0;
+            case "graph_data": // get Statistics of staff for bar graph
+
+
+                //initialize arrays to store researcher, publication 
                 $r_data = array();
                 $p_data = array();
                 $alldata = array();
@@ -60,6 +59,7 @@ class FrontendController extends Controller
                 $re_data = array();
                 $pr_data = array();
 
+                //variables for storing faculties 
                 $fac01 = "Fakultät für Human- und Sozialwissenschaften";
                 $fac02 = "Fakultät für Maschinenbau";
                 $fac03 = "Fakultät für Mathematik";
@@ -69,6 +69,7 @@ class FrontendController extends Controller
                 $fac07 = "Philosophische Fakultät";
                 $fac08 = "Fakultät für Informatik";
                 
+                //variable for counting professors of individual faculty
                 $fac01_cntr_p = 0;
                 $fac02_cntr_p = 0;
                 $fac03_cntr_p = 0;
@@ -78,6 +79,7 @@ class FrontendController extends Controller
                 $fac07_cntr_p = 0;
                 $fac08_cntr_p = 0;
 
+                //variable for counting researchers of individual faculty
                 $fac01_cntr_r = 0;
                 $fac02_cntr_r = 0;
                 $fac03_cntr_r = 0;
@@ -86,8 +88,8 @@ class FrontendController extends Controller
                 $fac06_cntr_r = 0;
                 $fac07_cntr_r = 0;
                 $fac08_cntr_r = 0;
-                
 
+                //get count of researcher and professor of all faculties
                 foreach ($xml->children($ns['rdf'])->Description as $resource) {
                     if($resource->children($ns['aiiso'])->Faculty == $fac01){
                         if($resource->children($ns['schema'])->jobTitle == 'Professor'){
@@ -147,6 +149,8 @@ class FrontendController extends Controller
                     }
 
                 }
+
+                //add labels and count of researcher/experties of all faculties  to array
                 $p_data = array("label"=>$fac01,"y"=>$fac01_cntr_p);
                 $r_data = array("label"=>$fac01,"y"=>$fac01_cntr_r);
                 array_push($pr_data,$p_data);
@@ -192,12 +196,13 @@ class FrontendController extends Controller
                 break;
 
             case "show_num":
-        
+                //variable to store count of researcher,professor & expertise
                 $pro_num = 0;
                 $res_num = 0;
                 $exp_num = 0;
+
+                //get count of researcher,professor & expertise
                 foreach ($xml->children($ns['rdf'])->Description as $resource) {
-                    
                     if (isset($resource->children($ns['rdf'])->type)&&
                         $resource->children($ns['rdf'])->type->attributes($ns['rdf'])->{'resource'} == "http://schema.org/DefinedTerm" )
                         $exp_num += 1;
@@ -319,6 +324,7 @@ class FrontendController extends Controller
                 break;
                 
             case "live_search":
+                //fetch expertise/researcher title from xml 
                 if( $facet == 'researcher') {
                     $count = 0;
                     $live_search_html = "";
@@ -361,18 +367,19 @@ class FrontendController extends Controller
                 break;
         }
     }
-
+    
+    //fetch publications of researcher/professor
     public function publications(){
         $result = [];
         $pubs = [];
         
 
-        $name = strtolower($_GET['name']);
-        $json = json_decode(file_get_contents(public_path("publications_dict.json")), true); 
+        $name = strtolower($_GET['name']); 
+        $json = json_decode(file_get_contents(public_path("publications_dict.json")), true); //decode json file
         
         foreach($json as $data){
             $len = count($data["entities"]);
-            if($len > 0){
+            if($len > 0){ //check if data exists
                 foreach($data["entities"] as $entity){
                     
                     $aa_len = count($entity["AA"]);
@@ -381,14 +388,14 @@ class FrontendController extends Controller
                             $something = [];
                             $authors = [];
                             if(strtolower($n["AuN"]) == $name){
-                                $something["title"] = $entity["Ti"];
-                                $something["year"] = $entity["Y"];
+                                $something["title"] = $entity["Ti"]; //get publication title
+                                $something["year"] = $entity["Y"];//get publication year
                                 if(array_key_exists("DOI",$entity)){
-                                    $something["DOI"] = $entity["DOI"];
+                                    $something["DOI"] = $entity["DOI"];//get publication DOI
                                 }
 
                                 foreach($entity["AA"] as $xx){
-                                    array_push($authors,$xx["AuN"]);
+                                    array_push($authors,$xx["AuN"]);//get publication authors
                                 }
                                 $something["authors"] = $authors;
                                 
@@ -405,24 +412,27 @@ class FrontendController extends Controller
         return $pubs;
     }
 
+    //Get Top Expertise 
     public function topexpertise(){
-        if(file_exists(public_path("2nd_level_expertise_list_old.json"))){
-            $resttt = json_decode(file_get_contents(public_path("top_expertise.json")), true);
+
+        if(file_exists(public_path("2nd_level_expertise_list_old.json"))){ //check if file expertise exists
+            $resttt = json_decode(file_get_contents(public_path("top_expertise.json")), true);//decode json file
             return $resttt;
-        }else{
+        }else{//if file doesn't exist create new file and write data to it
             $myfile = fopen("2nd_level_expertise_list_old.json", "w");
             $file_data = file_get_contents(public_path("2nd_level_expertise_list.json"));
             fwrite($myfile, $file_data);
             fclose($myfile);
 
-            $str = file_get_contents(public_path("database.xml"));
+            $str = file_get_contents(public_path("database.xml")); //parse rdf database 
             $xml = simplexml_load_string ($str);
             $ns = $xml->getNamespaces(true);
     
-            $expertises = json_decode(file_get_contents(public_path("2nd_level_expertise_list.json")), true);
+            $expertises = json_decode(file_get_contents(public_path("2nd_level_expertise_list.json")), true);//decode top expertise json file
             $result = [];
             $pair = [];
             
+            //fetch count of top expertise by comparing rdf database with second level expertise
             foreach($expertises as $e){
                 $count = 0;
                 foreach ($xml->children($ns['rdf'])->Description as $researcher) {  
@@ -460,7 +470,7 @@ class FrontendController extends Controller
                 array_push($result,$pair);
                
             }
-            file_put_contents("top_expertise.json",json_encode($result));
+            file_put_contents("top_expertise.json",json_encode($result)); //write expertise count to new file
             $resttt = json_decode(file_get_contents(public_path("top_expertise.json")), true);
             return $resttt;
         }
@@ -499,7 +509,7 @@ class FrontendController extends Controller
         return $res;
     }
 
-
+     
     public function contact(Request $request) {
 
         // Form validation

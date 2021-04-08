@@ -59,6 +59,12 @@
                 @guest
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
+                        <a style="font-size:16px;font-weight:600" href="/" class="nav-link">
+                            <span class="nav-link-inner--text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a style="font-size:16px;font-weight:600" href="{{ route('login') }}" class="nav-link">
                             <span class="nav-link-inner--text">Login</span>
                         </a>
