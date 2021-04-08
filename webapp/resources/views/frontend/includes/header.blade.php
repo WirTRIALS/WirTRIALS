@@ -1,4 +1,5 @@
 <style>
+
 .navbar-brand img.common {
     height: 50px !important;
 }
@@ -6,6 +7,9 @@
     font-size: 1.1rem;
 }
 
+.navbar-collapse.show a{
+    color: #333 !important;
+}
 
 </style>
 
@@ -39,28 +43,28 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/#about" class="nav-link">
+                        <a onclick="overscroll()" href="/#about" class="nav-link">
                             <span class="fas fa-info mr-1"></span> About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/product" class="nav-link">
+                        <a  href="/product" class="nav-link">
                             <span class="fab fa-product-hunt mr-2"></span> Products
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/#team" class="nav-link">
+                        <a onclick="overscroll()" href="/#team" class="nav-link">
                             <span class="fas fa-users mr-1"></span> Team
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/#contact" class="nav-link">
+                        <a onclick="overscroll()" href="/#contact" class="nav-link">
                             <span class="fas fa-envelope mr-1"></span> Contact
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="d-none d-lg-block">
+            <div class="d-lg-block">
                 <ul class="navbar-nav navbar-nav-hover">
                     <li class="nav-item dropdown">
                             <a style="color:white;padding:1px !important;" href="#" class="nav-link dropdown-toggle btn btn-secondary animate-up-2" aria-expanded="false" data-toggle="dropdown">
@@ -146,22 +150,13 @@ window.onscroll = function() {
    }
 }
 
-$(document).ready(function(){
-    nav_bar = $(".navbar-toggler-icon").is(":visible");
-    if(nav_bar == true){
-        
-        $(".nav-item > a").css("color","black")
-    }else{
-        $(".nav-item > a").css("color","white")
-    }
-})
+function overscroll(){
 
-$( window ).resize(function() {
-    nav_bar = $(".navbar-toggler-icon").is(":visible");
-    if(nav_bar == true){
-        $(".nav-item > a").css("color","black")
-    }else{
-        $(".nav-item > a").css("color","white")
+    var x = $(".navbar-collapse.show").length
+    if(x > 0){
+        $("body").css("overflow","initial")
+        $("html").css("overflow","initial")
     }
-});
+}
+
 </script>
